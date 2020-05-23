@@ -17,19 +17,28 @@ namespace VoiceActing
         [Title("Moveset")]
         [SerializeField]
         AttackController crouchController;
+        [SerializeField]
+        AttackController jumpLand;
+        [SerializeField]
+        AttackController runEnd;
 
+        [Title("Normal")]
         [SerializeField]
         AttackController groundDefaultAttack;
         [SerializeField]
         AttackController groundRunAttack;
 
+        [Title("Jump Normal")]
         [SerializeField]
         AttackController jumpDefaultAttack;
         [SerializeField]
         AttackController jumpForwardAttack;
 
+        [Title("Throw")]
         [SerializeField]
         AttackController throwAttack;
+
+        [Title("Special")]
         [SerializeField]
         AttackController specialAttack;
         [SerializeField]
@@ -46,14 +55,15 @@ namespace VoiceActing
         [SerializeField]
         AttackController dashForward;
 
-        [SerializeField]
-        AttackController runEnd;
+
 
         [Title("Parameter")]
         [SerializeField]
         float crouchJumpTime = 0.1f;
         [SerializeField]
         float runSpeedBonus = 1.5f;
+        [SerializeField]
+        float doubleJumpRatio = 0.75f;
 
         [Title("Buffer Parameter")]
         [SerializeField]
@@ -76,6 +86,8 @@ namespace VoiceActing
         int runInput = 0;
         bool isRunning = false;
 
+        bool willJumpLand = false;
+
         #region GettersSetters 
 
         /* ======================================== *\
@@ -92,6 +104,7 @@ namespace VoiceActing
 
         protected override void UpdateController()
         {
+            JumpLand();
             if (active == true)
             {
                 //InputThrow();
@@ -105,7 +118,25 @@ namespace VoiceActing
         }
 
 
-
+        private void JumpLand()
+        {
+            if(jumpLand != null)
+            {
+                if (state != CharacterState.Idle && state != CharacterState.Moving)
+                {
+                    return;
+                }
+                if (inAir == true && willJumpLand == false)
+                {
+                    willJumpLand = true;
+                }
+                if (inAir == false && willJumpLand == true)
+                {
+                    willJumpLand = false;
+                    Action(jumpLand);
+                }
+            }
+        }
 
 
         // =========================================================================================
@@ -151,7 +182,7 @@ namespace VoiceActing
         {
             if(direction != runDirection)
             {
-                if (CanAct() && inAir == false && isRunning == true)
+                if (CanAct() && inAir == false && isRunning == true && runEnd != null)
                     Action(runEnd);
                 runInput = 0;
                 isRunning = false;
@@ -193,7 +224,7 @@ namespace VoiceActing
             {
                 runInput = 0;
                 isRunning = false;
-                if(CanAct() && inAir == false)
+                if(CanAct() && inAir == false && runEnd != null)
                     Action(runEnd);
             }
 
@@ -413,9 +444,9 @@ namespace VoiceActing
                     speedX = defaultSpeed * direction;
                     if (isRunning == true)
                         speedX += runSpeedBonus * direction;
+                    //endAction = true;
+                    CancelAct();
                     JumpDefault();
-                    endAction = true;
-                    EndActionState();
                 }
             }
 
@@ -474,8 +505,9 @@ namespace VoiceActing
             }
             else if (inAir == true && speedZ > 0 && doubleJump == false)
             {
+                characterAnimator.SetTrigger("DoubleJump");
                 doubleJump = true;
-                Jump(jumpImpulsion * 0.75f);
+                Jump(jumpImpulsion * doubleJumpRatio);
                 if (Input.GetAxis("Horizontal") > 0.2f)
                 {
                     speedX = defaultSpeed;
@@ -492,6 +524,8 @@ namespace VoiceActing
                     speedY = 0;
                 }
             }
+            if (isRunning == true)
+                speedX += runSpeedBonus * direction;
             StopBuffer();
         }
 

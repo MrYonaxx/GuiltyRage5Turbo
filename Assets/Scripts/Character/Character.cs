@@ -241,7 +241,10 @@ namespace VoiceActing
 
             UpdateController();
 
-            ApplyGravity();
+            if (state != CharacterState.Throw)
+                ApplyGravity();
+            else
+                UpdateThrow();
             if (knockbackTime > 0)
                 UpdateKnockback();
             UpdateCollision();
@@ -450,8 +453,10 @@ namespace VoiceActing
             {
                 characterAnimator.SetBool("AerialDown", false);
             }
+
             if (state == CharacterState.Idle || state == CharacterState.Moving)
                 characterAnimator.SetBool("Moving", (speedX != 0 || speedY != 0));
+
             if(state == CharacterState.Guard)
             {
                 characterAnimator.SetBool("Guard", true);
@@ -661,10 +666,10 @@ namespace VoiceActing
 
 
 
-
-
-
-        public void CancelAction()
+        /// <summary>
+        /// Cancel Action mais sans retour à l'idle
+        /// </summary>
+        public void CancelAct()
         {
             if (currentAttackController != null)
                 currentAttackController.CancelAction();
@@ -678,6 +683,12 @@ namespace VoiceActing
             canTargetCombo = false;
 
             state = CharacterState.Idle;
+        }
+
+        public void CancelAction()
+        {
+            CancelAct();
+
             characterAnimator.SetTrigger("Idle");
         }
 
@@ -794,12 +805,12 @@ namespace VoiceActing
         {
             state = CharacterState.Guard;
             characterAnimator.SetBool("Guard", true);
-            OnGuardBreak.Invoke(this);
+            //OnGuardBreak.Invoke(this);
         }
 
         public void GuardBreak()
         {
-
+            OnGuardBreak.Invoke(this);
         }
 
 

@@ -38,7 +38,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_HitAerialFall1
+  m_Name: Hamtaro_HitAerialFall1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -51,7 +51,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 9ab54c0be1b67f946bc0b766b52b3ed8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 3aebeb57ba7f66543bfe0c497539aad7, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -111,7 +111,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_Hit1
+  m_Name: Hamtaro_Hit1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -124,7 +124,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 6f5b9770e32562b4c9fa7958730ac0e5, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2088bb099cb351f4db652a0eb14a4e55, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -366,7 +366,7 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &-3726431909302157916
+--- !u!1101 &-4788094959696353193
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -378,7 +378,32 @@ AnimatorStateTransition:
     m_ConditionEvent: AerialDown
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: -8956143223525065338}
+  m_DstState: {fileID: -2959346625861980090}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1101 &-4784255455449814696
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: AerialUp
+    m_EventTreshold: 0
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 905421149696875864}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
@@ -445,6 +470,32 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1102 &-2959346625861980090
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hamtaro_HitAerialFall2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: 19ece31e743550040a7258bf242ef1d6, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &-2714732149152876106
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -508,6 +559,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Down
     m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: HitAnimation
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 6589132007458658288}
   m_Solo: 0
@@ -529,11 +583,11 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_HitAerial2
+  m_Name: Hamtaro_HitAerial2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
-  - {fileID: -3726431909302157916}
+  - {fileID: -4788094959696353193}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -543,7 +597,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5e563bcd846d2654190297aaecb72c63, type: 2}
+  m_Motion: {fileID: 7400000, guid: 9e39e3f30ab6c00469dfbd2b8902f201, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -556,7 +610,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_HitAerial1
+  m_Name: Hamtaro_HitAerial1
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -570,7 +624,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 3327387dd0b807645aa652f579d775d7, type: 2}
+  m_Motion: {fileID: 7400000, guid: 539fa75ecb2d5a245a2b420d988ff39a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -839,7 +893,8 @@ AnimatorState:
   m_Name: Hamtaro_Crouch
   m_Speed: 1
   m_CycleOffset: 0
-  m_Transitions: []
+  m_Transitions:
+  - {fileID: -4784255455449814696}
   m_StateMachineBehaviours: []
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
@@ -956,6 +1011,60 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!1101 &1321020624213196597
+AnimatorStateTransition:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: Down
+    m_EventTreshold: 0
+  - m_ConditionMode: 6
+    m_ConditionEvent: HitAnimation
+    m_EventTreshold: 1
+  m_DstStateMachine: {fileID: 0}
+  m_DstState: {fileID: 1999339969741050478}
+  m_Solo: 0
+  m_Mute: 0
+  m_IsExit: 0
+  serializedVersion: 3
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0
+  m_ExitTime: 0.75
+  m_HasExitTime: 0
+  m_HasFixedDuration: 1
+  m_InterruptionSource: 0
+  m_OrderedInterruption: 1
+  m_CanTransitionToSelf: 1
+--- !u!1102 &1999339969741050478
+AnimatorState:
+  serializedVersion: 5
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Hamtaro_Down2
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 7400000, guid: d9135f735dae2854d91d10f0b1340337, type: 2}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
 --- !u!1101 &2946907730882757430
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1127,7 +1236,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_Hit2
+  m_Name: Hamtaro_Hit2
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1140,7 +1249,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 5c2db0d0398d4ef4ca15da12d3bbb924, type: 2}
+  m_Motion: {fileID: 7400000, guid: 247675f82d12f4a45b4a1911242d4e71, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -1190,19 +1299,19 @@ AnimatorStateMachine:
     m_Position: {x: -330, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8956143223525065338}
-    m_Position: {x: 790, y: 610, z: 0}
+    m_Position: {x: 790, y: 590, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6254360349638078226}
     m_Position: {x: 410, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6589132007458658288}
-    m_Position: {x: 300, y: 650, z: 0}
+    m_Position: {x: 230, y: 670, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 139473471589427069}
     m_Position: {x: -410, y: 80, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4890259605105582900}
-    m_Position: {x: -370, y: 140, z: 0}
+    m_Position: {x: -370, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7672817432622924028}
     m_Position: {x: -335, y: 205, z: 0}
@@ -1217,7 +1326,7 @@ AnimatorStateMachine:
     m_Position: {x: -415, y: 65, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 933553636120734479}
-    m_Position: {x: -380, y: 130, z: 0}
+    m_Position: {x: -100, y: -210, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5328120831645581425}
     m_Position: {x: -345, y: 195, z: 0}
@@ -1236,6 +1345,12 @@ AnimatorStateMachine:
   - serializedVersion: 1
     m_State: {fileID: -6633019731096102282}
     m_Position: {x: -170, y: 520, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -2959346625861980090}
+    m_Position: {x: 790, y: 650, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 1999339969741050478}
+    m_Position: {x: 340, y: 720, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 2946907730882757430}
@@ -1246,6 +1361,7 @@ AnimatorStateMachine:
   - {fileID: 3320920771274889824}
   - {fileID: -9039904127200429429}
   - {fileID: -2501425803018161364}
+  - {fileID: 1321020624213196597}
   m_EntryTransitions: []
   m_StateMachineTransitions: {}
   m_StateMachineBehaviours: []
@@ -1420,7 +1536,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_Down
+  m_Name: Hamtaro_Down
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -1433,7 +1549,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 0bf4cf0ac3d7d054e9cca9f2da2c3c48, type: 2}
+  m_Motion: {fileID: 7400000, guid: ba6b8a7ab7202994d8d3dd67376167c0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

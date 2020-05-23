@@ -311,9 +311,10 @@ namespace VoiceActing
                 if(crouchTime <= 0)
                 {
                     speedX = defaultSpeed * direction;
+                    CancelAct();
                     JumpDefault();
-                    endAction = true;
-                    EndActionState();
+                    /*endAction = true;
+                    EndActionState();*/
                 }
             }
 

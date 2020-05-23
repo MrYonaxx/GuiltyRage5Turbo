@@ -7002,7 +7002,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: acd97d7851f834940b4d11492cb09904, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -8121,7 +8121,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 285767236830761495, guid: 52ab19b685ec748469f0d040c1e86602, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f768f2f88fd9e494d91844ca4a2106bf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8149,7 +8149,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.35, y: 0.4}
+    oldSize: {x: 0.37, y: 0.4}
     newSize: {x: 0.35, y: 0.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9259,6 +9259,8 @@ MonoBehaviour:
       m_Calls: []
   crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
     type: 3}
+  jumpLand: {fileID: 0}
+  runEnd: {fileID: 7685275246996628382, guid: 08aea54efce1f4743904ada007131294, type: 3}
   groundDefaultAttack: {fileID: 2429798766261815113, guid: d69d0e40f5563b64b80e120dc6e6cf3e,
     type: 3}
   groundRunAttack: {fileID: 8119933654453206164, guid: 0cff73193f8cd664c8f7ec5f99cc8d79,
@@ -9279,9 +9281,9 @@ MonoBehaviour:
     type: 3}
   dashBack: {fileID: 0}
   dashForward: {fileID: 0}
-  runEnd: {fileID: 7685275246996628382, guid: 08aea54efce1f4743904ada007131294, type: 3}
   crouchJumpTime: 0.1
   runSpeedBonus: 2
+  doubleJumpRatio: 0.75
   bufferTime: 0.25
   runBufferTime: 0.12
 --- !u!4 &1079504038
@@ -13396,7 +13398,7 @@ Animator:
   m_GameObject: {fileID: 1599405547}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: aaaf63f6dc2ae364e9fbeac7bb9afe9a, type: 2}
+  m_Controller: {fileID: 9100000, guid: 73c5886eab3dc294893f402f707cc221, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -13461,7 +13463,7 @@ MonoBehaviour:
       Speed: 0
       Mass: 0
       KnockbackTime: 0
-  target: {fileID: 0}
+  target: {fileID: 1079504037}
   jumpImpulsion: 1
   gravity: 20
   gravityMax: -5

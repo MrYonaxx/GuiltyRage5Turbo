@@ -61,7 +61,7 @@ namespace VoiceActing
             EnemyAppear(true);
         }
 
-        protected override void Update()
+        /*protected override void Update()
         {
             if (canEndAction == false)
                 canEndAction = true;
@@ -82,7 +82,14 @@ namespace VoiceActing
             SetAnimation();
             EndActionState();
             // Les animations events sont joué après l'Update
+        }*/
+
+        protected override void UpdateController()
+        {
+            EnemyDecision();
+            base.UpdateController();
         }
+
 
         public void EnemyAppear(bool b)
         {
@@ -129,6 +136,8 @@ namespace VoiceActing
 
         public void EnemyDecision()
         {
+            if (state == CharacterState.Hit || state == CharacterState.Down)
+                return;
             if (enemyActionTime <= 0) 
             {
                 state = CharacterState.Idle;

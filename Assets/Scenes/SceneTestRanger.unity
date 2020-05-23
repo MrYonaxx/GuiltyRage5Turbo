@@ -8121,13 +8121,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -5087784978191457496, guid: 47041867f50ed2645880c4c13aaa5f8d,
+  m_Sprite: {fileID: 8048668061461203166, guid: 84ec656eb191f904986abb2d601d5438,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.45, y: 1}
+  m_Size: {x: 0.68, y: 0.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8150,8 +8150,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.45, y: 1}
-    newSize: {x: 0.45, y: 1}
+    oldSize: {x: 0.68, y: 0.77}
+    newSize: {x: 0.68, y: 0.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9053,7 +9053,7 @@ GameObject:
   - component: {fileID: 1079504035}
   - component: {fileID: 1079504034}
   m_Layer: 0
-  m_Name: PlayerUsagi
+  m_Name: PlayerRanger
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9069,7 +9069,7 @@ Animator:
   m_GameObject: {fileID: 1079504033}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 365296dc4a10c8e46ba5686aede2115b, type: 2}
+  m_Controller: {fileID: 9100000, guid: c623f8d7d8dc84e4aa043abef6715898, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -9182,7 +9182,7 @@ MonoBehaviour:
       Mass: 0
       KnockbackTime: 0
   target: {fileID: 0}
-  jumpImpulsion: 7
+  jumpImpulsion: 8
   gravity: 22
   gravityMax: -10
   defaultSpeed: 2.2
@@ -9258,8 +9258,10 @@ MonoBehaviour:
   OnWallBounce:
     m_PersistentCalls:
       m_Calls: []
-  crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
+  crouchController: {fileID: 897661490472993470, guid: 43e96204941939e41897fe36d2c0aa09,
     type: 3}
+  jumpLand: {fileID: 0}
+  runEnd: {fileID: 0}
   groundDefaultAttack: {fileID: 2429798766261815113, guid: d69d0e40f5563b64b80e120dc6e6cf3e,
     type: 3}
   groundRunAttack: {fileID: 8119933654453206164, guid: 0cff73193f8cd664c8f7ec5f99cc8d79,
@@ -9280,9 +9282,9 @@ MonoBehaviour:
     type: 3}
   dashBack: {fileID: 0}
   dashForward: {fileID: 0}
-  runEnd: {fileID: 7685275246996628382, guid: 08aea54efce1f4743904ada007131294, type: 3}
   crouchJumpTime: 0.1
   runSpeedBonus: 2
+  doubleJumpRatio: 0.8
   bufferTime: 0.25
   runBufferTime: 0.12
 --- !u!4 &1079504038
@@ -13184,7 +13186,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 4
-  m_Sprite: {fileID: 8118833055868487638, guid: 1178242a59421d449af914e705aabde0,
+  m_Sprite: {fileID: 8048668061461203166, guid: 84ec656eb191f904986abb2d601d5438,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_FlipX: 0
@@ -13462,7 +13464,7 @@ MonoBehaviour:
       Speed: 0
       Mass: 0
       KnockbackTime: 0
-  target: {fileID: 0}
+  target: {fileID: 1079504037}
   jumpImpulsion: 1
   gravity: 20
   gravityMax: -5
@@ -20508,7 +20510,7 @@ Transform:
   m_GameObject: {fileID: 1896451607}
   m_LocalRotation: {x: 0.17364816, y: 0, z: 0, w: 0.9848078}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 1, z: 1}
+  m_LocalScale: {x: 5, y: 1.5, z: 1}
   m_Children: []
   m_Father: {fileID: 1079504038}
   m_RootOrder: 0
