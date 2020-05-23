@@ -125,7 +125,7 @@ namespace VoiceActing
         private IEnumerator BattleRewardEndCoroutine()
         {
             yield return new WaitForSeconds(1.5f);
-            playerGetCard.SetCanInput(true);
+            //playerGetCard.SetCanInput(true);
             animatorBattleWin.gameObject.SetActive(false);
             canvasReward.gameObject.SetActive(false);
             OnEventEnd.Invoke();

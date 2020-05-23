@@ -60,7 +60,6 @@ namespace VoiceActing
         bool bufferSpecialActive = false;
         bool bufferJumpActive = false;
         bool bufferDashActive = false;
-        bool canInput = true;
 
         #endregion
 
@@ -78,11 +77,7 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
-        /*public void TestDebug()
-        {
-            defaultSpeed = -defaultSpeed;
-        }*/
-        protected override void Update()
+        /*protected override void Update()
         {
             if (canEndAction == false)
                 canEndAction = true;
@@ -102,9 +97,20 @@ namespace VoiceActing
             UpdateCollision();
             SetAnimation();
             EndActionState();
+        }*/
+
+        protected override void UpdateController()
+        {
+            if (active == true)
+            {
+                InputThrow();
+                InputMovement();
+                InputDash();
+                InputJump();
+                InputAction();
+                InputSpecial();
+            }
         }
-
-
 
 
         private void InputAction()
@@ -114,14 +120,15 @@ namespace VoiceActing
                 return;
             }
 
-            if (bufferNormalActive == true && state == CharacterState.Acting)
+            if (bufferNormalActive == true)
             {
                 if (CanAct() == true)
                 {
                     NormalAttack();
+                    return;
                 }
             }
-            else if (Input.GetButtonDown("ControllerX"))
+            if (Input.GetButtonDown("ControllerX"))
             {
                 if (CanAct() == true)
                 {
@@ -149,6 +156,7 @@ namespace VoiceActing
             {
                 Action(groundDefaultAttack);
             }
+            StopBuffer();
         }
 
         // =========================================================================================
@@ -191,6 +199,7 @@ namespace VoiceActing
                 Action(specialForwardAttack);
             else
                 Action(specialAttack);
+            StopBuffer();
         }
 
 
@@ -207,6 +216,7 @@ namespace VoiceActing
             {
                 Action(throwAttack);
             }
+            StopBuffer();
         }
 
 
@@ -287,6 +297,7 @@ namespace VoiceActing
             {
                 Action(dashBack);
             }
+            StopBuffer();
         }
 
 
@@ -310,6 +321,11 @@ namespace VoiceActing
             {
                 if(currentAttack.AttackBehavior.JumpCancel == true)
                     CancelAction();
+                else
+                {
+                    bufferJumpActive = true;
+                    StartBuffer();
+                }
             }
             else if (Input.GetButtonDown("ControllerA") && state == CharacterState.Acting)
             {
@@ -374,10 +390,22 @@ namespace VoiceActing
                     speedY = 0;
                 }
             }
+            StopBuffer();
         }
 
 
         // =========================================================================================
+        public void StopBuffer()
+        {
+            if (bufferCoroutine != null)
+                StopCoroutine(bufferCoroutine);
+            bufferNormalActive = false;
+            bufferSpecialActive = false;
+            bufferJumpActive = false;
+            bufferDashActive = false;
+        }
+
+
         public void StartBuffer()
         {
             if (bufferCoroutine != null)
@@ -396,12 +424,6 @@ namespace VoiceActing
         }
 
 
-        public void SetCanInput(bool b)
-        {
-            canInput = b;
-            if(b == true)
-                state = CharacterState.Idle;
-        }
 
         // Placeholder
         public void PlayGetCardAnimation()

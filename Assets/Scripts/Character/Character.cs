@@ -97,6 +97,8 @@ namespace VoiceActing
         protected float defaultSpeed = 1;
         [SerializeField]
         protected float wakeUpRecovery = 1;
+        [SerializeField]
+        protected float defaultMotionSpeed = 1;
 
 
         [SerializeField]
@@ -120,29 +122,31 @@ namespace VoiceActing
 
 
         [Title("Event")]
-        [SerializeField]
-        UnityEventCharacterBattle OnCardPlay;
+        /*[SerializeField]
+        UnityEventCharacterBattle OnCardPlay;*/
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventCharacterBattle OnDead;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventAttackBehavior OnHit;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventCharacterBattle OnGuard;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEvent OnActionHit;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEvent OnActionEnd;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventCharacterBattle OnGuardBreak;
+        [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventCharacterBattle OnWallBounce;
 
 
-        [Title("Debug")]
-        [SerializeField]
-        AttackController attackControllerPrefab;
-
-        [SerializeField]
         protected CharacterState state = CharacterState.Idle;
         protected bool inAir = false;
 
@@ -177,6 +181,8 @@ namespace VoiceActing
         protected bool canMoveCancel = false;
         protected bool canTargetCombo = false;
 
+        protected bool active = false;
+
 
         int layerMask;
         Vector2 bottomLeft;
@@ -203,6 +209,11 @@ namespace VoiceActing
             target = value;
         }
 
+        public void SetActive(bool b)
+        {
+            active = b;
+        }
+
         #endregion
 
         #region Functions 
@@ -227,12 +238,21 @@ namespace VoiceActing
         {
             if (canEndAction == false)
                 canEndAction = true;
+
+            UpdateController();
+
+            ApplyGravity();
             if (knockbackTime > 0)
                 UpdateKnockback();
             UpdateCollision();
             SetAnimation();
             EndActionState();
             // Les animations events sont joué après l'Update
+        }
+
+        protected virtual void UpdateController()
+        {
+
         }
 
         protected void UpdateCollision()
@@ -449,7 +469,6 @@ namespace VoiceActing
             if (col.tag == "EnemyAttack" || col.tag == "PlayerAttack")
             {
                 AttackController attackIncoming = col.GetComponent<AttackController>();
-
                 // Hit
                 if (CheckIfHit(attackIncoming) == true)
                 {
@@ -479,6 +498,8 @@ namespace VoiceActing
 
         private bool CheckIfHit(AttackController attack)
         {
+            if (attack.CheckCollisionY(this.transform.position.y) == false)
+                return false;
             if (state == CharacterState.Dead)
                 return false;
             if (state == CharacterState.Throw && attack.AttackBehavior.AttackThrow == false)
@@ -697,6 +718,8 @@ namespace VoiceActing
 
         public void Action(AttackController action)
         {
+            if (action == null)
+                return;
             state = CharacterState.Acting;         
             currentAttack = CheckCombo(action);
             previousAttack = action;
@@ -706,8 +729,12 @@ namespace VoiceActing
             canEndAction = false;
             canMoveCancel = false;
             canTargetCombo = false;
-            speedX = 0;
-            speedY = 0;
+            if(currentAttack.AttackBehavior.KeepMomentum == false) 
+            {
+                speedX = 0;
+                speedY = 0;
+            }
+
         }
 
         // Appelé par les anims
@@ -854,10 +881,10 @@ namespace VoiceActing
                 time -= Time.deltaTime;
                 yield return null;
             }
-            characterMotionSpeed = 1;
+            characterMotionSpeed = defaultMotionSpeed;
             characterAnimator.speed = characterMotionSpeed;
             if (currentAttackController != null)
-                currentAttackController.AttackMotionSpeed(1);
+                currentAttackController.AttackMotionSpeed(characterMotionSpeed);
         }
 
 

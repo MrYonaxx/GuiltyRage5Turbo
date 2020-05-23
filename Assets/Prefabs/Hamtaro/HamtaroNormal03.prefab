@@ -72,43 +72,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackBehavior:
     attackName: 
-    attackDamage: 0
     attackAnimation: Hamtaro_Attack03
     lifetime: 0.1
+    attackDamage: 0
+    comboCost: 0
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
-    animationDriven: 1
     isActive: 1
-    allyAttack: 0
-    isPiercing: 0
     isMultiHit: 0
-    linkToCharacter: 1
     noDirection: 0
-    moveToTarget: 0
-    cameraFollowAttack: 0
+    linkToCharacter: 1
+    linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
     jumpCancel: 0
     dashCancel: 0
+    runCancel: 1
+    keepMomentum: 0
     throwState: 0
     attackThrow: 0
     resetGravity: 0
+    allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
-    knockbackPowerX: 6
-    knockbackPowerZ: 3
+    knockbackPowerX: 5
+    knockbackPowerZ: 4
     knockbackAerialPowerX: 6
     knockbackAerialPowerZ: 3
-    knockbackDurationMultiplier: 1
     hitStop: 0.3
-    zoom: 0.3
+    hitStopGlobal: 0
     targetShakePower: 0.05
+    zoom: 0.3
     shakeScreen: 0
     shakeScreenTime: 0
-    blinkTarget: 0
-    blinkTargetColor: {r: 0, g: 0, b: 0, a: 0}
     attackBehaviorDatas: []
   hitbox: {fileID: 1750483598174567085}
+  hitboxY: {fileID: 0}
   animator: {fileID: 0}
   direction: 0

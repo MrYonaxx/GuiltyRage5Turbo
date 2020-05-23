@@ -9,6 +9,8 @@ namespace VoiceActing
     {
         [Header("Settings")]
         [SerializeField]
+        Camera mainCamera;
+        [SerializeField]
         Transform focusTarget;
         [SerializeField]
         Transform focusTargetLock;
@@ -29,6 +31,7 @@ namespace VoiceActing
         [SerializeField]
         float clampUp = 6;
 
+        float orthographicDefaultSize = 0;
 
         Vector3 velocity = Vector3.zero;
 
@@ -36,6 +39,7 @@ namespace VoiceActing
 
         private void Start()
         {
+            orthographicDefaultSize = mainCamera.orthographicSize;
             FocusDefault();
         }
 
@@ -54,7 +58,11 @@ namespace VoiceActing
                                                0);*/
             if (focusTargetLock != null)
                 targetPos = targetPos + ((focusTargetLock.position - focusTarget.position) / 2);
-            targetPos = new Vector3(Mathf.Clamp(targetPos.x, clampLeft, clampRight), Mathf.Clamp(targetPos.y, clampDown, clampUp), 0);
+
+            float realClampLeft = clampLeft * ((orthographicDefaultSize / mainCamera.orthographicSize));
+            float realClampRight = clampRight * ((orthographicDefaultSize / mainCamera.orthographicSize));
+            targetPos = new Vector3(Mathf.Clamp(targetPos.x, realClampLeft, realClampRight), Mathf.Clamp(targetPos.y, clampDown, clampUp), 0);
+
             transform.position = Vector3.SmoothDamp(transform.position, targetPos + new Vector3(0, 0, this.transform.position.z) + cameraOffset, ref velocity, smoothCamera);
             //OffsetCamera();
             ClampCamera();
@@ -67,7 +75,11 @@ namespace VoiceActing
 
         private void ClampCamera()
         {
-            this.transform.position = new Vector3(Mathf.Clamp(this.transform.position.x, clampLeft, clampRight),
+            float realClampLeft = clampLeft * (clampRight - clampLeft * (orthographicDefaultSize / mainCamera.orthographicSize));
+            float realClampRight = clampRight * (clampRight - clampLeft * (orthographicDefaultSize / mainCamera.orthographicSize));
+            //float realClampDown = 0;
+            //float clampUp = 0;
+            this.transform.position = new Vector3(Mathf.Clamp(this.transform.position.x, realClampLeft, realClampRight),
                                                 Mathf.Clamp(this.transform.position.y, clampDown, clampUp),
                                                 this.transform.position.z);
         }

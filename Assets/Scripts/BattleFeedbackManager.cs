@@ -81,7 +81,7 @@ namespace VoiceActing
 
         public void ApplyFeedback(AttackBehavior attack)
         {
-            if(attack.HitStop > 0)
+            if(attack.HitStop > 0 && attack.HitStopGlobal == true)
             {
                 SetBattleMotionSpeed(0, attack.HitStop);
             }

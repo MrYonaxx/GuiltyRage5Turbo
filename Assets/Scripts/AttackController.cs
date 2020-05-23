@@ -27,19 +27,14 @@ namespace VoiceActing
             get { return attackBehavior; }
         }
 
-
-        /*[SerializeField]
-        AttackData attackData;
-        public AttackData AttackData
-        {
-            get { return attackData; }
-        }*/
         [Space]
         [Space]
         [Space]
         [Title("Attack Controller")]
         [SerializeField]
         BoxCollider2D hitbox;
+        [SerializeField]
+        BoxCollider2D hitboxY;
         [SerializeField]
         Animator animator;
 
@@ -82,6 +77,8 @@ namespace VoiceActing
         public void Update()
         {
             transform.position += (speed * Time.deltaTime) * motionSpeed;
+            if (attackBehavior.LinkToCharacterAerial == true && hitboxY != null)
+                hitboxY.transform.position = user.transform.position;
             // Pattern de l'attaque
         }
 
@@ -98,8 +95,17 @@ namespace VoiceActing
             // hitbox
             hitbox.enabled = attackBehavior.IsActive;
 
-            if (attackBehavior.LinkToCharacter == true)
+            if (attackBehavior.LinkToCharacterAerial == true)
+            {
+                this.transform.SetParent(cUser.SpriteRenderer.transform);
+                this.transform.localPosition = Vector3.zero;
+                if(hitboxY != null)
+                    hitboxY.transform.position = user.transform.position;
+            }
+            else if (attackBehavior.LinkToCharacter == true)
+            {
                 this.transform.SetParent(cUser.transform);
+            }
             this.tag = cUser.tag + "Attack";
 
 
@@ -125,7 +131,12 @@ namespace VoiceActing
                 }
                 ExecuteActionBehavior(attackBehavior.AttackBehaviorDatas[i]);
             }
-            yield return new WaitForSeconds(Mathf.Max(0,(attackBehavior.Lifetime * 60) - currentFrame) / 60f);
+            float lifetime = Mathf.Max(0, (attackBehavior.Lifetime * 60) - currentFrame) / 60f;
+            while (lifetime > 0)
+            {
+                lifetime -= Time.deltaTime * motionSpeed;
+                yield return null;
+            }
             ActionEnd();
         }
 
@@ -153,6 +164,9 @@ namespace VoiceActing
         }
 
 
+
+
+
         public void SetDirection(int direction)
         {
             this.transform.localScale = new Vector3(this.transform.localScale.x * direction, this.transform.localScale.y, this.transform.localScale.z);
@@ -160,20 +174,33 @@ namespace VoiceActing
 
 
 
-
+        public bool CheckCollisionY(float posY)
+        {
+            if (hitboxY == null)
+                return true;
+            return ((hitboxY.transform.position.y + hitboxY.offset.y - hitboxY.size.y / 2) <= posY && posY <= (hitboxY.transform.position.y + hitboxY.offset.y + hitboxY.size.y / 2));
+        }
 
 
         public void HasHit(Character target)
         {
             if (attackBehavior.TargetCombo != null)
                 user.HitConfirm();
-            if (attackBehavior.OnHitAnimation != null)
-                Instantiate(attackBehavior.OnHitAnimation, target.ParticlePoint.position, Quaternion.identity);
             if (attackBehavior.OnHitCombo != null)
                 user.Action(attackBehavior.OnHitCombo);
             if (attackBehavior.ThrowState == true)
-                target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);;
-            if (attackBehavior.IsPiercing == false)
+                target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);
+
+            //Feedback
+            if (attackBehavior.OnHitAnimation != null)
+                Instantiate(attackBehavior.OnHitAnimation, target.ParticlePoint.position, Quaternion.identity);
+            if (attackBehavior.HitStopGlobal == false && attackBehavior.HitStop > 0) 
+            {
+                target.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
+                user.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
+            }
+
+            if (attackBehavior.IsMultiHit == false)
             {
                 ActionEnd();
             }
@@ -216,8 +243,8 @@ namespace VoiceActing
         {
             if (attackCoroutine != null)
                 StopCoroutine(attackCoroutine);
-            if(attackBehavior.AnimationDriven == false)
-                user.EndActionAttackController();
+            /*if(attackBehavior.AnimationDriven == false)
+                user.EndActionAttackController();*/
             CancelAction();
         }
 

@@ -31,12 +31,6 @@ namespace VoiceActing
             get { return attackName; }
         }
 
-        [SerializeField]
-        private int attackDamage;
-        public int AttackDamage
-        {
-            get { return attackDamage; }
-        }
 
         [SerializeField]
         private string attackAnimation;
@@ -53,7 +47,22 @@ namespace VoiceActing
             get { return lifetime; }
         }
 
+        [HorizontalGroup("Damage")]
+        [SerializeField]
+        private int attackDamage;
+        public int AttackDamage
+        {
+            get { return attackDamage; }
+        }
+        [HorizontalGroup("Damage")]
+        [SerializeField]
+        private int comboCost;
+        public int ComboCost
+        {
+            get { return comboCost; }
+        }
 
+        [Space]
         [SerializeField]
         private AttackController comboTo;
         public AttackController ComboTo
@@ -77,14 +86,13 @@ namespace VoiceActing
 
 
         [Title("Attack Parameter")]
-        [SerializeField]
+        /*[SerializeField]
         bool animationDriven = true;
         public bool AnimationDriven
         {
             get { return animationDriven; }
-        }
+        }*/
 
-        [HorizontalGroup("AttackParameter1")]
         [SerializeField]
         bool isActive = true;
         public bool IsActive
@@ -92,21 +100,14 @@ namespace VoiceActing
             get { return isActive; }
         }
 
-        [HorizontalGroup("AttackParameter1")]
-        [SerializeField]
-        bool allyAttack = false;
-        public bool AllyAttack
-        {
-            get { return allyAttack; }
-        }
 
-        [HorizontalGroup("AttackParameter2")]
+        /*[HorizontalGroup("AttackParameter2")]
         [SerializeField]
         bool isPiercing = false;
         public bool IsPiercing
         {
             get { return isPiercing; }
-        }
+        }*/
 
         [HorizontalGroup("AttackParameter2")]
         [SerializeField]
@@ -114,6 +115,14 @@ namespace VoiceActing
         public bool IsMultiHit
         {
             get { return isMultiHit; }
+        }
+
+        [HorizontalGroup("AttackParameter2")]
+        [SerializeField]
+        bool noDirection = false;
+        public bool NoDirection
+        {
+            get { return noDirection; }
         }
 
 
@@ -124,32 +133,26 @@ namespace VoiceActing
         {
             get { return linkToCharacter; }
         }
-
         [HorizontalGroup("AttackParameter3")]
         [SerializeField]
-        bool noDirection = false;
-        public bool NoDirection
+        bool linkToCharacterAerial = false;
+        public bool LinkToCharacterAerial
         {
-            get { return noDirection; }
+            get { return linkToCharacterAerial; }
         }
 
 
-        [HorizontalGroup("AttackParameter4")]
-        [SerializeField]
-        bool moveToTarget = false;
-        public bool MoveToTarget
-        {
-            get { return moveToTarget; }
-        }
 
-        [HorizontalGroup("AttackParameter4")]
+        /*[HorizontalGroup("AttackParameter4")]
         [SerializeField]
         bool cameraFollowAttack = false;
         public bool CameraFollowAttack
         {
             get { return cameraFollowAttack; }
-        }
+        }*/
 
+        [Space]
+        [HorizontalGroup("AttackParameter5")]
         [SerializeField]
         bool guardBreak = false;
         public bool GuardBreak
@@ -157,6 +160,8 @@ namespace VoiceActing
             get { return guardBreak; }
         }
 
+        [Space]
+        [HorizontalGroup("AttackParameter5")]
         [SerializeField]
         bool wakeUpAttack = false;
         public bool WakeUpAttack
@@ -164,6 +169,7 @@ namespace VoiceActing
             get { return wakeUpAttack; }
         }
 
+        [HorizontalGroup("AttackParameter6")]
         [SerializeField]
         bool jumpCancel = false;
         public bool JumpCancel
@@ -171,6 +177,7 @@ namespace VoiceActing
             get { return jumpCancel; }
         }
 
+        [HorizontalGroup("AttackParameter6")]
         [SerializeField]
         bool dashCancel = false;
         public bool DashCancel
@@ -178,13 +185,30 @@ namespace VoiceActing
             get { return dashCancel; }
         }
 
+        [HorizontalGroup("AttackParameter10")]
+        [SerializeField]
+        bool runCancel = false;
+        public bool RunCancel
+        {
+            get { return runCancel; }
+        }
+        [HorizontalGroup("AttackParameter10")]
+        [SerializeField]
+        bool keepMomentum = false;
+        public bool KeepMomentum
+        {
+            get { return keepMomentum; }
+        }
+
+
+        [HorizontalGroup("AttackParameter7")]
         [SerializeField]
         bool throwState = false;
         public bool ThrowState
         {
             get { return throwState; }
         }
-
+        [HorizontalGroup("AttackParameter7")]
         [SerializeField]
         bool attackThrow = false;
         public bool AttackThrow
@@ -192,12 +216,39 @@ namespace VoiceActing
             get { return attackThrow; }
         }
 
+        [Space]
+        [HorizontalGroup("AttackParameter8")]
         [SerializeField]
         bool resetGravity = false;
         public bool ResetGravity
         {
             get { return resetGravity; }
         }
+
+        /*[Space]
+        [HorizontalGroup("AttackParameter8")]
+        [SerializeField]
+        bool moveToTarget = false;
+        public bool MoveToTarget
+        {
+            get { return moveToTarget; }
+        }*/
+
+        [Space]
+        [HorizontalGroup("AttackParameter8")]
+        [SerializeField]
+        bool allyAttack = false;
+        public bool AllyAttack
+        {
+            get { return allyAttack; }
+        }
+        /*[HorizontalGroup("AttackParameter9")]
+        [SerializeField]
+        bool cameraFollowAttack = false;
+        public bool CameraFollowAttack
+        {
+            get { return cameraFollowAttack; }
+        }*/
 
 
         [Title("Feedback")]
@@ -239,15 +290,15 @@ namespace VoiceActing
             get { return knockbackAerialPowerZ; }
         }
 
-        [HorizontalGroup("Knockback2")]
+        /*[HorizontalGroup("Knockback2")]
         [SerializeField]
         float knockbackDurationMultiplier = 1;
         public float KnockbackDurationMultiplier
         {
             get { return knockbackDurationMultiplier; }
-        }
+        }*/
 
-
+        [Space]
         [HorizontalGroup("FeedbackPuissant")]
         [SerializeField]
         private float hitStop = 0.15f;
@@ -255,20 +306,30 @@ namespace VoiceActing
         {
             get { return hitStop; }
         }
+
+
+        [Space]
         [HorizontalGroup("FeedbackPuissant")]
         [SerializeField]
-        private float zoom;
-        public float Zoom
+        private bool hitStopGlobal;
+        public bool HitStopGlobal
         {
-            get { return zoom; }
+            get { return hitStopGlobal; }
         }
 
-        [HorizontalGroup("TargetShake")]
+        [HorizontalGroup("Zoom")]
         [SerializeField]
         private float targetShakePower;
         public float TargetShakePower
         {
             get { return targetShakePower; }
+        }
+        [HorizontalGroup("Zoom")]
+        [SerializeField]
+        private float zoom;
+        public float Zoom
+        {
+            get { return zoom; }
         }
 
         [HorizontalGroup("Shake")]
@@ -287,7 +348,7 @@ namespace VoiceActing
         }
 
 
-        [HorizontalGroup("Blink")]
+        /*[HorizontalGroup("Blink")]
         [SerializeField]
         private float blinkTarget;
         public float BlinkTarget
@@ -301,7 +362,7 @@ namespace VoiceActing
         public Color BlinkTargetColor
         {
             get { return blinkTargetColor; }
-        }
+        }*/
 
 
 

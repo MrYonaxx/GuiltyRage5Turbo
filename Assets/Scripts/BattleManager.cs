@@ -37,7 +37,7 @@ namespace VoiceActing
 
         [Title("Player")]
         [SerializeField]
-        PlayerController player;
+        Character player;
         [SerializeField]
         HealthBarDrawer playerHealthBar;
 
@@ -98,8 +98,8 @@ namespace VoiceActing
 
             battleFeedbackManager.SetBattleCharacters(tmp);
             player.SetCharacter(runData.PlayerCharacterData, runData.PlayerStats);
-            player.SetCanInput(true);
-            player.PlayIdleAnimation();
+            player.SetActive(true);
+            //player.PlayIdleAnimation();
             OnEventBattleStart.Invoke();
         }
 
@@ -176,7 +176,7 @@ namespace VoiceActing
 
         public void EndBattle()
         {
-            player.SetCanInput(false);
+            player.SetActive(false);
             battleFeedbackManager.EndBattleMotionSpeed();
             StartCoroutine(EndBattleCoroutine());
         }
