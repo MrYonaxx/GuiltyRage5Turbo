@@ -8121,12 +8121,13 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 285767236830761495, guid: 52ab19b685ec748469f0d040c1e86602, type: 3}
+  m_Sprite: {fileID: -5087784978191457496, guid: 47041867f50ed2645880c4c13aaa5f8d,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.35, y: 0.4}
+  m_Size: {x: 0.45, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8149,8 +8150,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 0.35, y: 0.4}
-    newSize: {x: 0.35, y: 0.4}
+    oldSize: {x: 0.45, y: 1}
+    newSize: {x: 0.45, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9052,7 +9053,7 @@ GameObject:
   - component: {fileID: 1079504035}
   - component: {fileID: 1079504034}
   m_Layer: 0
-  m_Name: PlayerHamtaro
+  m_Name: PlayerUsagi
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9068,7 +9069,7 @@ Animator:
   m_GameObject: {fileID: 1079504033}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 73c5886eab3dc294893f402f707cc221, type: 2}
+  m_Controller: {fileID: 9100000, guid: 365296dc4a10c8e46ba5686aede2115b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

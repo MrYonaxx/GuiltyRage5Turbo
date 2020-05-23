@@ -322,13 +322,19 @@ namespace VoiceActing
         private void SpecialAttack()
         {
             if (inAir == true && Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+            {
+                direction = (int)Mathf.Sign(Input.GetAxis("Horizontal"));
                 Action(specialAerialForwardAttack);
+            }
             else if (inAir == true)
                 Action(specialAerialAttack);
             else if (isRunning == true)
                 Action(specialRunAttack);
             else if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+            {
+                direction = (int)Mathf.Sign(Input.GetAxis("Horizontal"));
                 Action(specialForwardAttack);
+            }
             else
                 Action(specialAttack);        
             StopBuffer();
