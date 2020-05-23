@@ -1308,7 +1308,7 @@ AnimatorStateMachine:
     m_Position: {x: 230, y: 670, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 139473471589427069}
-    m_Position: {x: -410, y: 80, z: 0}
+    m_Position: {x: -400, y: 130, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4890259605105582900}
     m_Position: {x: -370, y: 230, z: 0}
@@ -1509,7 +1509,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_Guard
+  m_Name: Hamtaro_Guard
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
@@ -1523,7 +1523,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: e08e7ea5fd3169042be65a68201a6998, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2117947e5ff005441a9e53890b781a2f, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

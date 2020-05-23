@@ -1,7 +1,118 @@
 fileFormatVersion: 2
 guid: 3a899e84b345ba84dbbf9b626e875a6a
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -4245584614209935367
+    second: Hamtaro_Guard_0
+  - first:
+      213: 3568740661918008958
+    second: Hamtaro_Guard_1
+  - first:
+      213: -3854883946638933500
+    second: Hamtaro_Guard_2
+  - first:
+      213: 2486457495549815941
+    second: Hamtaro_Guard_3
+  - first:
+      213: 7451165511513623258
+    second: Hamtaro_Guard_4
+  - first:
+      213: 8022906862227416008
+    second: Hamtaro_Guard_5
+  - first:
+      213: -5296459044632574558
+    second: Hamtaro_Guard_6
+  - first:
+      213: 3861902950814383752
+    second: Hamtaro_Guard_7
+  - first:
+      213: -2347120155823855032
+    second: Hamtaro_Guard_8
+  - first:
+      213: 7160549156749972456
+    second: Hamtaro_Guard_9
+  - first:
+      213: -8648173792202472683
+    second: Hamtaro_Guard_10
+  - first:
+      213: -6538355848757708763
+    second: Hamtaro_Guard_11
+  - first:
+      213: 7021210559202879231
+    second: Hamtaro_Guard_12
+  - first:
+      213: 3301386313470764937
+    second: Hamtaro_Guard_13
+  - first:
+      213: 3809907641259945596
+    second: Hamtaro_Guard_14
+  - first:
+      213: 353366701895648775
+    second: Hamtaro_Guard_15
+  - first:
+      213: 6428330264815335256
+    second: Hamtaro_Guard_16
+  - first:
+      213: -353734062982132152
+    second: Hamtaro_Guard_17
+  - first:
+      213: -269596642318950279
+    second: Hamtaro_Guard_18
+  - first:
+      213: 810931965271778840
+    second: Hamtaro_Guard_19
+  - first:
+      213: -8279338974796468271
+    second: Hamtaro_Guard_20
+  - first:
+      213: -8873582325377117882
+    second: Hamtaro_Guard_21
+  - first:
+      213: 872877792671403560
+    second: Hamtaro_Guard_22
+  - first:
+      213: 8266289374948237037
+    second: Hamtaro_Guard_23
+  - first:
+      213: -2607336623277659547
+    second: Hamtaro_Guard_24
+  - first:
+      213: -2397593506445356964
+    second: Hamtaro_Guard_25
+  - first:
+      213: -5557921890035216088
+    second: Hamtaro_Guard_26
+  - first:
+      213: 6319165349500077846
+    second: Hamtaro_Guard_27
+  - first:
+      213: 5880032810289998690
+    second: Hamtaro_Guard_28
+  - first:
+      213: 1638853130158423351
+    second: Hamtaro_Guard_29
+  - first:
+      213: -7436884116100711525
+    second: Hamtaro_Guard_30
+  - first:
+      213: 2337831877080222337
+    second: Hamtaro_Guard_31
+  - first:
+      213: 2575505849979010437
+    second: Hamtaro_Guard_32
+  - first:
+      213: 2783706320284577314
+    second: Hamtaro_Guard_33
+  - first:
+      213: 7293093503491389583
+    second: Hamtaro_Guard_34
+  - first:
+      213: -6715309696482206331
+    second: Hamtaro_Guard_35
+  - first:
+      213: 7894461615626924575
+    second: Hamtaro_Guard_36
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -31,7 +142,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,7 +151,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -64,7 +175,91 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -73,7 +268,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Hamtaro_Guard_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f727269947a415c0800000000000000
+      internalID: -4245584614209935367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hamtaro_Guard_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 0
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e768d1959b6b68130800000000000000
+      internalID: 3568740661918008958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hamtaro_Guard_2
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 0
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4020b3e7973b08ac0800000000000000
+      internalID: -3854883946638933500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hamtaro_Guard_3
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 0
+        width: 42
+        height: 38
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58caa5b1beba18220800000000000000
+      internalID: 2486457495549815941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
