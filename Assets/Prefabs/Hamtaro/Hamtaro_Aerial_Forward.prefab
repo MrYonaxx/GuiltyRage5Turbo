@@ -88,12 +88,14 @@ MonoBehaviour:
     linkToCharacterAerial: 1
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 1
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 1
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -141,7 +143,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1990638437397206432
 Transform:
   m_ObjectHideFlags: 0
