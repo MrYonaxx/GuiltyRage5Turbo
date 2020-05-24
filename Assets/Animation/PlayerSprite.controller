@@ -1241,22 +1241,22 @@ AnimatorStateMachine:
     m_Position: {x: 300, y: 650, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 8170300788791032683}
-    m_Position: {x: 335, y: 715, z: 0}
+    m_Position: {x: -540, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -5588949424064826507}
-    m_Position: {x: 370, y: 780, z: 0}
+    m_Position: {x: -500, y: 170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -1169680511709203330}
-    m_Position: {x: 405, y: 845, z: 0}
+    m_Position: {x: -470, y: 230, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 7230975565903728451}
-    m_Position: {x: 440, y: 910, z: 0}
+    m_Position: {x: -430, y: 300, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 786075019579001763}
-    m_Position: {x: 475, y: 975, z: 0}
+    m_Position: {x: -400, y: 360, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5467363702598434865}
-    m_Position: {x: 510, y: 1040, z: 0}
+    m_Position: {x: -360, y: 430, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions:
   - {fileID: 2946907730882757430}

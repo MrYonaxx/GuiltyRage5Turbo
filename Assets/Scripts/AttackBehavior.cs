@@ -128,14 +128,14 @@ namespace VoiceActing
 
         [HorizontalGroup("AttackParameter3")]
         [SerializeField]
-        bool linkToCharacter = false;
+        bool linkToCharacter = true;
         public bool LinkToCharacter
         {
             get { return linkToCharacter; }
         }
         [HorizontalGroup("AttackParameter3")]
         [SerializeField]
-        bool linkToCharacterAerial = false;
+        bool linkToCharacterAerial = true;
         public bool LinkToCharacterAerial
         {
             get { return linkToCharacterAerial; }

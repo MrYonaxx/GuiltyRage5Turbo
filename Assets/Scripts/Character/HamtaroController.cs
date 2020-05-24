@@ -66,6 +66,8 @@ namespace VoiceActing
 
         [Title("Parameter")]
         [SerializeField]
+        bool canRunY = false;
+        [SerializeField]
         float crouchJumpTime = 0.1f;
         [SerializeField]
         float runSpeedBonus = 1.5f;
@@ -183,7 +185,7 @@ namespace VoiceActing
             {
                 return;
             }
-            if (Mathf.Abs(Input.GetAxis(controllerLeftVertical)) > 0.2f && isRunning == false)
+            if (Mathf.Abs(Input.GetAxis(controllerLeftVertical)) > 0.2f && (isRunning == false || canRunY == true))
             {
                 speedY = Input.GetAxis(controllerLeftVertical);
             }
@@ -268,7 +270,7 @@ namespace VoiceActing
             if(isRunning == true && (state == CharacterState.Moving || state == CharacterState.Idle) && inAir == false)
             {
                 speedX = (defaultSpeed + runSpeedBonus) * direction;
-                speedY = 0;
+                //speedY = 0;
                 characterAnimator.SetBool("Run", true);
             }
             else if (isRunning == false)
