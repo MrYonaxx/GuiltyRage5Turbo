@@ -170,12 +170,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 1
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 1
+    keepMomentum: 1
     jumpCancel: 1
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 1
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,

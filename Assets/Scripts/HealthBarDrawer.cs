@@ -25,6 +25,8 @@ namespace VoiceActing
         [SerializeField]
         Image characterFace;
         [SerializeField]
+        Image characterFaceOutline;
+        [SerializeField]
         TextMeshProUGUI textCharacterName;
 
         [SerializeField]
@@ -65,6 +67,7 @@ namespace VoiceActing
             else
                 characterFace.enabled = true;
             characterFace.sprite = characterData.CharacterFace;
+            characterFaceOutline.sprite = characterData.CharacterFace;
 
             int healthBarNumber = (characterStat.GetHPMax() / 1000);
             healthBarNumber = Mathf.Max(0, healthBarNumber);

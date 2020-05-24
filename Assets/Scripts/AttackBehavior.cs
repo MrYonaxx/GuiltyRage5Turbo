@@ -169,6 +169,39 @@ namespace VoiceActing
             get { return wakeUpAttack; }
         }
 
+        [HorizontalGroup("AttackParameter7")]
+        [SerializeField]
+        bool throwState = false;
+        public bool ThrowState
+        {
+            get { return throwState; }
+        }
+        [HorizontalGroup("AttackParameter7")]
+        [SerializeField]
+        bool attackThrow = false;
+        public bool AttackThrow
+        {
+            get { return attackThrow; }
+        }
+
+        [Space]
+        [HorizontalGroup("AttackParameter11")]
+        [SerializeField]
+        bool cancelOnlyOnHit = false;
+        public bool CancelOnlyOnHit
+        {
+            get { return cancelOnlyOnHit; }
+        }
+
+        [Space]
+        [HorizontalGroup("AttackParameter11")]
+        [SerializeField]
+        bool keepMomentum = false;
+        public bool KeepMomentum
+        {
+            get { return keepMomentum; }
+        }
+
         [HorizontalGroup("AttackParameter6")]
         [SerializeField]
         bool jumpCancel = false;
@@ -192,29 +225,17 @@ namespace VoiceActing
         {
             get { return runCancel; }
         }
+
         [HorizontalGroup("AttackParameter10")]
         [SerializeField]
-        bool keepMomentum = false;
-        public bool KeepMomentum
+        bool specialCancel = false;
+        public bool SpecialCancel
         {
-            get { return keepMomentum; }
+            get { return specialCancel; }
         }
 
 
-        [HorizontalGroup("AttackParameter7")]
-        [SerializeField]
-        bool throwState = false;
-        public bool ThrowState
-        {
-            get { return throwState; }
-        }
-        [HorizontalGroup("AttackParameter7")]
-        [SerializeField]
-        bool attackThrow = false;
-        public bool AttackThrow
-        {
-            get { return attackThrow; }
-        }
+
 
         [Space]
         [HorizontalGroup("AttackParameter8")]

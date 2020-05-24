@@ -3217,12 +3217,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 0
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -5344,12 +5346,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 0
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -9452,6 +9456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterFace: {fileID: 311849269}
+  characterFaceOutline: {fileID: 1858287906}
   textCharacterName: {fileID: 1440657113}
   healthGauge: {fileID: 1067843553}
   transformBarNumber: {fileID: 1301321463}
@@ -9753,6 +9758,7 @@ MonoBehaviour:
   OnWallBounce:
     m_PersistentCalls:
       m_Calls: []
+  playerID: 1
   crouchController: {fileID: 6337745606615018979, guid: d80a52316277b93458b957c5dd3a963c,
     type: 3}
   jumpLand: {fileID: 7597802839482984483, guid: 40d437d4268083b40967b38b03a1b4e8,
@@ -9780,6 +9786,7 @@ MonoBehaviour:
   dashForward: {fileID: 0}
   crouchJumpTime: 0.1
   runSpeedBonus: 2
+  doubleJumpRatio: 0.75
   bufferTime: 0.25
   runBufferTime: 0.12
 --- !u!4 &1079504038
@@ -11717,12 +11724,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 0
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -11894,6 +11903,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterFace: {fileID: 471778040}
+  characterFaceOutline: {fileID: 471778040}
   textCharacterName: {fileID: 904675567}
   healthGauge: {fileID: 1383924037}
   transformBarNumber: {fileID: 2094124144}
@@ -12026,7 +12036,8 @@ MonoBehaviour:
   battleFeedbackManager: {fileID: 1402578948}
   enemiesDatas:
   - {fileID: 11400000, guid: 815e1d707b0f81f40932e738aa64c953, type: 2}
-  player: {fileID: 1079504037}
+  players:
+  - {fileID: 1079504037}
   playerHealthBar: {fileID: 1067843554}
   enemyPrefab: {fileID: 1599405552}
   enemyHealthBar: {fileID: 1383924038}
@@ -14072,7 +14083,7 @@ MonoBehaviour:
       Speed: 0
       Mass: 0
       KnockbackTime: 0
-  target: {fileID: 0}
+  target: {fileID: 1079504037}
   jumpImpulsion: 1
   gravity: 20
   gravityMax: -5
@@ -20401,12 +20412,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 0
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 0}
@@ -26373,12 +26386,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    keepMomentum: 0
-    throwState: 0
-    attackThrow: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,

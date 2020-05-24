@@ -37,7 +37,7 @@ namespace VoiceActing
 
         [Title("Player")]
         [SerializeField]
-        Character player;
+        List<Character> players;
         [SerializeField]
         HealthBarDrawer playerHealthBar;
 
@@ -81,12 +81,28 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
+
+        public void InitializePlayers()
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                //tmp.Add(players[i]);
+                players[i].SetCharacter(runData.PlayerCharacterData, runData.PlayerStats);
+                players[i].SetActive(true);
+            }
+        }
+
         public void InitializeBattle()
         {
             enemiesController.Clear();
             enemyPrefab.gameObject.SetActive(true);
             List<Character> tmp = new List<Character>();
-            tmp.Add(player);
+            for (int i = 0; i < players.Count; i++)
+            {
+                tmp.Add(players[i]);
+                players[i].SetCharacter(runData.PlayerCharacterData, runData.PlayerStats);
+                players[i].SetActive(true);
+            }
             playerHealthBar.DrawCharacter(runData.PlayerCharacterData, runData.PlayerStats);
             for(int i = 0; i < enemiesDatas.Count; i++)
             {
@@ -97,8 +113,7 @@ namespace VoiceActing
             enemyPrefab.gameObject.SetActive(false);
 
             battleFeedbackManager.SetBattleCharacters(tmp);
-            player.SetCharacter(runData.PlayerCharacterData, runData.PlayerStats);
-            player.SetActive(true);
+
             //player.PlayIdleAnimation();
             OnEventBattleStart.Invoke();
         }
@@ -116,14 +131,14 @@ namespace VoiceActing
                 enemyHealthBar.gameObject.SetActive(false);
                 cameraController.SetLocked(null);
             }
-            player.SetTarget(character);
+            players[0].SetTarget(character);
             enemyTarget = character;
 
         }
 
         public void DrawHpPlayer()
         {
-            playerHealthBar.DrawHealth(player.CharacterStat.GetHP(), player.CharacterStat.GetHPMax());
+            playerHealthBar.DrawHealth(players[0].CharacterStat.GetHP(), players[0].CharacterStat.GetHPMax());
         }
 
         public void DrawHpEnemy()
@@ -160,7 +175,7 @@ namespace VoiceActing
 
                 // Faudra filer une reference a battleFeedbackManager pour par reupdate à chaque fois
                 List<Character> tmp = new List<Character>();
-                tmp.Add(player);
+                tmp.Add(players[0]);
                 for (int i = 0; i < enemiesController.Count; i++)
                 {
                     tmp.Add(enemiesController[i]);
@@ -176,7 +191,7 @@ namespace VoiceActing
 
         public void EndBattle()
         {
-            player.SetActive(false);
+            players[0].SetActive(false);
             battleFeedbackManager.EndBattleMotionSpeed();
             StartCoroutine(EndBattleCoroutine());
         }

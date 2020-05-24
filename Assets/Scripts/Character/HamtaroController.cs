@@ -14,6 +14,13 @@ namespace VoiceActing
 {
     public class HamtaroController : Character
     {
+        [Space]
+        [Space]
+        [Space]
+        [Title("PlayerController")]
+        [SerializeField]
+        int playerID = 1;
+
         [Title("Moveset")]
         [SerializeField]
         AttackController crouchController;
@@ -88,6 +95,17 @@ namespace VoiceActing
 
         bool willJumpLand = false;
 
+
+
+        string controllerA = "ControllerA";
+        string controllerB = "ControllerB";
+        string controllerX = "ControllerX";
+        string controllerY = "ControllerY";
+        string controllerR1 = "ControllerR1";
+        string controllerL1 = "ControllerL1";
+        string controllerLeftHorizontal = "ControllerLeftHorizontal";
+        string controllerLeftVertical = "ControllerLeftVertical";
+
         #region GettersSetters 
 
         /* ======================================== *\
@@ -101,6 +119,25 @@ namespace VoiceActing
         /* ======================================== *\
          *                FUNCTIONS                 *
         \* ======================================== */
+
+        private void Start()
+        {
+            string[] controllers;
+            controllers = Input.GetJoystickNames();
+            for(int i = 0; i < controllers.Length; i++)
+            {
+                Debug.Log(controllers[i]);
+            }
+            controllerA += "_" + playerID;
+            controllerB += "_" + playerID;
+            controllerX += "_" + playerID;
+            controllerY += "_" + playerID;
+            controllerR1 += "_" + playerID;
+            controllerL1 += "_" + playerID;
+            controllerLeftHorizontal += "_" + playerID;
+            controllerLeftVertical += "_" + playerID;
+        }
+
 
         protected override void UpdateController()
         {
@@ -146,23 +183,23 @@ namespace VoiceActing
             {
                 return;
             }
-            if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f && isRunning == false)
+            if (Mathf.Abs(Input.GetAxis(controllerLeftVertical)) > 0.2f && isRunning == false)
             {
-                speedY = Input.GetAxis("Vertical");
+                speedY = Input.GetAxis(controllerLeftVertical);
             }
             else
             {
                 speedY = 0;
             }
 
-            if (Input.GetAxis("Horizontal") > 0.2f)
+            if (Input.GetAxis(controllerLeftHorizontal) > 0.2f)
             {
-                speedX = Input.GetAxis("Horizontal");
+                speedX = Input.GetAxis(controllerLeftHorizontal);
                 direction = 1;
             }
-            else if (Input.GetAxis("Horizontal") < -0.2f)
+            else if (Input.GetAxis(controllerLeftHorizontal) < -0.2f)
             {
-                speedX = Input.GetAxis("Horizontal");
+                speedX = Input.GetAxis(controllerLeftHorizontal);
                 direction = -1;
             }
             else
@@ -198,29 +235,29 @@ namespace VoiceActing
                     CancelAction();
             }
 
-            if (Mathf.Abs(Input.GetAxis("Horizontal")) < 0.2f && runInput == -1)
+            if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) < 0.2f && runInput == -1)
             {
                 runInput = 0;
             }
-            else if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f && runInput == 0)
+            else if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) > 0.2f && runInput == 0)
             {
-                runDirection = (int)Mathf.Sign(Input.GetAxis("Horizontal"));
+                runDirection = (int)Mathf.Sign(Input.GetAxis(controllerLeftHorizontal));
                 runInput += 1;
                 RunBuffer();
             }
-            else if (Mathf.Abs(Input.GetAxis("Horizontal")) < 0.2f && runInput == 1)
+            else if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) < 0.2f && runInput == 1)
             {
                 runInput += 1;
                 RunBuffer();
             }
-            else if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f && runInput == 2)
+            else if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) > 0.2f && runInput == 2)
             {
                 runInput += 1;
                 isRunning = true;
                 if (runningCoroutine != null)
                     StopCoroutine(runningCoroutine);
             }
-            else if (Mathf.Abs(Input.GetAxis("Horizontal")) < 0.2f && runInput == 3)
+            else if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) < 0.2f && runInput == 3)
             {
                 runInput = 0;
                 isRunning = false;
@@ -273,7 +310,7 @@ namespace VoiceActing
                     return;
                 }
             }
-            if (Input.GetButtonDown("ControllerX"))
+            if (Input.GetButtonDown(controllerX))
             {
                 if (CanAct() == true)
                 {
@@ -291,17 +328,14 @@ namespace VoiceActing
         {
             if (inAir == true && speedX != 0)
             {
-                Debug.Log("AerialForward");
                 Action(jumpForwardAttack);
             }
             else if (inAir == true)
             {
-                Debug.Log("Aerial");
                 Action(jumpDefaultAttack);
             }
             else if (isRunning == true)
             {
-                Debug.Log("run");
                 runInput = 0;
                 isRunning = false;
                 Action(groundRunAttack);
@@ -332,7 +366,7 @@ namespace VoiceActing
             }
 
             // Input
-            if (Input.GetButtonDown("ControllerY") && state == CharacterState.Acting)
+            if (Input.GetButtonDown(controllerY) && state == CharacterState.Acting)
             {
                 if (canMoveCancel == true)
                 {
@@ -344,7 +378,7 @@ namespace VoiceActing
                     StartBuffer();
                 }
             }
-            else if (Input.GetButtonDown("ControllerY"))
+            else if (Input.GetButtonDown(controllerY))
             {
                 SpecialAttack();
             }
@@ -352,18 +386,18 @@ namespace VoiceActing
 
         private void SpecialAttack()
         {
-            if (inAir == true && Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+            if (inAir == true && Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) > 0.2f)
             {
-                direction = (int)Mathf.Sign(Input.GetAxis("Horizontal"));
+                direction = (int)Mathf.Sign(Input.GetAxis(controllerLeftHorizontal));
                 Action(specialAerialForwardAttack);
             }
             else if (inAir == true)
                 Action(specialAerialAttack);
             else if (isRunning == true)
                 Action(specialRunAttack);
-            else if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+            else if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) > 0.2f)
             {
-                direction = (int)Mathf.Sign(Input.GetAxis("Horizontal"));
+                direction = (int)Mathf.Sign(Input.GetAxis(controllerLeftHorizontal));
                 Action(specialForwardAttack);
             }
             else
@@ -450,7 +484,7 @@ namespace VoiceActing
                 }
             }
 
-            if ((Input.GetButtonDown("ControllerA") || bufferJumpActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
+            if ((Input.GetButtonDown(controllerA) || bufferJumpActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
             {
                 if (currentAttack.AttackBehavior.JumpCancel == true)
                     CancelAction();
@@ -460,7 +494,7 @@ namespace VoiceActing
                     StartBuffer();
                 }
             }
-            else if (Input.GetButtonDown("ControllerA") && state == CharacterState.Acting)
+            else if (Input.GetButtonDown(controllerA) && state == CharacterState.Acting)
             {
                 bufferJumpActive = true;
                 StartBuffer();
@@ -473,7 +507,7 @@ namespace VoiceActing
                 bufferJumpActive = false;
                 JumpAction();
             }
-            if (Input.GetButtonDown("ControllerA"))
+            if (Input.GetButtonDown(controllerA))
             {
                 JumpAction();
             }
@@ -484,13 +518,13 @@ namespace VoiceActing
             if (inAir == false)
             {
                 doubleJump = false;
-                if (Input.GetAxis("Horizontal") > 0.2f)
+                if (Input.GetAxis(controllerLeftHorizontal) > 0.2f)
                 {
                     direction = 1;
                     crouchTime = crouchJumpTime;
                     Action(crouchController);
                 }
-                else if (Input.GetAxis("Horizontal") < -0.2f)
+                else if (Input.GetAxis(controllerLeftHorizontal) < -0.2f)
                 {
                     direction = -1;
                     crouchTime = crouchJumpTime;
@@ -508,12 +542,12 @@ namespace VoiceActing
                 characterAnimator.SetTrigger("DoubleJump");
                 doubleJump = true;
                 Jump(jumpImpulsion * doubleJumpRatio);
-                if (Input.GetAxis("Horizontal") > 0.2f)
+                if (Input.GetAxis(controllerLeftHorizontal) > 0.2f)
                 {
                     speedX = defaultSpeed;
                     direction = 1;
                 }
-                else if (Input.GetAxis("Horizontal") < -0.2f)
+                else if (Input.GetAxis(controllerLeftHorizontal) < -0.2f)
                 {
                     speedX = -defaultSpeed;
                     direction = -1;
@@ -528,6 +562,9 @@ namespace VoiceActing
                 speedX += runSpeedBonus * direction;
             StopBuffer();
         }
+
+
+
 
 
         // =========================================================================================

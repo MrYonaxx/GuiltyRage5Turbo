@@ -761,6 +761,8 @@ namespace VoiceActing
         // Appelé par les anims
         public void MoveCancelable()
         {
+            if (canTargetCombo == false && currentAttack.AttackBehavior.CancelOnlyOnHit == true)
+                return;
             canMoveCancel = true;
         }
 

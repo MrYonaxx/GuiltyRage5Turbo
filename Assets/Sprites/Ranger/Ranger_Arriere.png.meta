@@ -1,13 +1,25 @@
 fileFormatVersion: 2
-guid: 2ab1f33d0593ae34e899295bc2b1550c
+guid: 2da5880858727e04896cc60072e22d6b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2180979825983893314
-    second: Normal2_0
+      213: 2701530291482144277
+    second: Ranger_Arriere_0
   - first:
-      213: -3754909331641831324
-    second: Normal2_1
+      213: -5286455116809677493
+    second: Ranger_Arriere_1
+  - first:
+      213: 2282046850088261688
+    second: Ranger_Arriere_2
+  - first:
+      213: 8455389977240261620
+    second: Ranger_Arriere_3
+  - first:
+      213: 7794799157831051801
+    second: Ranger_Arriere_4
+  - first:
+      213: 4111662686597721562
+    second: Ranger_Arriere_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -165,13 +177,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Normal2_0
+      name: Ranger_Arriere_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 94
-        height: 103
+        width: 88
+        height: 85
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb0dfe1576a9bb1e0800000000000000
-      internalID: -2180979825983893314
+      spriteID: 51e20cd9c73cd7520800000000000000
+      internalID: 2701530291482144277
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Normal2_1
+      name: Ranger_Arriere_1
       rect:
         serializedVersion: 2
-        x: 94
+        x: 88
         y: 0
-        width: 94
-        height: 103
+        width: 88
+        height: 85
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,8 +212,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 46070b37bd1e3ebc0800000000000000
-      internalID: -3754909331641831324
+      spriteID: b455381841db2a6b0800000000000000
+      internalID: -5286455116809677493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_Arriere_2
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 88
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8385f44f4857baf10800000000000000
+      internalID: 2282046850088261688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_Arriere_3
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 88
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f3ddceb264975570800000000000000
+      internalID: 8455389977240261620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_Arriere_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 88
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91aa8021980bc2c60800000000000000
+      internalID: 7794799157831051801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ranger_Arriere_5
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 0
+        width: 88
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adda2eecd6f8f0930800000000000000
+      internalID: 4111662686597721562
       vertices: []
       indices: 
       edges: []
