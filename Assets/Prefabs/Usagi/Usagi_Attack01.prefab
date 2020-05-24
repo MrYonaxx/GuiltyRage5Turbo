@@ -99,7 +99,7 @@ MonoBehaviour:
     specialCancel: 1
     resetGravity: 0
     allyAttack: 0
-    onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
+    onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
       type: 3}
     knockbackPowerX: 1
     knockbackPowerZ: 0

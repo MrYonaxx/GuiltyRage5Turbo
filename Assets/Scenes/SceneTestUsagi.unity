@@ -27005,6 +27005,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AttackController
       objectReference: {fileID: 0}
+    - target: {fileID: 2627044422989534804, guid: 52d7dc592debd114eb448537abdd5fbd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52d7dc592debd114eb448537abdd5fbd, type: 3}
 --- !u!1001 &3291631371228048942
