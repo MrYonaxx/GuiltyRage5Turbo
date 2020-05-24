@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: 2df135a1ee2255c4e93a44ba082b5c40
+guid: 2ae2ad39083d2744d8050f249f7bc74c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2891906461582346433
-    second: Ranger_Normal01_0
+      213: -8927078149825416885
+    second: spritesheet_XX_0
   - first:
-      213: -847656904617902696
-    second: Ranger_Normal01_1
+      213: 5048684893396961941
+    second: spritesheet_XX_1
   - first:
-      213: 3207318944534438710
-    second: Ranger_Normal01_2
+      213: -2567114958787459259
+    second: spritesheet_XX_2
   - first:
-      213: -1597833834493889480
-    second: Ranger_Normal01_3
+      213: -4037180709404100982
+    second: spritesheet_XX_3
   - first:
-      213: 4718979604744638669
-    second: Ranger_Normal01_4
+      213: 1764848876743671731
+    second: spritesheet_XX_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,89 +98,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: tvOS
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Lumin
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ranger_Normal01_0
+      name: spritesheet_XX_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 68
-        height: 77
+        width: 80
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,20 +116,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f373ab92562edd7d0800000000000000
-      internalID: -2891906461582346433
+      spriteID: b41318d68b5ac1480800000000000000
+      internalID: -8927078149825416885
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger_Normal01_1
+      name: spritesheet_XX_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 80
         y: 0
-        width: 68
-        height: 77
+        width: 80
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89db7dc49848c34f0800000000000000
-      internalID: -847656904617902696
+      spriteID: 59a8ec55928801640800000000000000
+      internalID: 5048684893396961941
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger_Normal01_2
+      name: spritesheet_XX_2
       rect:
         serializedVersion: 2
-        x: 136
+        x: 160
         y: 0
-        width: 68
-        height: 77
+        width: 80
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6332b52469fa28c20800000000000000
-      internalID: 3207318944534438710
+      spriteID: 547c1efcb86cf5cd0800000000000000
+      internalID: -2567114958787459259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger_Normal01_3
+      name: spritesheet_XX_3
       rect:
         serializedVersion: 2
-        x: 204
+        x: 240
         y: 0
-        width: 68
-        height: 77
+        width: 80
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83434ecd79a53d9e0800000000000000
-      internalID: -1597833834493889480
+      spriteID: a86b8e1e88d09f7c0800000000000000
+      internalID: -4037180709404100982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Ranger_Normal01_4
+      name: spritesheet_XX_4
       rect:
         serializedVersion: 2
-        x: 272
+        x: 320
         y: 0
-        width: 68
-        height: 77
+        width: 80
+        height: 71
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc01e13c2fe2d7140800000000000000
-      internalID: 4718979604744638669
+      spriteID: 3bfbd8ce3b00e7810800000000000000
+      internalID: 1764848876743671731
       vertices: []
       indices: 
       edges: []
