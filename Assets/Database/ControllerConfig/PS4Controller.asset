@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PS4Controller
   m_EditorClassIdentifier: 
   controllerA: ControllerB
-  controllerB: ControllerY
+  controllerB: ControllerX
   controllerX: ControllerA
-  controllerY: ControllerX
+  controllerY: ControllerY
