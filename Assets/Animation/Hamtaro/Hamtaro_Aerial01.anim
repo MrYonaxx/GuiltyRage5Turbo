@@ -98,6 +98,6 @@ AnimationClip:
     functionName: Jump
     data: 
     objectReferenceParameter: {fileID: 0}
-    floatParameter: -10
+    floatParameter: -20
     intParameter: 0
     messageOptions: 0

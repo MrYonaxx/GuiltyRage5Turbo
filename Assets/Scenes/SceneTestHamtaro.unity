@@ -18972,13 +18972,13 @@ MonoBehaviour:
     type: 3}
   groundRunAttack: {fileID: 8119933654453206164, guid: 0cff73193f8cd664c8f7ec5f99cc8d79,
     type: 3}
-  jumpDefaultAttack: {fileID: 267855701420156300, guid: b315a8eb9925dce4083fa9a8a04898c6,
+  jumpDefaultAttack: {fileID: 1990638437085727834, guid: f1869a133a674214a87b8b586e89e0f0,
     type: 3}
   jumpForwardAttack: {fileID: 1990638437085727834, guid: f1869a133a674214a87b8b586e89e0f0,
     type: 3}
   jumpUpAttack: {fileID: 267855701420156300, guid: b315a8eb9925dce4083fa9a8a04898c6,
     type: 3}
-  jumpDownAttack: {fileID: 1990638437085727834, guid: f1869a133a674214a87b8b586e89e0f0,
+  jumpDownAttack: {fileID: 267855701420156300, guid: b315a8eb9925dce4083fa9a8a04898c6,
     type: 3}
   throwAttack: {fileID: 0}
   specialAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
