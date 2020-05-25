@@ -8076,7 +8076,7 @@ Transform:
   m_GameObject: {fileID: 981988817}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_Children:
   - {fileID: 2012286181}
   m_Father: {fileID: 1079504038}
@@ -9183,7 +9183,7 @@ MonoBehaviour:
       Mass: 0
       KnockbackTime: 0
   target: {fileID: 0}
-  jumpImpulsion: 8
+  jumpImpulsion: 7
   gravity: 22
   gravityMax: -10
   defaultSpeed: 2.2
@@ -9270,10 +9270,12 @@ MonoBehaviour:
     type: 3}
   jumpDefaultAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
     type: 3}
-  jumpForwardAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
+  jumpForwardAttack: {fileID: 0}
+  jumpUpAttack: {fileID: 5675724579743022368, guid: 62c3ebffb2eedad40a7b742246fd37b3,
     type: 3}
+  jumpDownAttack: {fileID: 0}
   throwAttack: {fileID: 0}
-  specialAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
+  specialAttack: {fileID: 8775327884234781867, guid: c3d1a33ecda7b8a49856916d9b432c4d,
     type: 3}
   specialForwardAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
     type: 3}
@@ -9285,12 +9287,14 @@ MonoBehaviour:
     type: 3}
   dashBack: {fileID: 0}
   dashForward: {fileID: 0}
-  canRunY: 0
+  chargedAttack: {fileID: 0}
+  chargeTotalTime: 0.5
+  canRunY: 1
   crouchJumpTime: 0.1
-  runSpeedBonus: 2
+  runSpeedBonus: 1
   doubleJumpRatio: 0.8
   bufferTime: 0.25
-  runBufferTime: 0.16
+  runBufferTime: 0.4
 --- !u!4 &1079504038
 Transform:
   m_ObjectHideFlags: 0

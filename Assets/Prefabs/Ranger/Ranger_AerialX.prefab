@@ -302,7 +302,7 @@ MonoBehaviour:
     knockbackPowerX: 1
     knockbackPowerZ: 3
     knockbackAerialPowerX: 1
-    knockbackAerialPowerZ: 0
+    knockbackAerialPowerZ: 3
     blockStun: 0.1
     blockKnockback: 0
     onHitKnockback: 0
@@ -312,5 +312,29 @@ MonoBehaviour:
     zoom: 0
     shakeScreen: 0
     shakeScreenTime: 0
-    attackBehaviorDatas: []
+    attackBehaviorDatas:
+    - frame: 0
+      action: 1
+      argument: 
+      argument1: {x: 0, y: 0, z: 0}
+      anim: {fileID: 0}
+      move: {fileID: 0}
+    - frame: 5
+      action: 1
+      argument: 
+      argument1: {x: 0, y: 0, z: 0}
+      anim: {fileID: 0}
+      move: {fileID: 0}
+    - frame: 10
+      action: 1
+      argument: 
+      argument1: {x: 0, y: 0, z: 0}
+      anim: {fileID: 0}
+      move: {fileID: 0}
+    - frame: 15
+      action: 1
+      argument: 
+      argument1: {x: 0, y: 0, z: 0}
+      anim: {fileID: 0}
+      move: {fileID: 0}
   direction: 0

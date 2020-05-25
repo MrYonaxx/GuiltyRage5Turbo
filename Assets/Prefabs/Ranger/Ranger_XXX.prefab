@@ -109,7 +109,7 @@ MonoBehaviour:
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
-    knockbackPowerX: 4
+    knockbackPowerX: 3
     knockbackPowerZ: 6
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
