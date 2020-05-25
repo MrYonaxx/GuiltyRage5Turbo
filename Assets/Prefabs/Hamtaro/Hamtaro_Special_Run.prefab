@@ -106,7 +106,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.64}
+  m_Size: {x: 0.32, y: 0.48}
   m_EdgeRadius: 0
 --- !u!1 &4847249994434456038
 GameObject:
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.1, y: 0.3}
+  m_Offset: {x: 0.05, y: 0.15}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -166,7 +166,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7, y: 0.65}
+  m_Size: {x: 0.35, y: 0.325}
   m_EdgeRadius: 0
 --- !u!114 &4847249994434456039
 MonoBehaviour:
@@ -180,6 +180,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f161df927e666e4ab67ef10fd91ec9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitbox: {fileID: 4847249994434456032}
+  hitboxY: {fileID: 4847249994245213354}
+  animator: {fileID: 0}
   attackBehavior:
     attackName: 
     attackAnimation: Hamtaro_SpecialRun
@@ -191,7 +194,9 @@ MonoBehaviour:
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
     onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
     onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 1
@@ -245,9 +250,6 @@ MonoBehaviour:
       anim: {fileID: 0}
       move: {fileID: 6691542949019435389, guid: 9c60a8eec85de0b49ba045c0155e0d06,
         type: 3}
-  hitbox: {fileID: 4847249994434456032}
-  hitboxY: {fileID: 4847249994245213354}
-  animator: {fileID: 0}
   direction: 0
 --- !u!1 &4847249994466804735
 GameObject:
@@ -275,7 +277,7 @@ Transform:
   m_GameObject: {fileID: 4847249994466804735}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4847249994434456033}
   m_RootOrder: 1

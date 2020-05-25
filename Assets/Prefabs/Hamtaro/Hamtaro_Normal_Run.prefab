@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8119933654364981239
 Transform:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 8119933654364981236}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8119933654453206166}
   m_RootOrder: 1
@@ -129,7 +129,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.15, y: 0.1}
+  m_Offset: {x: 0.075, y: 0.05}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -140,7 +140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.3}
+  m_Size: {x: 0.45, y: 0.15}
   m_EdgeRadius: 0
 --- !u!114 &8119933654453206164
 MonoBehaviour:
@@ -154,6 +154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f161df927e666e4ab67ef10fd91ec9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitbox: {fileID: 8119933654453206167}
+  hitboxY: {fileID: 8119933654547218333}
+  animator: {fileID: 0}
   attackBehavior:
     attackName: 
     attackAnimation: Hamtaro_AttackRun01
@@ -165,7 +168,9 @@ MonoBehaviour:
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
     onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
     onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 0
@@ -200,9 +205,6 @@ MonoBehaviour:
     shakeScreen: 0
     shakeScreenTime: 0
     attackBehaviorDatas: []
-  hitbox: {fileID: 8119933654453206167}
-  hitboxY: {fileID: 8119933654547218333}
-  animator: {fileID: 0}
   direction: 0
 --- !u!1 &8119933654547218275
 GameObject:
@@ -310,5 +312,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.64}
+  m_Size: {x: 0.32, y: 0.48}
   m_EdgeRadius: 0

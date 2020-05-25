@@ -19,6 +19,19 @@ namespace VoiceActing
         /* ======================================== *\
          *               ATTRIBUTES                 *
         \* ======================================== */
+
+        [Title("Attack Controller")]
+        [SerializeField]
+        BoxCollider2D hitbox;
+        [SerializeField]
+        BoxCollider2D hitboxY;
+        [SerializeField]
+        Animator animator;
+
+        [Space]
+        [Space]
+        [Space]
+
         [HideLabel]
         [SerializeField]
         private AttackBehavior attackBehavior;
@@ -27,16 +40,7 @@ namespace VoiceActing
             get { return attackBehavior; }
         }
 
-        [Space]
-        [Space]
-        [Space]
-        [Title("Attack Controller")]
-        [SerializeField]
-        BoxCollider2D hitbox;
-        [SerializeField]
-        BoxCollider2D hitboxY;
-        [SerializeField]
-        Animator animator;
+
 
         Character user;
 
@@ -88,7 +92,7 @@ namespace VoiceActing
             lockedCharacter = lockedTarget;
 
             // direction
-            this.transform.localScale = new Vector3(this.transform.localScale.x * cUser.GetDirection(), this.transform.localScale.y, this.transform.localScale.z);
+            this.transform.localScale = new Vector3(user.SpriteRenderer.transform.localScale.x * cUser.GetDirection(), user.SpriteRenderer.transform.localScale.y, user.SpriteRenderer.transform.localScale.z);
             if (attackBehavior.NoDirection == false)
                 direction = cUser.GetDirection();
 
@@ -157,7 +161,7 @@ namespace VoiceActing
             }
             if (attackBehaviorData.move != null)
             {
-                subActions.Add(Instantiate(attackBehaviorData.move, this.transform));
+                subActions.Add(Instantiate(attackBehaviorData.move, this.transform.position, Quaternion.identity));
                 subActions[subActions.Count - 1].CreateAttack(user, lockedCharacter);
                 subActions[subActions.Count - 1].SetDirection(-1);
             }
@@ -178,7 +182,8 @@ namespace VoiceActing
         {
             if (hitboxY == null)
                 return true;
-            return ((hitboxY.transform.position.y + hitboxY.offset.y - hitboxY.size.y / 2) <= posY && posY <= (hitboxY.transform.position.y + hitboxY.offset.y + hitboxY.size.y / 2));
+            float scaleY = user.SpriteRenderer.transform.localScale.y;
+            return ((hitboxY.transform.position.y + ((hitboxY.offset.y - (hitboxY.size.y / 2)) * scaleY)) <= posY && posY <= (hitboxY.transform.position.y + ((hitboxY.offset.y + (hitboxY.size.y / 2)) * scaleY)));
         }
 
 
@@ -245,8 +250,7 @@ namespace VoiceActing
         {
             if (attackCoroutine != null)
                 StopCoroutine(attackCoroutine);
-            /*if(attackBehavior.AnimationDriven == false)
-                user.EndActionAttackController();*/
+            //user.EndActionAttackController();
             CancelAction();
         }
 

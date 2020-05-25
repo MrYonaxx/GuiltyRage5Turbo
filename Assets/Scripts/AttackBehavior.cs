@@ -107,6 +107,7 @@ namespace VoiceActing
             get { return cancelOnGround; }
         }
         [HorizontalGroup("CancelGround")]
+        [ShowIf("cancelOnGround")]
         [SerializeField]
         private AttackController onGroundCombo;
         public AttackController OnGroundCombo
@@ -114,14 +115,15 @@ namespace VoiceActing
             get { return onGroundCombo; }
         }
 
-        [HorizontalGroup("CancelGround")]
+        [HorizontalGroup("CancelWall")]
         [SerializeField]
         bool cancelOnWall = false;
         public bool CancelOnWall
         {
             get { return cancelOnWall; }
         }
-        [HorizontalGroup("CancelGround")]
+        [HorizontalGroup("CancelWall")]
+        [ShowIf("cancelOnWall")]
         [SerializeField]
         private AttackController onWallCombo;
         public AttackController OnWallCombo

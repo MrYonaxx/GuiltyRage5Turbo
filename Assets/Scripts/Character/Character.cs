@@ -782,6 +782,7 @@ namespace VoiceActing
         // Appelé par l'attack controller
         public void EndActionAttackController()
         {
+            //currentAttackController = null;
             /*if (state == CharacterState.Acting && canEndAction == true)
             {
                 endAction = true;

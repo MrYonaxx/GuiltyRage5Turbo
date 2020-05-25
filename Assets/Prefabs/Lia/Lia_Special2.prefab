@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 7632667607707690538}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7536460104112476741}
   m_RootOrder: 1
@@ -136,7 +136,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.7}
+  m_Size: {x: 1, y: 0.5}
   m_EdgeRadius: 0
 --- !u!1 &8081170845480450649
 GameObject:
@@ -185,7 +185,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3, y: 0.4}
+  m_Offset: {x: 0.15, y: 0.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -196,7 +196,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.4}
+  m_Size: {x: 0.5, y: 0.7}
   m_EdgeRadius: 0
 --- !u!114 &5727957042899581957
 MonoBehaviour:
@@ -210,6 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f161df927e666e4ab67ef10fd91ec9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitbox: {fileID: 3013198398437259435}
+  hitboxY: {fileID: 2814916616117043377}
+  animator: {fileID: 0}
   attackBehavior:
     attackName: 
     attackAnimation: Lia_Special02
@@ -221,7 +224,9 @@ MonoBehaviour:
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
     onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
     onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 1
@@ -275,7 +280,4 @@ MonoBehaviour:
       anim: {fileID: 0}
       move: {fileID: 7642102180543687964, guid: c3792d5ce521bc9498953a7106a69d35,
         type: 3}
-  hitbox: {fileID: 3013198398437259435}
-  hitboxY: {fileID: 2814916616117043377}
-  animator: {fileID: 0}
   direction: 0
