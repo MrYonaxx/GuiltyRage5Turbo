@@ -108,6 +108,7 @@ namespace VoiceActing
         }
         [HorizontalGroup("CancelGround")]
         [ShowIf("cancelOnGround")]
+        [LabelWidth(100)]
         [SerializeField]
         private AttackController onGroundCombo;
         public AttackController OnGroundCombo
@@ -124,6 +125,7 @@ namespace VoiceActing
         }
         [HorizontalGroup("CancelWall")]
         [ShowIf("cancelOnWall")]
+        [LabelWidth(100)]
         [SerializeField]
         private AttackController onWallCombo;
         public AttackController OnWallCombo

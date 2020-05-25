@@ -30,6 +30,10 @@ namespace VoiceActing
             unityEvent2.Invoke();
         }
 
+        public void DestroyObject()
+        {
+            Destroy(this.gameObject);
+        }
 
     } 
 

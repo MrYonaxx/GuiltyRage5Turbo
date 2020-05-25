@@ -160,8 +160,8 @@ namespace VoiceActing
                         enemyActionTime = Random.Range(180, 360) / 60f;
                         break;
                     case 4: // Move in front of player
-                        Guard();
-                        Debug.Log("Guard");
+                        //Guard();
+                        //Debug.Log("Guard");
                         LookAt(target.transform);
                         enemyActionTime = Random.Range(180, 360) / 60f;
                         break;

@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 2942628069076481642}
   - component: {fileID: 2942628069076481641}
   m_Layer: 9
-  m_Name: Hamtaro_Special_Aerial2
+  m_Name: Hamtaro_Special_Aerial3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: 
-    attackAnimation: Hamtaro_Special_Aerial02
+    attackAnimation: Hamtaro_Special_Aerial03
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
       type: 3}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
-    cancelOnGround: 0
+    cancelOnGround: 1
     onGroundCombo: {fileID: 0}
     cancelOnWall: 0
     onWallCombo: {fileID: 0}
@@ -187,7 +187,7 @@ MonoBehaviour:
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    specialCancel: 1
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,

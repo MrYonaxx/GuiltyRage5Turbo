@@ -244,7 +244,7 @@ MonoBehaviour:
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
-    specialCancel: 0
+    specialCancel: 1
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,

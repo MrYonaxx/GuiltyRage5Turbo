@@ -163,7 +163,7 @@ namespace VoiceActing
             {
                 subActions.Add(Instantiate(attackBehaviorData.move, this.transform.position, Quaternion.identity));
                 subActions[subActions.Count - 1].CreateAttack(user, lockedCharacter);
-                subActions[subActions.Count - 1].SetDirection(-1);
+                //subActions[subActions.Count - 1].SetDirection(-1);
             }
         }
 

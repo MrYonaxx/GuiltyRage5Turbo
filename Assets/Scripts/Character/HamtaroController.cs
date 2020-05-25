@@ -156,6 +156,36 @@ namespace VoiceActing
             }
         }
 
+        protected override void OnGroundCollision()
+        {
+            base.OnGroundCollision();
+            if(currentAttack != null && state == CharacterState.Acting)
+            {
+                if(currentAttack.AttackBehavior.CancelOnGround == true)
+                {
+                    if(currentAttack.AttackBehavior.OnGroundCombo != null)
+                        Action(currentAttack.AttackBehavior.OnGroundCombo);
+                    else 
+                        CancelAction();
+                }
+            }
+        }
+
+        protected override void OnWallCollision()
+        {
+            base.OnWallCollision();
+            if (currentAttack != null && state == CharacterState.Acting)
+            {
+                if (currentAttack.AttackBehavior.CancelOnWall == true)
+                {               
+                    if (currentAttack.AttackBehavior.OnWallCombo != null)
+                        Action(currentAttack.AttackBehavior.OnWallCombo);
+                    else
+                        CancelAction();
+                }
+            }
+        }
+
 
         private void JumpLand()
         {
@@ -176,6 +206,8 @@ namespace VoiceActing
                 }
             }
         }
+
+
 
 
         // =========================================================================================
@@ -362,17 +394,38 @@ namespace VoiceActing
             }
 
             // Buffer
-            if (bufferSpecialActive == true && state == CharacterState.Acting && canMoveCancel == true)
+            /*if (bufferSpecialActive == true && state == CharacterState.Acting && canMoveCancel == true)
             {
                 SpecialAttack();
+            }*/
+
+
+            if (bufferSpecialActive == true && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
+            {
+                if (currentAttack.AttackBehavior.SpecialCancel == true)
+                    CancelAction();
             }
+
+            if (bufferSpecialActive == true && (state == CharacterState.Idle || state == CharacterState.Moving))
+            {
+                StopBuffer();
+                SpecialAttack();
+            }
+
+
 
             // Input
             if (Input.GetButtonDown(controllerY) && state == CharacterState.Acting)
             {
-                if (canMoveCancel == true)
+                if (canMoveCancel == true && currentAttack != null)
                 {
-                    SpecialAttack();
+                    if (currentAttack.AttackBehavior.SpecialCancel == true)
+                        SpecialAttack();
+                    else
+                    {
+                        bufferSpecialActive = true;
+                        StartBuffer();
+                    }
                 }
                 else
                 {
@@ -596,6 +649,7 @@ namespace VoiceActing
             bufferJumpActive = false;
             bufferDashActive = false;
         }
+
 
         #endregion
     }

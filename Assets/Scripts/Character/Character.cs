@@ -306,7 +306,7 @@ namespace VoiceActing
                         float distance = raycastX.point.x - bottomLeft.x;
                         distance += offsetRaycastX;
                         actualSpeedX = distance / Time.deltaTime;
-                        WallBounce();
+                        OnWallCollision();
                         return;
 
                     }
@@ -330,7 +330,7 @@ namespace VoiceActing
                         float distance = raycastX.point.x - bottomRight.x;
                         distance -= offsetRaycastX;
                         actualSpeedX = distance / Time.deltaTime;
-                        WallBounce();
+                        OnWallCollision();
                         return;
                     }
                     originRaycast += new Vector2(0, Mathf.Abs(upperRight.y - bottomRight.y) / (numberRaycastHorizontal - 1));
@@ -432,12 +432,12 @@ namespace VoiceActing
                     inAir = false;
                     speedZ = 0;
                     spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, 0, spriteRenderer.transform.localPosition.z);
-                    OnGround();
+                    OnGroundCollision();
                 }
             }
         }
 
-        protected virtual void OnGround()
+        protected virtual void OnGroundCollision()
         {
 
         }
@@ -579,7 +579,12 @@ namespace VoiceActing
             OnHit.Invoke(attack.AttackBehavior);
         }
 
-        public void WallBounce()
+        protected virtual void OnWallCollision()
+        {
+            WallBounce();
+        }
+
+        private void WallBounce()
         {
             if (state == CharacterState.Hit && inAir == true)
             {
