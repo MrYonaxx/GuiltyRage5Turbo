@@ -9268,8 +9268,9 @@ MonoBehaviour:
     type: 3}
   groundRunAttack: {fileID: 8119933654453206164, guid: 0cff73193f8cd664c8f7ec5f99cc8d79,
     type: 3}
-  jumpDefaultAttack: {fileID: 0}
-  jumpForwardAttack: {fileID: 1990638437085727834, guid: f1869a133a674214a87b8b586e89e0f0,
+  jumpDefaultAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
+    type: 3}
+  jumpForwardAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
     type: 3}
   throwAttack: {fileID: 0}
   specialAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
@@ -9280,15 +9281,16 @@ MonoBehaviour:
     type: 3}
   specialAerialForwardAttack: {fileID: 1912206292486497067, guid: 998d09b8ffc5f0a45be11fefcfcf9786,
     type: 3}
-  specialRunAttack: {fileID: 4847249994434456039, guid: 6323458f8da4d2d40b8334eafddba9d2,
+  specialRunAttack: {fileID: 5428025765668806407, guid: e7c483b30639b5c428f6daeffd6abe7e,
     type: 3}
   dashBack: {fileID: 0}
   dashForward: {fileID: 0}
+  canRunY: 0
   crouchJumpTime: 0.1
   runSpeedBonus: 2
   doubleJumpRatio: 0.8
   bufferTime: 0.25
-  runBufferTime: 0.14
+  runBufferTime: 0.16
 --- !u!4 &1079504038
 Transform:
   m_ObjectHideFlags: 0
@@ -19700,15 +19702,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f161df927e666e4ab67ef10fd91ec9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitbox: {fileID: 1792568625}
+  hitboxY: {fileID: 0}
+  animator: {fileID: 0}
   attackBehavior:
     attackName: 
     attackAnimation: 
     lifetime: 0
     attackDamage: 0
     comboCost: 0
+    knockbackDurationBonus: 0
+    knockdownValue: 0
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
+    onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
+    onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 0
     noDirection: 1
@@ -19731,6 +19742,9 @@ MonoBehaviour:
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
+    onHitKnockback: 0
     hitStop: 0
     hitStopGlobal: 0
     targetShakePower: 0
@@ -19738,9 +19752,6 @@ MonoBehaviour:
     shakeScreen: 0
     shakeScreenTime: 0
     attackBehaviorDatas: []
-  hitbox: {fileID: 1792568625}
-  hitboxY: {fileID: 0}
-  animator: {fileID: 0}
   direction: 0
 --- !u!4 &1792568627
 Transform:
@@ -25566,15 +25577,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f161df927e666e4ab67ef10fd91ec9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hitbox: {fileID: 1958029413}
+  hitboxY: {fileID: 905539273}
+  animator: {fileID: 0}
   attackBehavior:
     attackName: 
     attackAnimation: 
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
+    knockbackDurationBonus: 0
+    knockdownValue: 0
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
+    onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
+    onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 0
     noDirection: 0
@@ -25598,6 +25618,9 @@ MonoBehaviour:
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
+    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05
@@ -25605,9 +25628,6 @@ MonoBehaviour:
     shakeScreen: 0
     shakeScreenTime: 0
     attackBehaviorDatas: []
-  hitbox: {fileID: 1958029413}
-  hitboxY: {fileID: 905539273}
-  animator: {fileID: 0}
   direction: 0
 --- !u!61 &1958029413
 BoxCollider2D:
@@ -26785,75 +26805,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1001 &478472806706598793
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1010453034100673714, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3495649979541179214, guid: 5e0425f61325c45439ab93f7b81611fe,
-        type: 3}
-      propertyPath: m_Name
-      value: AttackController
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5e0425f61325c45439ab93f7b81611fe, type: 3}
 --- !u!1001 &1731304342098830008
 PrefabInstance:
   m_ObjectHideFlags: 0
