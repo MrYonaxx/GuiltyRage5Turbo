@@ -78,9 +78,13 @@ MonoBehaviour:
     lifetime: 0
     attackDamage: 0
     comboCost: 0
+    knockbackDurationBonus: 0
+    knockdownValue: 0
     comboTo: {fileID: 0}
     targetCombo: {fileID: 0}
     onHitCombo: {fileID: 0}
+    onGroundCombo: {fileID: 0}
+    onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 0
     noDirection: 1
@@ -88,10 +92,14 @@ MonoBehaviour:
     linkToCharacterAerial: 0
     guardBreak: 0
     wakeUpAttack: 0
-    jumpCancel: 0
-    dashCancel: 0
     throwState: 0
     attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
+    jumpCancel: 0
+    dashCancel: 0
+    runCancel: 0
+    specialCancel: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 0}
@@ -99,6 +107,9 @@ MonoBehaviour:
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
+    onHitKnockback: 0
     hitStop: 0
     hitStopGlobal: 0
     targetShakePower: 0

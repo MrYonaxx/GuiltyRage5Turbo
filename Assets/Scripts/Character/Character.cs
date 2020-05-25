@@ -432,11 +432,15 @@ namespace VoiceActing
                     inAir = false;
                     speedZ = 0;
                     spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, 0, spriteRenderer.transform.localPosition.z);
+                    OnGround();
                 }
             }
         }
 
+        protected virtual void OnGround()
+        {
 
+        }
 
         protected void SetAnimation()
         {

@@ -62,6 +62,21 @@ namespace VoiceActing
             get { return comboCost; }
         }
 
+        [HorizontalGroup("KnockbackValue")]
+        [SerializeField]
+        float knockbackDurationBonus = 0;
+        public float KnockbackDurationBonus
+        {
+            get { return knockbackDurationBonus; }
+        }
+        [HorizontalGroup("KnockbackValue")]
+        [SerializeField]
+        float knockdownValue = 0;
+        public float KnockdownValue
+        {
+            get { return knockdownValue; }
+        }
+
         [Space]
         [SerializeField]
         private AttackController comboTo;
@@ -82,6 +97,36 @@ namespace VoiceActing
         public AttackController OnHitCombo
         {
             get { return onHitCombo; }
+        }
+
+        [HorizontalGroup("CancelGround")]
+        [SerializeField]
+        bool cancelOnGround = false;
+        public bool CancelOnGround
+        {
+            get { return cancelOnGround; }
+        }
+        [HorizontalGroup("CancelGround")]
+        [SerializeField]
+        private AttackController onGroundCombo;
+        public AttackController OnGroundCombo
+        {
+            get { return onGroundCombo; }
+        }
+
+        [HorizontalGroup("CancelGround")]
+        [SerializeField]
+        bool cancelOnWall = false;
+        public bool CancelOnWall
+        {
+            get { return cancelOnWall; }
+        }
+        [HorizontalGroup("CancelGround")]
+        [SerializeField]
+        private AttackController onWallCombo;
+        public AttackController OnWallCombo
+        {
+            get { return onWallCombo; }
         }
 
 
@@ -311,13 +356,30 @@ namespace VoiceActing
             get { return knockbackAerialPowerZ; }
         }
 
-        /*[HorizontalGroup("Knockback2")]
+        [Space]
+        [HorizontalGroup("Block")]
         [SerializeField]
-        float knockbackDurationMultiplier = 1;
-        public float KnockbackDurationMultiplier
+        float blockStun = 0.1f;
+        public float BlockStun
         {
-            get { return knockbackDurationMultiplier; }
-        }*/
+            get { return blockStun; }
+        }
+        [Space]
+        [HorizontalGroup("Block")]
+        [SerializeField]
+        float blockKnockback = 0;
+        public float BlockKnockback
+        {
+            get { return blockKnockback; }
+        }
+
+        [SerializeField]
+        float onHitKnockback = 0;
+        public float OnHitKnockback
+        {
+            get { return onHitKnockback; }
+        }
+
 
         [Space]
         [HorizontalGroup("FeedbackPuissant")]

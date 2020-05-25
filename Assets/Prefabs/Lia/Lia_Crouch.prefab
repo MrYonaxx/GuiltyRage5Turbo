@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6389422145757030345}
   - component: {fileID: 6389422145757030344}
   m_Layer: 9
-  m_Name: AttackController
+  m_Name: Lia_Crouch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,31 +72,51 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackBehavior:
     attackName: 
-    attackDamage: 0
     attackAnimation: Lia_Crouch
     lifetime: 0.4
+    attackDamage: 0
+    comboCost: 0
+    knockbackDurationBonus: 0
+    knockdownValue: 0
     comboTo: {fileID: 0}
-    animationDriven: 1
+    targetCombo: {fileID: 0}
+    onHitCombo: {fileID: 0}
+    onGroundCombo: {fileID: 0}
+    onWallCombo: {fileID: 0}
     isActive: 0
-    allyAttack: 0
-    isPiercing: 0
     isMultiHit: 0
-    linkToCharacter: 1
     noDirection: 0
-    moveToTarget: 0
-    cameraFollowAttack: 0
+    linkToCharacter: 1
+    linkToCharacterAerial: 1
+    guardBreak: 0
+    wakeUpAttack: 0
+    throwState: 0
+    attackThrow: 0
+    cancelOnlyOnHit: 0
+    keepMomentum: 0
+    jumpCancel: 0
+    dashCancel: 0
+    runCancel: 0
+    specialCancel: 0
+    resetGravity: 0
+    allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
     knockbackPowerX: 0
     knockbackPowerZ: 5
-    knockbackDurationMultiplier: 1
+    knockbackAerialPowerX: 1
+    knockbackAerialPowerZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
+    onHitKnockback: 0
     hitStop: 0.15
-    zoom: 0
+    hitStopGlobal: 0
     targetShakePower: 0
+    zoom: 0
     shakeScreen: 0
     shakeScreenTime: 0
-    blinkTarget: 0
-    blinkTargetColor: {r: 0, g: 0, b: 0, a: 0}
     attackBehaviorDatas: []
   hitbox: {fileID: 6389422145757030345}
+  hitboxY: {fileID: 0}
+  animator: {fileID: 0}
   direction: 0
