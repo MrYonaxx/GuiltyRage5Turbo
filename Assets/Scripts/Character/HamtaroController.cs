@@ -20,6 +20,8 @@ namespace VoiceActing
         [Title("PlayerController")]
         [SerializeField]
         int playerID = 1;
+        [SerializeField]
+        ControllerConfigurationData controllerConfig = null;
 
         [Title("Moveset")]
         [SerializeField]
@@ -141,10 +143,20 @@ namespace VoiceActing
             {
                 Debug.Log(controllers[i]);
             }
-            controllerA += "_" + playerID;
-            controllerB += "_" + playerID;
-            controllerX += "_" + playerID;
-            controllerY += "_" + playerID;
+            if (controllerConfig != null)
+            {
+                controllerA = controllerConfig.controllerA + "_" + playerID;
+                controllerB = controllerConfig.controllerB + "_" + playerID;
+                controllerX = controllerConfig.controllerX + "_" + playerID;
+                controllerY = controllerConfig.controllerY + "_" + playerID;
+            }
+            else
+            {
+                controllerA += "_" + playerID;
+                controllerB += "_" + playerID;
+                controllerX += "_" + playerID;
+                controllerY += "_" + playerID;
+            }
             controllerR1 += "_" + playerID;
             controllerL1 += "_" + playerID;
             controllerLeftHorizontal += "_" + playerID;

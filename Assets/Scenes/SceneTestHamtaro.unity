@@ -11457,6 +11457,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerID: 2
+  controllerConfig: {fileID: 0}
   crouchController: {fileID: 897661490472993470, guid: 43e96204941939e41897fe36d2c0aa09,
     type: 3}
   jumpLand: {fileID: 0}
@@ -18964,6 +18965,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerID: 1
+  controllerConfig: {fileID: 11400000, guid: ade9f2cb9c2916b4190da0086e45d215, type: 2}
   crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
     type: 3}
   jumpLand: {fileID: 0}
@@ -42675,6 +42677,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerID: 2
+  controllerConfig: {fileID: 0}
   crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
     type: 3}
   jumpLand: {fileID: 0}
