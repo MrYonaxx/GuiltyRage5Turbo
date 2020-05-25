@@ -129,7 +129,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.34974992, y: 0.85948056}
+  m_Offset: {x: 0.49123678, y: 0.8264572}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -140,7 +140,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68643117, y: 0.7888993}
+  m_Size: {x: 0.66756624, y: 0.732288}
   m_EdgeRadius: 0
 --- !u!114 &463705356259515568
 MonoBehaviour:
@@ -160,10 +160,16 @@ MonoBehaviour:
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
+    knockbackDurationBonus: 0
+    knockdownValue: 0
     comboTo: {fileID: 0}
     targetCombo: {fileID: 1605258149344995937, guid: b9863bad495a2f24b998becdae8f74f9,
       type: 3}
     onHitCombo: {fileID: 0}
+    cancelOnGround: 0
+    onGroundCombo: {fileID: 0}
+    cancelOnWall: 0
+    onWallCombo: {fileID: 0}
     isActive: 1
     isMultiHit: 0
     noDirection: 0
@@ -187,6 +193,9 @@ MonoBehaviour:
     knockbackPowerZ: 0
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
+    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05
