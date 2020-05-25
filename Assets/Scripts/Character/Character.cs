@@ -18,14 +18,11 @@ namespace VoiceActing
         Idle,
         Moving,
         Guard,
-        Jumping,
         Acting,
-        CardBreak,
         Hit,
         Down,
         Dead,
-        Throw,
-        Reload
+        Throw
     }
 
 
@@ -616,7 +613,7 @@ namespace VoiceActing
             }
             if (knockbackTime <= 0)
             {
-                if (state == CharacterState.Hit || state == CharacterState.CardBreak || state == CharacterState.Down)
+                if (state == CharacterState.Hit || state == CharacterState.Down)
                 {
                     state = CharacterState.Idle;
                     characterAnimator.SetTrigger("Idle");
@@ -828,7 +825,7 @@ namespace VoiceActing
 
 
 
-        public void ReloadDeck()
+        /*public void ReloadDeck()
         {
             state = CharacterState.Reload;
             characterAnimator.SetBool("Reload", true);
@@ -838,7 +835,7 @@ namespace VoiceActing
         {
             characterAnimator.SetBool("Reload", false);
             state = CharacterState.Idle;
-        }
+        }*/
 
 
 

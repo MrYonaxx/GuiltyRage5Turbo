@@ -40,6 +40,10 @@ namespace VoiceActing
         AttackController jumpDefaultAttack;
         [SerializeField]
         AttackController jumpForwardAttack;
+        [SerializeField]
+        AttackController jumpUpAttack;
+        [SerializeField]
+        AttackController jumpDownAttack;
 
         [Title("Throw")]
         [SerializeField]
@@ -62,6 +66,12 @@ namespace VoiceActing
         [SerializeField]
         AttackController dashForward;
 
+        [Title("Charged Attack")]
+        [SerializeField]
+        AttackController chargedAttack;
+        [SerializeField]
+        float chargeTotalTime = 0.5f;
+
 
 
         [Title("Parameter")]
@@ -81,6 +91,7 @@ namespace VoiceActing
         float runBufferTime = 0.25f;
 
 
+        float chargeTime = 0;
         float crouchTime = 0;
         bool doubleJump = false;
 
@@ -151,6 +162,7 @@ namespace VoiceActing
                 InputRun();
                 //InputDash();
                 InputJump();
+                InputCharged();
                 InputAction();
                 InputSpecial();
             }
@@ -328,6 +340,54 @@ namespace VoiceActing
 
 
 
+
+        // =========================================================================================
+        private void InputCharged()
+        {
+            if (chargedAttack == null)
+                return;
+            if(Input.GetButton(controllerX))
+            {
+                if(state != CharacterState.Hit)
+                    chargeTime += Time.deltaTime;
+            }
+            else if(Input.GetButtonUp(controllerX))
+            {
+                if(chargeTime >= chargeTotalTime)
+                {
+                    if (state == CharacterState.Idle || state == CharacterState.Moving)
+                    {
+                        Action(chargedAttack);
+                    }
+                }
+                chargeTime = 0;
+            }
+        }
+
+        /*private void InputChargedHamtaro()
+        {
+            if (chargedAttack != null)
+                return;
+            if (Input.GetButton(controllerX))
+            {
+                if (state != CharacterState.Hit)
+                    chargeTime += Time.deltaTime;
+            }
+            else
+            {
+                if (chargeTime == chargeTotalTime)
+                {
+                    if (state == CharacterState.Idle && state == CharacterState.Moving)
+                    {
+                        Action(chargedAttack);
+                    }
+                }
+                chargeTime = 0;
+            }
+        }*/
+
+
+
         // =========================================================================================
         private void InputAction()
         {
@@ -360,9 +420,17 @@ namespace VoiceActing
 
         private void NormalAttack()
         {
-            if (inAir == true && speedX != 0)
+            if (inAir == true && Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) > 0.2f)
             {
                 Action(jumpForwardAttack);
+            }
+            else if (inAir == true && Input.GetAxis(controllerLeftVertical) > 0.2f)
+            {
+                Action(jumpUpAttack);
+            }
+            else if (inAir == true && Input.GetAxis(controllerLeftVertical) < -0.2f)
+            {
+                Action(jumpDownAttack);
             }
             else if (inAir == true)
             {
