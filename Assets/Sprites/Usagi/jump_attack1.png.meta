@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -1584949153699415266
     second: jump_attack1_1
+  - first:
+      213: -7586281263194023162
+    second: jump_attack1_0
+  - first:
+      213: -5331450625277286273
+    second: jump_attack1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -179,8 +185,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d85ee1567030cc40800000000000000
-      internalID: 5530473627149818069
+      spriteID: 60b5e1d826d18b690800000000000000
+      internalID: -7586281263194023162
       vertices: []
       indices: 
       edges: []
@@ -200,8 +206,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1bb0b26421210ae0800000000000000
-      internalID: -1584949153699415266
+      spriteID: f7820de47e1e206b0800000000000000
+      internalID: -5331450625277286273
       vertices: []
       indices: 
       edges: []

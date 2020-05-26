@@ -22,10 +22,10 @@ AnimationClip:
     - time: 0
       value: {fileID: -2180979825983893314, guid: 2ab1f33d0593ae34e899295bc2b1550c,
         type: 3}
-    - time: 0.16666667
+    - time: 0.1
       value: {fileID: -3754909331641831324, guid: 2ab1f33d0593ae34e899295bc2b1550c,
         type: 3}
-    - time: 0.41666666
+    - time: 0.33333334
       value: {fileID: -3754909331641831324, guid: 2ab1f33d0593ae34e899295bc2b1550c,
         type: 3}
     attribute: m_Sprite
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.35000002
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,21 +75,21 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.16666667
+  - time: 0.1
     functionName: ActionActive
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.3
+  - time: 0.15
     functionName: MoveCancelable
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.41666666
+  - time: 0.33333334
     functionName: EndAction
     data: 
     objectReferenceParameter: {fileID: 0}
