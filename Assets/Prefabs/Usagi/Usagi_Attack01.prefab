@@ -47,7 +47,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.19, y: 1.11}
+  m_Offset: {x: 0.23, y: 1.18}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -116,8 +116,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 1
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
-    hitStop: 0.1
+    onHitKnockback: 2
+    hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
     zoom: 0
@@ -231,7 +231,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.83}
+  m_Size: {x: 0.34, y: 0.98}
   m_EdgeRadius: 0
 --- !u!1 &3291631371473243872
 GameObject:

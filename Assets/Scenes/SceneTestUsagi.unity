@@ -8121,7 +8121,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 81c3b5f9ea056a84e82683e6285e77a2, type: 3}
+  m_Sprite: {fileID: 2031457972136702823, guid: 82dcd7bcbd5e1364fb7fc3ef42ed25a7,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8149,7 +8150,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 1.5}
+    oldSize: {x: 1.28, y: 1.11}
     newSize: {x: 1, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -9182,7 +9183,7 @@ MonoBehaviour:
       Mass: 0
       KnockbackTime: 0
   target: {fileID: 0}
-  jumpImpulsion: 8
+  jumpImpulsion: 8.5
   gravity: 22
   gravityMax: -10
   defaultSpeed: 2.2
@@ -9267,7 +9268,8 @@ MonoBehaviour:
   runEnd: {fileID: 0}
   groundDefaultAttack: {fileID: 3291631369890514099, guid: bcdb16999ed5f964d89a47a7b6bdca4d,
     type: 3}
-  groundRunAttack: {fileID: 0}
+  groundRunAttack: {fileID: 3291631369890514099, guid: bcdb16999ed5f964d89a47a7b6bdca4d,
+    type: 3}
   jumpDefaultAttack: {fileID: 8014497293985825660, guid: cf4169bdf0612744084852a5ab42bf3a,
     type: 3}
   jumpForwardAttack: {fileID: 8014497293985825660, guid: cf4169bdf0612744084852a5ab42bf3a,

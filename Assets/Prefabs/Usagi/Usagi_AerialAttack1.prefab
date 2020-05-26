@@ -84,7 +84,8 @@ MonoBehaviour:
     knockbackDurationBonus: 0
     knockdownValue: 0
     comboTo: {fileID: 0}
-    targetCombo: {fileID: 0}
+    targetCombo: {fileID: 3276892862786655758, guid: 6bf041e52be9e0c469159908506d41dd,
+      type: 3}
     onHitCombo: {fileID: 0}
     cancelOnGround: 1
     onGroundCombo: {fileID: 0}
@@ -248,7 +249,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8014497295729528790
 Transform:
   m_ObjectHideFlags: 0
