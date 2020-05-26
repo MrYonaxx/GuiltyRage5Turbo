@@ -6248,7 +6248,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 317.25, y: 0}
+  m_AnchoredPosition: {x: 317, y: 0}
   m_SizeDelta: {x: -634.62, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &344926926
@@ -15109,7 +15109,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: acd97d7851f834940b4d11492cb09904, type: 3}
+  m_Sprite: {fileID: -1446290574434296820, guid: b281b85164372f0488ddc8932082afec,
+    type: 3}
   m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -15137,7 +15138,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.81, y: 0.77}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -19178,7 +19179,7 @@ MonoBehaviour:
   OnWallBounce:
     m_PersistentCalls:
       m_Calls: []
-  playerID: 2
+  playerID: 1
   controllerConfig: {fileID: 0}
   crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
     type: 3}
