@@ -275,7 +275,7 @@ namespace VoiceActing
         // =========================================================================================
         private void InputRun()
         {
-            if(direction != runDirection)
+            if(direction != runDirection )//&& state != CharacterState.Acting)
             {
                 if (CanAct() && inAir == false && isRunning == true && runEnd != null)
                     Action(runEnd);
@@ -290,7 +290,10 @@ namespace VoiceActing
             if (isRunning == true && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
             {
                 if (currentAttack.AttackBehavior.RunCancel == true)
+                {
                     CancelAction();
+                    //direction = runDirection;
+                }
             }
 
             if (Mathf.Abs(Input.GetAxis(controllerLeftHorizontal)) < 0.2f && runInput == -1)

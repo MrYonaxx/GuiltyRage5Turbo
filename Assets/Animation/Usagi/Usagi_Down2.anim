@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Hamtaro_Aerial01
+  m_Name: Usagi_Down2
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,22 +20,22 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2101129394158269327, guid: 2ed8507b8f1ce5a45a859895cf588363,
+      value: {fileID: -8022331018935727687, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
-    - time: 0.05
-      value: {fileID: 7214715591783118797, guid: 2ed8507b8f1ce5a45a859895cf588363,
+    - time: 0.06666667
+      value: {fileID: -5995588625413214423, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
-    - time: 0.1
-      value: {fileID: 7251817713614328433, guid: 2ed8507b8f1ce5a45a859895cf588363,
+    - time: 0.21666667
+      value: {fileID: 8055615520640165733, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
-    - time: 0.15
-      value: {fileID: 2138739328125735681, guid: 2ed8507b8f1ce5a45a859895cf588363,
+    - time: 0.43333334
+      value: {fileID: 3063294399388326948, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
-    - time: 0.2
-      value: {fileID: -2907835219423700723, guid: 159687206bfeb1f40bf905eff54927ef,
+    - time: 0.51666665
+      value: {fileID: -9025221381885985231, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
-    - time: 0.41666666
-      value: {fileID: -2907835219423700723, guid: 159687206bfeb1f40bf905eff54927ef,
+    - time: 0.6
+      value: {fileID: -9025221381885985231, guid: 0585ad3468dd0e94ab8424be1aa6c551,
         type: 3}
     attribute: m_Sprite
     path: PlayerSprite
@@ -56,23 +56,23 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2101129394158269327, guid: 2ed8507b8f1ce5a45a859895cf588363, type: 3}
-    - {fileID: 7214715591783118797, guid: 2ed8507b8f1ce5a45a859895cf588363, type: 3}
-    - {fileID: 7251817713614328433, guid: 2ed8507b8f1ce5a45a859895cf588363, type: 3}
-    - {fileID: 2138739328125735681, guid: 2ed8507b8f1ce5a45a859895cf588363, type: 3}
-    - {fileID: -2907835219423700723, guid: 159687206bfeb1f40bf905eff54927ef, type: 3}
-    - {fileID: -2907835219423700723, guid: 159687206bfeb1f40bf905eff54927ef, type: 3}
+    - {fileID: -8022331018935727687, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
+    - {fileID: -5995588625413214423, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
+    - {fileID: 8055615520640165733, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
+    - {fileID: 3063294399388326948, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
+    - {fileID: -9025221381885985231, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
+    - {fileID: -9025221381885985231, guid: 0585ad3468dd0e94ab8424be1aa6c551, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.43333334
+    m_StopTime: 0.6166667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
     m_HasAdditiveReferencePose: 0
-    m_LoopTime: 1
+    m_LoopTime: 0
     m_LoopBlend: 0
     m_LoopBlendOrientation: 0
     m_LoopBlendPositionY: 0
@@ -86,18 +86,4 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events:
-  - time: 0
-    functionName: Jump
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: 4
-    intParameter: 0
-    messageOptions: 0
-  - time: 0.15
-    functionName: Jump
-    data: 
-    objectReferenceParameter: {fileID: 0}
-    floatParameter: -20
-    intParameter: 0
-    messageOptions: 0
+  m_Events: []
