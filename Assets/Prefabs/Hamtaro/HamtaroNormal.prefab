@@ -186,11 +186,12 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: Hamtaro_Attack01
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
-    attackDamage: 0
+    attackDamage: 100
     comboCost: 0
     knockbackDurationBonus: 0
-    knockdownValue: 0
+    knockdownValue: 20
     comboTo: {fileID: 2429798766261815113}
     targetCombo: {fileID: 9057382000418724419, guid: 5818fa652144e234e9faa4442befbc1e,
       type: 3}

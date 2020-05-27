@@ -9,12 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22dabd3434a48404d82ead2897858470, type: 3}
-  m_Name: ElementTypeData
+  m_Script: {fileID: 11500000, guid: 16ea510530b96514387f4d37f4d2eb8b, type: 3}
+  m_Name: BattleFeedbackManagerData
   m_EditorClassIdentifier: 
-  cardTypeName:
-  - Physique
-  - Feu
-  - Glace
-  - Foudre
-  cardTypeColor: []
+  battleFeedbackManager: {fileID: 0}

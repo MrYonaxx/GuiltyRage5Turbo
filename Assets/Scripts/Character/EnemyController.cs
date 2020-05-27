@@ -24,7 +24,8 @@ namespace VoiceActing
         float timeEnemyAppear = 0.5f;
         [SerializeField]
         float timeEnemyDisappear = 2f;
-
+        [SerializeField]
+        AttackController attackController;
 
         [SerializeField]
         Transform debugPoint;
@@ -136,7 +137,7 @@ namespace VoiceActing
 
         public void EnemyDecision()
         {
-            if (state == CharacterState.Hit || state == CharacterState.Down)
+            if (state == CharacterState.Hit || state == CharacterState.Down || state == CharacterState.Dead)
                 return;
             if (enemyActionTime <= 0) 
             {
@@ -160,8 +161,8 @@ namespace VoiceActing
                         enemyActionTime = Random.Range(180, 360) / 60f;
                         break;
                     case 4: // Move in front of player
-                        //Guard();
-                        //Debug.Log("Guard");
+                        Guard();
+                        SetSpeed(0, 0);
                         LookAt(target.transform);
                         enemyActionTime = Random.Range(180, 360) / 60f;
                         break;
@@ -189,6 +190,7 @@ namespace VoiceActing
                     movementPosition = new Vector3(target.transform.position.x, target.transform.position.y, 0) + randomPosition;
                     if (MoveToPoint(movementPosition, 0, 0) == true)
                     {
+                        Action(attackController);
                         enemyPatternID = 4;
                         enemyActionTime = 0;
                     }

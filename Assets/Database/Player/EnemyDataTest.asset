@@ -14,21 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characterFace: {fileID: 0}
   characterName: Enemy A
-  initialCharacterStat:
-    hp: 2000
-    HpMax: 2000
-    Attack: 0
-    Magic: 0
-    Defense: 0
-    Reload: 100
+  characterStat:
+    hp: 500
+    HpMax: 500
+    AttackMultiplier: 1
+    DefenseMultiplier: 1
+    Reload: 0
     Recovery: 0
-    RecoveryKnockback: 0
     Speed: 0
+    JumpImpulsion: 0
+    Gravity: 0
+    GravityMax: 0
     Mass: 1
-    KnockbackTime: 0.5
-  hitbox: {x: 0.5, y: 0.32}
-  hitboxOffset: {x: 0, y: 0.04}
-  salut: 
-  maxProbability: 0
-  animationDatabase:
-    animations: []
+    KnockbackTime: 0.4
+    KnockdownResistance: 1
+    WakeUpRecovery: 0
+    MotionSpeed: 1

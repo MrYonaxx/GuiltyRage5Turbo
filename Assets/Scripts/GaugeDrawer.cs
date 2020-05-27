@@ -45,7 +45,8 @@ namespace VoiceActing
         \* ======================================== */
         public void DrawGauge(float amount, float maxAmount)
         {
-            textGaugeValue.text = amount.ToString();
+            if(textGaugeValue != null)
+                textGaugeValue.text = amount.ToString();
             gaugeTransform.localScale = new Vector3(amount / maxAmount, gaugeTransform.localScale.y, gaugeTransform.localScale.z);
         }
 

@@ -22,8 +22,6 @@ namespace VoiceActing
         [SerializeField]
         Camera cameraMain;
         [SerializeField]
-        CameraBattleController cameraController;
-        [SerializeField]
         Shake cameraShake;
         [SerializeField]
         Animator zoom;
@@ -49,7 +47,9 @@ namespace VoiceActing
 
 
         [SerializeField]
-        List<Character> battleCharacters;
+        FeedbackManager feedbackManager;
+        [SerializeField]
+        BattleFeedbackManagerData battleCharacters;
 
         private IEnumerator motionSpeedCoroutine;
 
@@ -69,9 +69,13 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
-        public void SetBattleCharacters(List<Character> characters)
+        /*public void SetBattleCharacters(List<Character> characters)
         {
             battleCharacters = characters;
+        }*/
+        private void Start()
+        {
+            feedbackManager.BattleFeedbackManager = this;
         }
 
         public void Guard(Character character)
@@ -99,8 +103,8 @@ namespace VoiceActing
         {
             Instantiate(animationDeath, character.ParticlePoint.position, Quaternion.identity);
             cameraShake.ShakeEffect(0.2f, 20);
-            zoom.SetTrigger("Zoom");
-            SetBattleMotionSpeed(0, 0.6f);
+            //zoom.SetTrigger("Zoom");
+            //SetBattleMotionSpeed(0, 0.6f);
         }
 
         public void AnimationWallBounce(Character character)
@@ -110,13 +114,13 @@ namespace VoiceActing
         }
 
 
-        public void EndBattleMotionSpeed()
+        /*public void EndBattleMotionSpeed()
         {
             cameraShake.ShakeEffect(0.2f, 25);
             zoom.SetTrigger("BigZoom");
-            for (int i = 0; i < battleCharacters.Count; i++)
+            for (int i = 0; i < battleCharacters.CharactersScene.Count; i++)
             {
-                battleCharacters[i].SetCharacterMotionSpeed(0);
+                battleCharacters.CharactersScene[i].SetCharacterMotionSpeed(0);
             }
 
             if (motionSpeedCoroutine != null)
@@ -132,7 +136,7 @@ namespace VoiceActing
                 yield return null;
             }
             SetBattleMotionSpeed(0.2f, 2f);
-        }
+        }*/
 
 
 
@@ -141,9 +145,9 @@ namespace VoiceActing
 
         public void SetBattleMotionSpeed(float motionSpeed, float time)
         {
-            for(int i = 0; i < battleCharacters.Count; i++)
+            for(int i = 0; i < battleCharacters.CharactersScene.Count; i++)
             {
-                battleCharacters[i].SetCharacterMotionSpeed(motionSpeed);
+                battleCharacters.CharactersScene[i].SetCharacterMotionSpeed(motionSpeed);
             }
 
             if (motionSpeedCoroutine != null)
@@ -159,9 +163,9 @@ namespace VoiceActing
                 time -= Time.deltaTime;
                 yield return null;
             }
-            for (int i = 0; i < battleCharacters.Count; i++)
+            for (int i = 0; i < battleCharacters.CharactersScene.Count; i++)
             {
-                battleCharacters[i].SetCharacterMotionSpeed(1);
+                battleCharacters.CharactersScene[i].SetCharacterMotionSpeed(1);
             }
         }
 

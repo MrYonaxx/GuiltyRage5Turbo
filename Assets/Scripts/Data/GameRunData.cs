@@ -22,34 +22,12 @@ namespace VoiceActing
          *               ATTRIBUTES                 *
         \* ======================================== */
         [SerializeField]
-        private PlayerData playerCharacterData;
-        public PlayerData PlayerCharacterData
+        private List<PlayerData> players;
+        public List<PlayerData> Players
         {
-            get { return playerCharacterData; }
+            get { return players; }
         }
 
-
-        [SerializeField]
-        CharacterStatController playerStats;
-        public CharacterStatController PlayerStats
-        {
-            get { return playerStats; }
-        }
-
-        [SerializeField]
-        int floor;
-        public int Floor
-        {
-            get { return floor; }
-        }
-
-
-
-
-
-
-        [SerializeField]
-        int money;
 
         #endregion
 
@@ -68,10 +46,10 @@ namespace VoiceActing
         \* ======================================== */
         public void CreateRunData(PlayerData playerInitialData)
         {
-            playerCharacterData = playerInitialData;
+            /*playerCharacterData = playerInitialData;
             playerStats.CreateStatController(playerInitialData);
 
-            floor = 0;
+            floor = 0;*/
         }
 
 

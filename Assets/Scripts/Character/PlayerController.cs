@@ -12,13 +12,19 @@ using Sirenix.OdinInspector;
 
 namespace VoiceActing
 {
-    public class PlayerController : Character
+    public class PlayerController : MonoBehaviour, ICharacterController
     {
         #region Attributes 
 
         /* ======================================== *\
          *               ATTRIBUTES                 *
         \* ======================================== */
+        [Title("PlayerController")]
+        [SerializeField]
+        int playerID = 1;
+        [SerializeField]
+        ControllerConfigurationData controllerConfig = null;
+
         [Title("Moveset")]
         [SerializeField]
         AttackController crouchController;
@@ -55,11 +61,29 @@ namespace VoiceActing
         float crouchTime = 0;
         bool doubleJump = false;
 
+        Character character;
+        CharacterState state;
+
+
         IEnumerator bufferCoroutine = null;
         bool bufferNormalActive = false;
         bool bufferSpecialActive = false;
         bool bufferJumpActive = false;
         bool bufferDashActive = false;
+
+
+
+
+        string controllerA = "ControllerA";
+        string controllerB = "ControllerB";
+        string controllerX = "ControllerX";
+        string controllerY = "ControllerY";
+        string controllerR1 = "ControllerR1";
+        string controllerL1 = "ControllerL1";
+        string controllerLeftHorizontal = "ControllerLeftHorizontal";
+        string controllerLeftVertical = "ControllerLeftVertical";
+
+
 
         #endregion
 
@@ -77,43 +101,41 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
-        /*protected override void Update()
+        protected void Start()
         {
-            if (canEndAction == false)
-                canEndAction = true;
-
-            if (canInput == true)
+            if (controllerConfig != null)
             {
-                InputThrow();
-                InputMovement();
-                InputDash();
-                InputJump();
-                InputAction();
-                InputSpecial();
+                controllerA = controllerConfig.controllerA + "_" + playerID;
+                controllerB = controllerConfig.controllerB + "_" + playerID;
+                controllerX = controllerConfig.controllerX + "_" + playerID;
+                controllerY = controllerConfig.controllerY + "_" + playerID;
             }
-            ApplyGravity();
-            if (knockbackTime > 0)
-                UpdateKnockback();
-            UpdateCollision();
-            SetAnimation();
-            EndActionState();
-        }*/
+            else
+            {
+                controllerA += "_" + playerID;
+                controllerB += "_" + playerID;
+                controllerX += "_" + playerID;
+                controllerY += "_" + playerID;
+            }
+            controllerR1 += "_" + playerID;
+            controllerL1 += "_" + playerID;
+            controllerLeftHorizontal += "_" + playerID;
+            controllerLeftVertical += "_" + playerID;
+        }
 
-        protected override void UpdateController()
+        public void UpdateController(Character c)
         {
-            if (active == true)
-            {
-                InputThrow();
-                InputMovement();
-                InputDash();
-                InputJump();
-                InputAction();
-                InputSpecial();
-            }
+            character = c;
+           /* InputThrow();
+            InputMovement();
+            InputDash();
+            InputJump();
+            InputAction();
+            InputSpecial();*/
         }
 
 
-        private void InputAction()
+       /* private void InputAction()
         {
             if (state != CharacterState.Idle && state != CharacterState.Moving && state != CharacterState.Acting)
             {
@@ -255,6 +277,7 @@ namespace VoiceActing
             move.Normalize();
             speedX = move.x * defaultSpeed;
             speedY = move.y * defaultSpeed;
+            character.SetSpeed(move.x * defaultSpeed, move.y * defaultSpeed);
 
         }
 
@@ -315,7 +338,7 @@ namespace VoiceActing
                     JumpDefault();
                     /*endAction = true;
                     EndActionState();*/
-                }
+                /*}
             }
 
             if((Input.GetButtonDown("ControllerA") || bufferJumpActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
@@ -392,7 +415,7 @@ namespace VoiceActing
                 }
             }
             StopBuffer();
-        }
+        }*/
 
 
         // =========================================================================================
@@ -424,20 +447,6 @@ namespace VoiceActing
             bufferDashActive = false;
         }
 
-
-
-        // Placeholder
-        public void PlayGetCardAnimation()
-        {
-            state = CharacterState.Acting;
-            characterAnimator.Play("Lia_GetCard");
-        }
-        // Placeholder
-        public void PlayIdleAnimation()
-        {
-            state = CharacterState.Idle;
-            characterAnimator.Play("Lia_Idle");
-        }
 
         #endregion
 

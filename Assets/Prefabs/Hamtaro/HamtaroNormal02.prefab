@@ -217,8 +217,9 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: Hamtaro_Attack02
+    attackAnimation2: {fileID: 0}
     lifetime: 0.3
-    attackDamage: 0
+    attackDamage: 50
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0

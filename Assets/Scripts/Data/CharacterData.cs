@@ -1,11 +1,4 @@
-﻿/*****************************************************************
- * Product:    #PROJECTNAME#
- * Developer:  #DEVELOPERNAME#
- * Company:    #COMPANY#
- * Date:       #CREATIONDATE#
-******************************************************************/
-
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
@@ -13,7 +6,7 @@ using Sirenix.OdinInspector;
 namespace VoiceActing
 {
     [CreateAssetMenu(fileName = "CharacterData", menuName = "PlayableCharacterData", order = 1)]
-    public class PlayerData : ScriptableObject
+    public class CharacterData : ScriptableObject
     {
         #region Attributes 
 
@@ -48,36 +41,12 @@ namespace VoiceActing
         {
             get { return characterStat; }
         }
-        /*[HideLabel]
-        [PreviewField(ObjectFieldAlignment.Left, Height = 256)]
-        [SerializeField]
-        Sprite characterCutIn;
-        public Sprite CharacterCutIn
-        {
-            get { return characterCutIn; }
-        }*/
-
-        #endregion
-
-        #region GettersSetters 
-
-        /* ======================================== *\
-         *           GETTERS AND SETTERS            *
-        \* ======================================== */
-
-        #endregion
-
-        #region Functions 
-
-        /* ======================================== *\
-         *                FUNCTIONS                 *
-        \* ======================================== */
 
 
 
 
         #endregion
 
-    } 
+    }
 
 } // #PROJECTNAME# namespace

@@ -22,9 +22,11 @@ namespace VoiceActing
          *               ATTRIBUTES                 *
         \* ======================================== */
 
+        int currentHP = 0;
+
         [SerializeField]
         [HideLabel]
-        CharacterStat characterBaseStat;
+        PlayerData characterBaseData;
         [BoxGroup]
         [SerializeField]
         CharacterStat characterBonusStat;
@@ -41,37 +43,35 @@ namespace VoiceActing
         \* ======================================== */
         public int GetHP()
         {
-            return Mathf.RoundToInt((characterBaseStat.Hp + characterBonusStat.Hp) * characterPercentageBonusStat.Hp);
+            return Mathf.RoundToInt((currentHP + characterBonusStat.Hp) * characterPercentageBonusStat.Hp);
         }
 
         public int GetHPMax()
         {
-            return Mathf.RoundToInt((characterBaseStat.HpMax + characterBonusStat.HpMax) * characterPercentageBonusStat.HpMax);
+            return Mathf.RoundToInt((characterBaseData.CharacterStat.HpMax + characterBonusStat.HpMax) * characterPercentageBonusStat.HpMax);
+        }
+
+
+        public float GetKnockdownResistance()
+        {
+            return (characterBaseData.CharacterStat.KnockdownResistance + characterBonusStat.KnockdownResistance) * characterPercentageBonusStat.KnockdownResistance;
         }
 
         public float GetKnockbackTime()
         {
-            return (characterBaseStat.KnockbackTime + characterBonusStat.KnockbackTime) * characterPercentageBonusStat.KnockbackTime;
+            return (characterBaseData.CharacterStat.KnockbackTime + characterBonusStat.KnockbackTime) * characterPercentageBonusStat.KnockbackTime;
         }
 
 
-        public float GetReload()
-        {
-            return (characterBaseStat.Reload + characterBonusStat.Reload) * characterPercentageBonusStat.Reload;
-        }
-        public float GetRecoveryKnockback()
-        {
-            return (characterBaseStat.RecoveryKnockback + characterBonusStat.RecoveryKnockback) * characterPercentageBonusStat.RecoveryKnockback;
-        }
 
         public float GetMass()
         {
-            return (characterBaseStat.Mass + characterBonusStat.Mass) * characterPercentageBonusStat.Mass;
+            return (characterBaseData.CharacterStat.Mass + characterBonusStat.Mass) * characterPercentageBonusStat.Mass;
         }
 
         public float GetSpeed()
         {
-            return (characterBaseStat.Speed + characterBonusStat.Speed) * characterPercentageBonusStat.Speed;
+            return (characterBaseData.CharacterStat.Speed + characterBonusStat.Speed) * characterPercentageBonusStat.Speed;
         }
 
         #endregion
@@ -85,30 +85,31 @@ namespace VoiceActing
 
         public CharacterStatController(PlayerData characterData)
         {
-            characterBaseStat = new CharacterStat(characterData.InitialCharacterStat);
+            characterBaseData = characterData;
             characterBonusStat = new CharacterStat();
             characterPercentageBonusStat = new CharacterStat(1);
+            currentHP = Mathf.RoundToInt((characterBaseData.CharacterStat.Hp + characterBonusStat.Hp) * characterPercentageBonusStat.Hp);
         }
 
         public void CreateStatController(PlayerData characterData)
         {
-            characterBaseStat = new CharacterStat(characterData.InitialCharacterStat);
+            characterBaseData = characterData;
             characterBonusStat = new CharacterStat();
             characterPercentageBonusStat = new CharacterStat(1);
         }
 
 
-        public int TakeDamage(AttackData attack)
+        public int TakeDamage(AttackBehavior attack)
         {
             int finalDamage = 0;
-            int rawDamage = 0;// attack.CardData.CardDamage[attack.GetCardValue()];
+            int rawDamage = 0;
 
 
 
 
-            finalDamage = rawDamage;
-
-            characterBaseStat.Hp -= finalDamage;
+            finalDamage = attack.AttackDamage;
+            currentHP -= finalDamage;
+            Mathf.Clamp(currentHP, 0, GetHPMax());
             return finalDamage;
         }
 

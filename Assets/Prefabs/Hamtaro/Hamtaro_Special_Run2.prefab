@@ -78,8 +78,9 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: 
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
-    attackDamage: 0
+    attackDamage: 150
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0

@@ -98,6 +98,11 @@ namespace VoiceActing
             focusTargetLock = lockTransform;
         }
 
+        public void SetNewClampX(Vector2 newClamp)
+        {
+            clampLeft = newClamp.x;
+            clampRight = newClamp.y;
+        }
 
 
     }

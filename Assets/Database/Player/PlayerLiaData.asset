@@ -12,50 +12,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 434bf688527fc654fb1aaf31068428ae, type: 3}
   m_Name: PlayerLiaData
   m_EditorClassIdentifier: 
-  characterFace: {fileID: 21300000, guid: 04780fad0a704a441a1e16f7e7bb50c1, type: 3}
-  characterName: Lia
-  initialCharacterStat:
-    hp: 5000
-    HpMax: 5000
-    Attack: 0
-    Magic: 0
-    Defense: 0
-    Reload: 100
+  characterFace: {fileID: 21300000, guid: bde527ddc8f63f5428605640957540f9, type: 3}
+  characterName: Hamtaro
+  characterStat:
+    hp: 4999
+    HpMax: 4999
+    AttackMultiplier: 1
+    DefenseMultiplier: 1
+    Reload: 0
     Recovery: 0
-    RecoveryKnockback: 10
-    Speed: 3
-    Mass: 2
+    Speed: 0
+    JumpImpulsion: 0
+    Gravity: 0
+    GravityMax: 0
+    Mass: 1
     KnockbackTime: 0.4
-  hitbox: {x: 0.5, y: 0.32}
-  hitboxOffset: {x: 0, y: 0.04}
-  salut: 
-  maxProbability: 800
-  animationDatabase:
-    animations:
-    - animationsID: Idle
-      canLoop: 1
-      animationsBehaviour:
-      - frame: 0
-        sprite: {fileID: 21300000, guid: a97dd66f8ab395740b74f858b3fd129f, type: 3}
-        tag: 
-      - frame: 5
-        sprite: {fileID: 21300000, guid: acd97d7851f834940b4d11492cb09904, type: 3}
-        tag: 
-      - frame: 10
-        sprite: {fileID: 21300000, guid: 8e8b99660ceda2847b8b2b3d423822e7, type: 3}
-        tag: 
-      - frame: 15
-        sprite: {fileID: 21300000, guid: 4408cf7fa73c8cd4ebf111e5c5195053, type: 3}
-        tag: 
-      - frame: 20
-        sprite: {fileID: 21300000, guid: a97dd66f8ab395740b74f858b3fd129f, type: 3}
-        tag: 
-    - animationsID: Run
-      canLoop: 0
-      animationsBehaviour: []
-    - animationsID: Hit1
-      canLoop: 0
-      animationsBehaviour: []
-    - animationsID: Hit2
-      canLoop: 0
-      animationsBehaviour: []
+    KnockdownResistance: 100
+    WakeUpRecovery: 1
+    MotionSpeed: 1

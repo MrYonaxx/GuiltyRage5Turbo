@@ -115,7 +115,7 @@ namespace VoiceActing
         // Appelé à la fin de l'anim de animatorCardControllers
         public void AnimationGetoDaze()
         {
-            playerGetCard.PlayGetCardAnimation();
+            //playerGetCard.PlayGetCardAnimation();
             animatorBattleWin.SetBool("Appear", false);
             animatorCardControllers.SetInteger("Reward", 0);
             animatorCardControllers.gameObject.SetActive(false);

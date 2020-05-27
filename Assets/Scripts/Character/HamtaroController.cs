@@ -135,8 +135,9 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
-        private void Start()
+        protected override void Start()
         {
+            base.Start();
             string[] controllers;
             controllers = Input.GetJoystickNames();
             for(int i = 0; i < controllers.Length; i++)
@@ -207,6 +208,16 @@ namespace VoiceActing
                     else
                         CancelAction();
                 }
+            }
+            if(isRunning == true && (state == CharacterState.Idle || state == CharacterState.Moving))
+            {
+                characterAnimator.SetBool("Climb", true);
+                inAir = true;
+                speedZ = 3;
+            }
+            else
+            {
+                characterAnimator.SetBool("Climb", false);
             }
         }
 
@@ -411,6 +422,7 @@ namespace VoiceActing
                 return;
             }
 
+            // Buffer
             if (bufferNormalActive == true)
             {
                 if (CanAct() == true)
@@ -419,6 +431,8 @@ namespace VoiceActing
                     return;
                 }
             }
+
+            // Input
             if (Input.GetButtonDown(controllerX))
             {
                 if (CanAct() == true)

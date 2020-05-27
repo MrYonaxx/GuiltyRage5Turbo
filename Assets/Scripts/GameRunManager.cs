@@ -24,18 +24,15 @@ namespace VoiceActing
 
         [Title("Player")]
         [SerializeField]
-        PlayerData playerData;
-        [SerializeField]
-        PlayerController playerController;
+        List<Character> players;
 
-        [Title("Enemy")]
-        [SerializeField]
-        List<PlayerData> enemyDatas;
 
-        [Title("Battle")]
-        [SerializeField]
-        BattleManager battleManager;
 
+        [Title("HealthBar")]
+        [SerializeField]
+        HealthBarDrawer healthBarPrefab;
+        [SerializeField]
+        Transform healthParent;
 
         #endregion
 
@@ -55,13 +52,23 @@ namespace VoiceActing
         private void Start()
         {
             CreatePlayer();
-            battleManager.InitializeBattle();
+            CreateHealthBar();
         }
 
         public void CreatePlayer()
         {
-            runData.CreateRunData(playerData);
+            //runData.CreateRunData(playerData);
             //playerController.SetCharacter(runData.PlayerCharacterData, runData.PlayerDeck, runData.PlayerStats);
+        }
+
+        public void CreateHealthBar()
+        {
+            for(int i = 0; i < players.Count; i++)
+            {
+                var healthbar = Instantiate(healthBarPrefab, healthParent);
+                players[i].SetHealthBar(healthbar);
+            }
+            healthBarPrefab.gameObject.SetActive(false);
         }
 
         #endregion

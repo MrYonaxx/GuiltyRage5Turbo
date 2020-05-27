@@ -39,6 +39,13 @@ namespace VoiceActing
             get { return attackAnimation; }
         }
 
+        [SerializeField]
+        private AnimationClip attackAnimation2;
+        public AnimationClip AttackAnimation2
+        {
+            get { return attackAnimation2; }
+        }
+
 
         [SerializeField]
         private float lifetime;

@@ -13,6 +13,16 @@ using Sirenix.OdinInspector;
 namespace VoiceActing
 {
     [System.Serializable]
+    public class CustomStat
+    {
+        [HorizontalGroup("attribut", LabelWidth = 150)]
+        public string CustomStatName;
+        [HorizontalGroup("attribut", LabelWidth = 150)]
+        public float CustomStatValue;
+    }
+
+
+    [System.Serializable]
     public class CharacterStat
     {
         #region Attributes 
@@ -44,44 +54,58 @@ namespace VoiceActing
         [Title("Statistiques")]
         [VerticalGroup("Stat/Left")]
         [SerializeField]
-        public float Attack;
+        public float AttackMultiplier = 1;
 
         [VerticalGroup("Stat/Left")]
         [SerializeField]
-        public float Magic;
+        public float DefenseMultiplier = 1;
 
         [VerticalGroup("Stat/Left")]
         [SerializeField]
-        public float Defense;
+        public float MotionSpeed = 1;
 
         [HorizontalGroup("Stat", LabelWidth = 150, PaddingLeft = 10, PaddingRight = 10)]
-        [Title("Card")]
+        [Title("Physics")]
         [VerticalGroup("Stat/Center")]
-        [SerializeField]
-        public float Reload;
-
-        [VerticalGroup("Stat/Center")]
-        [SerializeField]
-        public float Recovery;
-
-        [VerticalGroup("Stat/Center")]
-        [SerializeField]
-        public float RecoveryKnockback;
-
-
-        [HorizontalGroup("Stat", LabelWidth = 150, PaddingLeft = 10, PaddingRight = 10)]
-        [Title("Character")]
-        [VerticalGroup("Stat/Right")]
         [SerializeField]
         public float Speed;
 
-        [VerticalGroup("Stat/Right")]
+        [VerticalGroup("Stat/Center")]
+        [SerializeField]
+        public float JumpImpulsion;
+
+        [VerticalGroup("Stat/Center")]
+        [SerializeField]
+        public float Gravity;
+
+        [VerticalGroup("Stat/Center")]
+        [SerializeField]
+        public float GravityMax;
+
+        [VerticalGroup("Stat/Center")]
         [SerializeField]
         public float Mass = 1;
 
+
+
+        [HorizontalGroup("Stat", LabelWidth = 150, PaddingLeft = 10, PaddingRight = 10)]
+        [Title("Knockback")]
         [VerticalGroup("Stat/Right")]
         [SerializeField]
         public float KnockbackTime = 1;
+
+        [VerticalGroup("Stat/Right")]
+        [SerializeField]
+        public float KnockdownResistance = 1;
+
+        [VerticalGroup("Stat/Right")]
+        [SerializeField]
+        public float WakeUpRecovery = 1;
+
+        [Space]
+        [Space]
+        [SerializeField]
+        public CustomStat[] customStats;
 
         #endregion
 
@@ -102,15 +126,20 @@ namespace VoiceActing
         {
             Hp = 0;
             HpMax = 0;
-            Attack = 0;
-            Magic = 0;
-            Defense = 0;
-            Reload = 0;
-            Recovery = 0;
+            
+            AttackMultiplier = 0;
+            DefenseMultiplier = 0;
+            MotionSpeed = 0;
+
             Speed = 0;
+            JumpImpulsion = 0;
+            Gravity = 0;
+            GravityMax = 0;
             Mass = 0;
+
             KnockbackTime = 0;
-            RecoveryKnockback = 0;
+            KnockdownResistance = 0;
+            WakeUpRecovery = 0;
         }
 
         // A utiliser si CharacterStat est utilisé comme pourcentage
@@ -118,15 +147,20 @@ namespace VoiceActing
         {
             Hp = i;
             HpMax = i;
-            Attack = i;
-            Magic = i;
-            Defense = i;
-            Reload = i;
-            Recovery = i;
+
+            AttackMultiplier = i;
+            DefenseMultiplier = i;
+            MotionSpeed = i;
+
             Speed = i;
+            JumpImpulsion = i;
+            Gravity = i;
+            GravityMax = i;
             Mass = i;
+
             KnockbackTime = i;
-            RecoveryKnockback = i;
+            KnockdownResistance = i;
+            WakeUpRecovery = i;
         }
 
 
@@ -134,17 +168,21 @@ namespace VoiceActing
         {
             Hp = characterStat.Hp;
             HpMax = characterStat.HpMax;
-            Attack = characterStat.Attack;
-            Magic = characterStat.Magic;
-            Defense = characterStat.Defense;
 
-            Reload = characterStat.Reload;
-            Recovery = characterStat.Recovery;
-            RecoveryKnockback = characterStat.RecoveryKnockback;
+            AttackMultiplier = characterStat.AttackMultiplier;
+            DefenseMultiplier = characterStat.DefenseMultiplier;
+            MotionSpeed = characterStat.MotionSpeed;
 
             Speed = characterStat.Speed;
+            JumpImpulsion = characterStat.JumpImpulsion;
+            Gravity = characterStat.Gravity;
+            GravityMax = characterStat.GravityMax;
             Mass = characterStat.Mass;
+
             KnockbackTime = characterStat.KnockbackTime;
+            KnockdownResistance = characterStat.KnockdownResistance;
+            WakeUpRecovery = characterStat.WakeUpRecovery;
+
 
         }
 

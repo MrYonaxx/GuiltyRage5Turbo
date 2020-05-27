@@ -41,6 +41,7 @@ namespace VoiceActing
         protected BoxCollider2D characterCollider;
         [SerializeField]
         protected Animator characterAnimator;
+
         [SerializeField]
         protected SpriteRenderer spriteRenderer;
         public SpriteRenderer SpriteRenderer
@@ -62,7 +63,24 @@ namespace VoiceActing
 
 
 
+
+        [Title("Collision")]
+        [SerializeField]
+        protected float offsetRaycastX = 0.0001f;
+        [SerializeField]
+        protected float offsetRaycastY = 0.0001f;
+        [HorizontalGroup("RaycastNumber")]
+        [SerializeField]
+        protected int numberRaycastVertical = 2;
+        [HorizontalGroup("RaycastNumber")]
+        [SerializeField]
+        protected int numberRaycastHorizontal = 2;
+
+
         [Title("Parameter")]
+        [SerializeField]
+        BattleFeedbackManagerData battleFeedback;
+
         [SerializeField]
         protected PlayerData characterData;
         public PlayerData CharacterData
@@ -85,6 +103,13 @@ namespace VoiceActing
         }
 
         [SerializeField]
+        protected ICharacterInfoDrawer healthBar;
+        public ICharacterInfoDrawer HealthBar
+        {
+            get { return healthBar; }
+        }
+
+        [SerializeField]
         protected float jumpImpulsion = 1;
         [SerializeField]
         protected float gravity = 1;
@@ -104,23 +129,7 @@ namespace VoiceActing
 
 
 
-        [Title("Collision")]
-        //[SerializeField]
-        //protected float maxAngle = 40;
-
-        [SerializeField]
-        protected float offsetRaycastX = 0.0001f;
-        [SerializeField]
-        protected float offsetRaycastY = 0.0001f;
-        [SerializeField]
-        protected int numberRaycastVertical = 2;
-        [SerializeField]
-        protected int numberRaycastHorizontal = 2;
-
-
         [Title("Event")]
-        /*[SerializeField]
-        UnityEventCharacterBattle OnCardPlay;*/
         [FoldoutGroup("Events")]
         [SerializeField]
         UnityEventCharacterBattle OnDead;
@@ -143,15 +152,13 @@ namespace VoiceActing
         [SerializeField]
         UnityEventCharacterBattle OnWallBounce;
 
-
+        [SerializeField]
         protected CharacterState state = CharacterState.Idle;
         protected bool inAir = false;
 
         protected float speedX = 0;
         protected float speedY = 0;
         protected float speedZ = 0;
-
-        protected bool fly = false;
 
         protected float actualSpeedX = 0;
         protected float actualSpeedY = 0;
@@ -161,6 +168,8 @@ namespace VoiceActing
         protected bool noKnockback = false;
         protected float knockbackTime = 0;
         protected int knockbackAnimation = 0;
+
+        protected float knockdownValue = 0;
 
         protected bool invulnerableState = false;
         protected float invulnerableTime = 0;
@@ -178,7 +187,7 @@ namespace VoiceActing
         protected bool canMoveCancel = false;
         protected bool canTargetCombo = false;
 
-        protected bool active = false;
+        protected bool active = true;
 
 
         int layerMask;
@@ -204,11 +213,19 @@ namespace VoiceActing
         public void SetTarget(Character value)
         {
             target = value;
+            if (healthBar != null)
+                healthBar.DrawTarget(value.CharacterStat.GetHP(), value.CharacterStat.GetHPMax(), value.CharacterData.CharacterName);
         }
 
         public void SetActive(bool b)
         {
             active = b;
+        }
+
+        public void SetHealthBar(ICharacterInfoDrawer drawer)
+        {
+            healthBar = drawer;
+            healthBar.DrawCharacter(characterData);
         }
 
         #endregion
@@ -218,21 +235,31 @@ namespace VoiceActing
         /* ======================================== *\
          *                FUNCTIONS                 *
         \* ======================================== */
-        private void Start()
+        private void OnDestroy()
         {
-            //Application.targetFrameRate = 60;
+            battleFeedback.RemoveCharacter(this);
+            OnWallBounce.RemoveAllListeners();
+            OnGuardBreak.RemoveAllListeners();
+            OnGuard.RemoveAllListeners();
+            OnHit.RemoveAllListeners();
+            OnDead.RemoveAllListeners();
         }
 
         public virtual void SetCharacter(PlayerData data, CharacterStatController stat)
         {
             characterData = data;
             characterStat = stat;
-            characterCollider.size = characterData.Hitbox;
-            characterCollider.offset = characterData.HitboxOffset;
+        }
+
+        protected virtual void Start()
+        {
+            battleFeedback.AddCharacter(this);
+            SetCharacter(characterData, new CharacterStatController(characterData));
         }
 
         protected virtual void Update()
         {
+            // On trigger enter / On collider enter
             if (canEndAction == false)
                 canEndAction = true;
 
@@ -390,192 +417,6 @@ namespace VoiceActing
         }
 
 
-
-
-        protected void StartFly()
-        {
-            fly = true;
-        }
-        protected void StopFly()
-        {
-            fly = false;
-        }
-
-        protected void JumpDefault()
-        {
-            speedZ = jumpImpulsion;
-            inAir = true;
-        }
-
-        protected void Jump(float impulsion)
-        {
-            speedZ = impulsion;
-            inAir = true;
-        }
-
-        protected void ApplyGravity()
-        {
-            if(inAir == true && fly == false)
-            {
-                speedZ -= ((gravity * Time.deltaTime) * characterMotionSpeed);
-                speedZ = Mathf.Max(speedZ, gravityMax);
-                spriteRenderer.transform.localPosition += new Vector3(0, (speedZ * Time.deltaTime) * characterMotionSpeed, 0);
-                if (spriteRenderer.transform.localPosition.y <= 0 && characterMotionSpeed != 0)
-                {
-                    if(state == CharacterState.Hit)
-                    {
-                        CharacterDown();
-                    }
-                    inAir = false;
-                    speedZ = 0;
-                    spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, 0, spriteRenderer.transform.localPosition.z);
-                    OnGroundCollision();
-                }
-            }
-        }
-
-        protected virtual void OnGroundCollision()
-        {
-
-        }
-
-        protected void SetAnimation()
-        {
-            if (direction == 1)
-                spriteRenderer.flipX = false;
-            else if (direction == -1)
-                spriteRenderer.flipX = true;
-            characterAnimator.SetBool("AerialUp", inAir);
-            if (inAir == true && speedZ <= 0)
-            {
-                characterAnimator.SetBool("AerialDown", true);
-            }
-            else
-            {
-                characterAnimator.SetBool("AerialDown", false);
-            }
-
-            if (state == CharacterState.Idle || state == CharacterState.Moving)
-                characterAnimator.SetBool("Moving", (speedX != 0 || speedY != 0));
-
-            if(state == CharacterState.Guard)
-            {
-                characterAnimator.SetBool("Guard", true);
-            }
-            else
-            {
-                characterAnimator.SetBool("Guard", false);
-            }
-        }
-
-
-
-        void OnTriggerEnter2D(Collider2D col)
-        {
-            if (col.tag == "EnemyAttack" || col.tag == "PlayerAttack")
-            {
-                AttackController attackIncoming = col.GetComponent<AttackController>();
-                // Hit
-                if (CheckIfHit(attackIncoming) == true)
-                {
-                    // Guard
-                    if (state == CharacterState.Guard && attackIncoming.AttackBehavior.GuardBreak)
-                    {
-                        GuardBreak();
-                    }
-                    else if (state == CharacterState.Guard)
-                    {
-                        OnGuard.Invoke(this);
-                        return;
-                    }
-                    attackIncoming.HasHit(this);
-                    //int damage = characterStat.TakeDamage(attackIncoming.AttackData);
-                    if (characterStat.GetHP() == 0)
-                    {
-                        KnockbackDeath(attackIncoming);
-                    }
-                    else
-                    {
-                        Knockback(attackIncoming);
-                    }
-                }
-            }
-        }
-
-        private bool CheckIfHit(AttackController attack)
-        {
-            if (attack.CheckCollisionY(this.transform.position.y) == false)
-                return false;
-            if (state == CharacterState.Dead)
-                return false;
-            if (state == CharacterState.Throw && attack.AttackBehavior.AttackThrow == false)
-                return false;
-            if (inAir == true && attack.AttackBehavior.ThrowState == true)
-                return false;
-            if (state == CharacterState.Down && attack.AttackBehavior.WakeUpAttack == false)
-                return false;
-            if (this.tag + "Attack" != attack.tag)
-                return true;
-            return false;
-        }
-
-        public void KnockbackDeath(AttackController attack)
-        {
-            state = CharacterState.Dead;
-            if (attack.Direction == 0)
-                speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * -direction;
-            else
-                speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * attack.Direction;
-            knockbackTime = characterStat.GetKnockbackTime();
-            characterAnimator.SetTrigger("Dead");
-            OnDead.Invoke(this);
-        }
-
-        public void Knockback(AttackController attack)
-        {
-            if (attack.AttackBehavior.ThrowState == true)
-                return;
-            state = CharacterState.Hit;
-
-            if(inAir == true)
-            {
-                if (attack.Direction == 0)
-                    speedX = attack.AttackBehavior.KnockbackAerialPowerX * characterStat.GetMass() * -direction;
-                else
-                    speedX = attack.AttackBehavior.KnockbackAerialPowerX * characterStat.GetMass() * attack.Direction;
-                speedY = 0;
-                if (attack.AttackBehavior.ResetGravity == true)
-                    speedZ = attack.AttackBehavior.KnockbackAerialPowerZ;
-                else
-                    speedZ += attack.AttackBehavior.KnockbackAerialPowerZ;
-            }
-            else
-            {
-                if (attack.Direction == 0)
-                    speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * -direction;
-                else
-                    speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * attack.Direction;
-                speedY = 0;
-                if (attack.AttackBehavior.ResetGravity == true)
-                    speedZ = attack.AttackBehavior.KnockbackPowerZ;
-                else
-                    speedZ += attack.AttackBehavior.KnockbackPowerZ;
-                if (attack.AttackBehavior.KnockbackPowerZ > 0)
-                {
-                    inAir = true;
-                }
-            }
-
-
-            knockbackTime = characterStat.GetKnockbackTime();
-            knockbackAnimation += 1;
-            if (knockbackAnimation == 2)
-                knockbackAnimation = 0;
-            characterAnimator.SetTrigger("Hit");
-            characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
-            OnHit.Invoke(attack.AttackBehavior);
-        }
-
         protected virtual void OnWallCollision()
         {
             WallBounce();
@@ -600,6 +441,180 @@ namespace VoiceActing
             }
         }
 
+
+
+
+
+        protected void JumpDefault()
+        {
+            speedZ = jumpImpulsion;
+            inAir = true;
+        }
+
+        protected void Jump(float impulsion)
+        {
+            speedZ = impulsion;
+            inAir = true;
+        }
+
+        protected void ApplyGravity()
+        {
+            if(inAir == true)
+            {
+                speedZ -= ((gravity * Time.deltaTime) * characterMotionSpeed);
+                speedZ = Mathf.Max(speedZ, gravityMax);
+                spriteRenderer.transform.localPosition += new Vector3(0, (speedZ * Time.deltaTime) * characterMotionSpeed, 0);
+                if (spriteRenderer.transform.localPosition.y <= 0 && characterMotionSpeed != 0)
+                {
+                    if(state == CharacterState.Hit || state == CharacterState.Dead)
+                    {
+                        CharacterDown();
+                    }
+                    inAir = false;
+                    speedZ = 0;
+                    spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, 0, spriteRenderer.transform.localPosition.z);
+                    OnGroundCollision();
+                }
+            }
+        }
+
+        protected virtual void OnGroundCollision()
+        {
+
+        }
+
+        protected void SetAnimation()
+        {
+            if (direction == 1)
+                spriteRenderer.flipX = false;
+            else if (direction == -1)
+                spriteRenderer.flipX = true;
+            characterAnimator.SetBool("AerialUp", inAir);
+            if (inAir == true && speedZ <= 0)
+                characterAnimator.SetBool("AerialDown", true);
+            else
+                characterAnimator.SetBool("AerialDown", false);
+
+            if (state == CharacterState.Idle || state == CharacterState.Moving)
+                characterAnimator.SetBool("Moving", (speedX != 0 || speedY != 0));
+
+            characterAnimator.SetBool("Guard", (state == CharacterState.Guard));
+        }
+
+
+
+        void OnTriggerEnter2D(Collider2D col)
+        {
+            if (col.tag == "EnemyAttack" || col.tag == "PlayerAttack")
+            {
+                AttackController attackIncoming = col.GetComponent<AttackController>();
+                // Hit
+                if (CheckIfHit(attackIncoming) == true)
+                {
+                    // Guard
+                    if (state == CharacterState.Guard && attackIncoming.AttackBehavior.GuardBreak)
+                    {
+                        GuardBreak();
+                    }
+                    else if (state == CharacterState.Guard)
+                    {
+                        OnGuard.Invoke(this);
+                        return;
+                    }
+                    characterStat.TakeDamage(attackIncoming.AttackBehavior);
+                    attackIncoming.HasHit(this);
+                    if (characterStat.GetHP() <= 0 && state != CharacterState.Dead)
+                    {
+                        Knockback(attackIncoming);
+                        KnockbackDeath(attackIncoming);
+                    }
+                    else
+                    {
+                        Knockback(attackIncoming);
+                    }
+                }
+            }
+        }
+
+        private bool CheckIfHit(AttackController attack)
+        {
+            if (attack.CheckCollisionY(this.transform.position.y) == false)
+                return false;
+            if (state == CharacterState.Dead && inAir == false)
+                return false;
+            if (state == CharacterState.Throw && attack.AttackBehavior.AttackThrow == false)
+                return false;
+            if (inAir == true && attack.AttackBehavior.ThrowState == true)
+                return false;
+            if (state == CharacterState.Down && attack.AttackBehavior.WakeUpAttack == false)
+                return false;
+            if (this.tag + "Attack" != attack.tag)
+                return true;
+            return false;
+        }
+
+        public void KnockbackDeath(AttackController attack)
+        {
+            state = CharacterState.Dead;
+            speedZ += 1;
+            inAir = true;
+            characterAnimator.SetTrigger("Dead");
+            OnDead.Invoke(this);
+        }
+
+        public void Knockback(AttackController attack)
+        {
+            if (attack.AttackBehavior.ThrowState == true)
+                return;
+            if(state != CharacterState.Dead)
+                state = CharacterState.Hit;
+
+            if(inAir == true)
+            {
+                if (attack.Direction == 0)
+                    speedX = attack.AttackBehavior.KnockbackAerialPowerX * characterStat.GetMass() * -direction;
+                else
+                    speedX = attack.AttackBehavior.KnockbackAerialPowerX * characterStat.GetMass() * attack.Direction;
+                speedY = 0;
+                if (attack.AttackBehavior.ResetGravity == true)
+                    speedZ = attack.AttackBehavior.KnockbackAerialPowerZ * characterStat.GetMass();
+                else
+                    speedZ += attack.AttackBehavior.KnockbackAerialPowerZ * characterStat.GetMass();
+            }
+            else
+            {
+                if (attack.Direction == 0)
+                    speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * -direction;
+                else
+                    speedX = attack.AttackBehavior.KnockbackPowerX * characterStat.GetMass() * attack.Direction;
+                speedY = 0;
+                speedZ = attack.AttackBehavior.KnockbackPowerZ * characterStat.GetMass();
+                if (attack.AttackBehavior.KnockbackPowerZ > 0)
+                {
+                    inAir = true;
+                }
+            }
+
+            knockdownValue += attack.AttackBehavior.KnockdownValue;
+            if (knockdownValue >= characterStat.GetKnockdownResistance())
+            {
+                CharacterDown();
+            }
+            else
+            {
+                knockbackTime = characterStat.GetKnockbackTime();
+                knockbackAnimation += 1;
+                if (knockbackAnimation == 2)
+                    knockbackAnimation = 0;
+                characterAnimator.SetTrigger("Hit");
+                characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
+            }
+            if(healthBar != null)
+                healthBar.DrawHealth(characterStat.GetHP(), characterStat.GetHPMax());
+            OnHit.Invoke(attack.AttackBehavior);
+        }
+
+
         protected void UpdateKnockback()
         {
             knockbackTime -= Time.deltaTime * characterMotionSpeed;
@@ -617,16 +632,22 @@ namespace VoiceActing
                 {
                     state = CharacterState.Idle;
                     characterAnimator.SetTrigger("Idle");
-                    //characterAnimator.SetBool("Hit", false);
-                    characterAnimator.SetBool("CardBreak", false);
                 }
                 speedX = 0;
                 speedY = 0;
+                knockdownValue = 0;
             }
         }
 
         public void CharacterDown()
         {
+            if (state == CharacterState.Dead)
+            {
+                characterAnimator.SetTrigger("Dead");
+                battleFeedback.RemoveCharacter(this);
+                StartCoroutine(DisappearCoroutine());
+                return;
+            }
             state = CharacterState.Down;
             characterAnimator.SetTrigger("Down");
             knockbackTime = wakeUpRecovery;
@@ -636,7 +657,21 @@ namespace VoiceActing
         }
 
 
-
+        private IEnumerator DisappearCoroutine()
+        {
+            yield return new WaitForSeconds(2f);
+            characterCollider.enabled = false;
+            Vector3 startPosition = new Vector3(1, 1, 1);
+            Vector3 finalPosition = new Vector3(1, 0, 1);
+            float t = 0f;
+            while (t < 1f)
+            {
+                t += Time.deltaTime;
+                this.transform.localScale = Vector3.Lerp(startPosition, finalPosition, t);
+                yield return null;
+            }
+            Destroy(this.gameObject);
+        }
 
 
 
@@ -657,7 +692,6 @@ namespace VoiceActing
                 knockbackAnimation = 0;
             characterAnimator.SetTrigger("Hit");
             characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
-            //this.transform.SetParent(throwAttach);
         }
 
         public void UpdateThrow()
@@ -741,6 +775,7 @@ namespace VoiceActing
             currentAttack = CheckCombo(action);
             previousAttack = action;
             characterAnimator.ResetTrigger("Idle");
+            //characterAnimator.Play(currentAttack.AttackBehavior.AttackAnimation2.name, 0, 0f);
             characterAnimator.Play(currentAttack.AttackBehavior.AttackAnimation, 0, 0f);
             endAction = false;
             canEndAction = false;
@@ -765,6 +800,13 @@ namespace VoiceActing
         }
 
         // Appelé par les anims
+        public void ActionActiveInstant(AttackController attack)
+        {
+            currentAttackController = (Instantiate(attack, this.transform.position, Quaternion.identity));
+            currentAttackController.CreateAttack(this, target);
+        }
+
+        // Appelé par les anims
         public void MoveCancelable()
         {
             if (canTargetCombo == false && currentAttack.AttackBehavior.CancelOnlyOnHit == true)
@@ -782,14 +824,14 @@ namespace VoiceActing
         }
 
         // Appelé par l'attack controller
-        public void EndActionAttackController()
+        /*public void EndActionAttackController()
         {
             //currentAttackController = null;
-            /*if (state == CharacterState.Acting && canEndAction == true)
+            if (state == CharacterState.Acting && canEndAction == true)
             {
                 endAction = true;
-            }*/
-        }
+            }
+        }*/
 
         protected void EndActionState()
         {
@@ -821,22 +863,6 @@ namespace VoiceActing
         {
             OnGuardBreak.Invoke(this);
         }
-
-
-
-
-        /*public void ReloadDeck()
-        {
-            state = CharacterState.Reload;
-            characterAnimator.SetBool("Reload", true);
-        }
-
-        public void StopReload()
-        {
-            characterAnimator.SetBool("Reload", false);
-            state = CharacterState.Idle;
-        }*/
-
 
 
         public void MoveToPointInstant(Vector3 point)
