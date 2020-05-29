@@ -5,7 +5,7 @@ using Sirenix.OdinInspector;
 
 namespace VoiceActing
 {
-    [CreateAssetMenu(fileName = "CharacterData", menuName = "PlayableCharacterData", order = 1)]
+    [CreateAssetMenu(fileName = "CharacterData", menuName = "CharacterData", order = 1)]
     public class CharacterData : ScriptableObject
     {
         #region Attributes 

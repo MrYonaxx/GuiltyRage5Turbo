@@ -9,24 +9,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 434bf688527fc654fb1aaf31068428ae, type: 3}
-  m_Name: EnemyDataTest
+  m_Script: {fileID: 11500000, guid: 120dbf4ca0770fb4890a4e640ec4ea4a, type: 3}
+  m_Name: PlayerUsagiData
   m_EditorClassIdentifier: 
-  characterFace: {fileID: 0}
-  characterName: Enemy A
+  characterFace: {fileID: 21300000, guid: 04780fad0a704a441a1e16f7e7bb50c1, type: 3}
+  characterName: Usagi
   characterStat:
-    hp: 500
-    HpMax: 500
+    hp: 2000
+    HpMax: 2000
     AttackMultiplier: 1
     DefenseMultiplier: 1
-    Reload: 0
-    Recovery: 0
+    MotionSpeed: 1
     Speed: 0
     JumpImpulsion: 0
     Gravity: 0
     GravityMax: 0
     Mass: 1
     KnockbackTime: 0.4
-    KnockdownResistance: 1
-    WakeUpRecovery: 0
-    MotionSpeed: 1
+    KnockdownResistance: 100
+    WakeUpRecovery: 0.5
+    customStats: []

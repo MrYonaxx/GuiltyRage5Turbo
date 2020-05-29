@@ -16,7 +16,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3276892862608040447
 Transform:
   m_ObjectHideFlags: 0
@@ -160,12 +160,14 @@ MonoBehaviour:
   attackBehavior:
     attackName: kickku TSU
     attackAnimation: Usagi_Aerial_Normal2
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
-    comboTo: {fileID: 0}
+    comboTo: {fileID: 1141108377661332516, guid: 7de44735548c17c4ea946098b79e8721,
+      type: 3}
     targetCombo: {fileID: 1141108377661332516, guid: 7de44735548c17c4ea946098b79e8721,
       type: 3}
     onHitCombo: {fileID: 0}
@@ -199,7 +201,7 @@ MonoBehaviour:
     blockStun: 0.1
     blockKnockback: 0
     onHitKnockback: 0
-    hitStop: 0.1
+    hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
     zoom: 0

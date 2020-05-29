@@ -78,12 +78,14 @@ MonoBehaviour:
   attackBehavior:
     attackName: aeriaaaal kickkkkku
     attackAnimation: Usagi_Aerial_Normal1
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
-    comboTo: {fileID: 0}
+    comboTo: {fileID: 3276892862786655758, guid: 6bf041e52be9e0c469159908506d41dd,
+      type: 3}
     targetCombo: {fileID: 3276892862786655758, guid: 6bf041e52be9e0c469159908506d41dd,
       type: 3}
     onHitCombo: {fileID: 0}
@@ -117,7 +119,7 @@ MonoBehaviour:
     blockStun: 0.1
     blockKnockback: 0
     onHitKnockback: 0
-    hitStop: 0.1
+    hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
     zoom: 0

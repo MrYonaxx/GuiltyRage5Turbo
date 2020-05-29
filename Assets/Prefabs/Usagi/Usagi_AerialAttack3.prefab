@@ -77,7 +77,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: kickkkuuu thrreeeeee
-    attackAnimation: Usagi_Aerial_Normal3
+    attackAnimation: Usagi_AerialAttack3
+    attackAnimation2: {fileID: 7400000, guid: bc44e6ee68359c544a6810449f2c578e, type: 2}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -116,7 +117,7 @@ MonoBehaviour:
     blockStun: 0.1
     blockKnockback: 0
     onHitKnockback: 0
-    hitStop: 0.2
+    hitStop: 0.3
     hitStopGlobal: 0
     targetShakePower: 0.2
     zoom: 0.1

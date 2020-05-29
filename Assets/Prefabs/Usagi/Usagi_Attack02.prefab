@@ -186,6 +186,7 @@ MonoBehaviour:
   attackBehavior:
     attackName: Normal02
     attackAnimation: Usagi_Attack02
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -249,7 +250,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2490638471250170472
 Transform:
   m_ObjectHideFlags: 0

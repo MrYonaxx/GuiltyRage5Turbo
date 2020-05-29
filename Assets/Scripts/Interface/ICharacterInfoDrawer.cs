@@ -6,7 +6,7 @@ namespace VoiceActing
 {
     public interface ICharacterInfoDrawer
     {
-        void DrawCharacter(PlayerData character);
+        void DrawCharacter(CharacterData character);
 
         void DrawHealth(int hp, int maxHp);
 

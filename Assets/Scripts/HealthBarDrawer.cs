@@ -76,7 +76,7 @@ namespace VoiceActing
         /* ======================================== *\
          *                FUNCTIONS                 *
         \* ======================================== */
-        public void DrawCharacter(PlayerData characterData)
+        public void DrawCharacter(CharacterData characterData)
         {
             textCharacterName.text = characterData.CharacterName;
             if (characterData.CharacterFace == null)

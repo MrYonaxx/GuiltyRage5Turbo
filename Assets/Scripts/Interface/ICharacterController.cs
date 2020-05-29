@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface ICharacterController
+namespace VoiceActing 
 {
-
+    public interface ICharacterController
+    {
+        void UpdateController(Character character);
+    }
 }

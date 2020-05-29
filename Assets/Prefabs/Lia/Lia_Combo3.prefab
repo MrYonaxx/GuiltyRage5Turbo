@@ -77,7 +77,7 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: Lia_Swd03
-    attackAnimation2: {fileID: 0}
+    attackAnimation2: {fileID: 7400000, guid: 72808fa0e484b354784aed5ca5a61377, type: 2}
     lifetime: 0.3
     attackDamage: 100
     comboCost: 0

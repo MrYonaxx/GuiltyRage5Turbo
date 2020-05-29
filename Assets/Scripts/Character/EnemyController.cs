@@ -9,10 +9,62 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
+using Sirenix.Serialization;
 
 namespace VoiceActing
 {
-    public class EnemyController: Character
+    public enum Logique
+    {
+        AND,
+        OR
+    }
+
+    [System.Serializable]
+    public struct EnemyBehaviorSequence
+    {
+        [VerticalGroup(PaddingTop = 20)]
+        [SerializeField]
+        [HideLabel]
+        public string SequenceID;
+
+        [VerticalGroup("Pattern", PaddingBottom = 30)]
+        [OdinSerialize]
+        [ListDrawerSettings(Expanded = true, AlwaysAddDefaultValue = true)]
+        public List<EnemyBehavior> behaviours;
+    }
+
+    [System.Serializable]
+    public struct EnemyPattern
+    {
+
+        [VerticalGroup(PaddingTop = 20)]
+        [SerializeField]
+        [HideLabel]
+        public string PatternID;
+
+        [SerializeField]
+        [VerticalGroup("Pattern", PaddingBottom = 30)]
+        [HorizontalGroup("Pattern/Right", LabelWidth = 100, Width = 200)]
+        [ListDrawerSettings(Expanded = true, AlwaysAddDefaultValue = true)]
+        public List<EnemyCondition> conditions;
+
+        [OdinSerialize]
+        [HorizontalGroup("Pattern/Right")]
+        [ListDrawerSettings(Expanded = true, AlwaysAddDefaultValue = true)]
+        public List<EnemyBehavior> behaviours;
+
+    }
+
+    [System.Serializable]
+    public struct EnemyCondition
+    {
+        [HorizontalGroup]
+        public CharacterState targetState;
+        /*[HorizontalGroup]
+        public Logique logique;*/
+
+    }
+    public class EnemyController : SerializedMonoBehaviour, ICharacterController
     {
         #region Attributes 
 
@@ -24,21 +76,26 @@ namespace VoiceActing
         float timeEnemyAppear = 0.5f;
         [SerializeField]
         float timeEnemyDisappear = 2f;
+
+        [OdinSerialize]
+        [TabGroup("Decision Tree")]
+        [System.NonSerialized]
+        EnemyPattern[] patterns = new EnemyPattern[0];
+
+        [OdinSerialize]
+        [TabGroup("Sequence")]
+        [System.NonSerialized]
+        EnemyBehaviorSequence[] behaviorSequences;
+
+        [OdinSerialize]
+        [System.NonSerialized]
         [SerializeField]
-        AttackController attackController;
-
-        [SerializeField]
-        Transform debugPoint;
+        EnemyBehavior startUpPattern;
 
 
+        EnemyBehavior currentPattern;
 
-
-        int enemyPatternID = 0;
         float enemyActionTime = 1;
-        Vector3 randomPosition;
-        Vector3 movementPosition;
-
-        int cardID = 0;
 
         #endregion
 
@@ -56,45 +113,15 @@ namespace VoiceActing
          *                FUNCTIONS                 *
         \* ======================================== */
 
-        public override void SetCharacter(PlayerData data, CharacterStatController stat)
+        private void Start()
         {
-            base.SetCharacter(data, stat);
+            currentPattern = startUpPattern;
             EnemyAppear(true);
         }
 
-        /*protected override void Update()
-        {
-            if (canEndAction == false)
-                canEndAction = true;
-            if (knockbackTime > 0)
-                UpdateKnockback();
-            else
-            {
-                if (state == CharacterState.Idle || state == CharacterState.Moving || state == CharacterState.Acting)
-                {
-                    //EnemyDecision();
-                }
-            }
-            if (state != CharacterState.Throw)
-                ApplyGravity();
-            else
-                UpdateThrow();
-            UpdateCollision();
-            SetAnimation();
-            EndActionState();
-            // Les animations events sont joué après l'Update
-        }*/
-
-        protected override void UpdateController()
-        {
-            EnemyDecision();
-            base.UpdateController();
-        }
-
-
         public void EnemyAppear(bool b)
         {
-            if(b == true)
+            if (b == true)
             {
                 StartCoroutine(EnemyAppearCoroutine());
             }
@@ -119,7 +146,6 @@ namespace VoiceActing
 
         private IEnumerator EnemyDisappearCoroutine()
         {
-            characterCollider.enabled = false;
             Vector3 startPosition = new Vector3(1, 1, 1);
             Vector3 finalPosition = new Vector3(1, 0, 1);
             float t = 0f;
@@ -135,86 +161,88 @@ namespace VoiceActing
 
 
 
-        public void EnemyDecision()
+
+
+
+
+
+
+
+        public void UpdateController(Character character)
         {
-            if (state == CharacterState.Hit || state == CharacterState.Down || state == CharacterState.Dead)
-                return;
-            if (enemyActionTime <= 0) 
+            EnemyDecision(character);
+        }
+        public void LateUpdateController(Character character)
+        {
+            CheckInterrupt(character);
+        }
+        private void CheckInterrupt(Character character)
+        {
+            if (character.State == CharacterState.Hit)
             {
-                state = CharacterState.Idle;
-                enemyPatternID = Random.Range(1, 4 + 1);
-                switch (enemyPatternID) 
+                currentPattern = null;
+            }
+        }
+
+
+
+        public void EnemyDecision(Character character)
+        {
+            if (character.State == CharacterState.Hit || character.State == CharacterState.Down || character.State == CharacterState.Dead)
+                return;
+            //patterns
+            if (currentPattern == null)
+            {
+                SelectAction(character);
+                enemyActionTime = currentPattern.StartBehavior(this, character);
+            }
+
+            enemyActionTime -= Time.deltaTime;
+            currentPattern.UpdateBehavior(this, character);
+            if (enemyActionTime <= 0)
+                currentPattern = null;
+        }
+
+        private void SelectAction(Character character)
+        {
+            for(int i = 0; i < patterns.Length; i++)
+            {
+                for (int j = 0; j < patterns[i].conditions.Count; j++)
                 {
-                    case 1: // Move random
-                        randomPosition = Random.insideUnitCircle * 1f;
-                        randomPosition.Normalize();
-                        randomPosition *= 1.5f;
-                        enemyActionTime = Random.Range(180, 360) / 60f;
-                        break;
-                    case 2: // Wait
-                        SetSpeed(0, 0);
-                        enemyActionTime = Random.Range(60, 240) / 60f;
-                        break;
-                    case 3: // Move in front of player
-                        LookAt(target.transform);
-                        randomPosition = Vector3.left * direction;
-                        enemyActionTime = Random.Range(180, 360) / 60f;
-                        break;
-                    case 4: // Move in front of player
-                        Guard();
-                        SetSpeed(0, 0);
-                        LookAt(target.transform);
-                        enemyActionTime = Random.Range(180, 360) / 60f;
-                        break;
+                    if (patterns[i].conditions[j].targetState == character.Target.State)
+                    {
+                        currentPattern = patterns[i].behaviours[Random.Range(0, patterns[i].behaviours.Count)];
+                        return;
+                    }
                 }
             }
-
-
-            if(state != CharacterState.Acting)
-                enemyActionTime -= Time.deltaTime * characterMotionSpeed;
-
-            switch (enemyPatternID)
-            {
-                case 1:
-                    movementPosition = new Vector3(target.transform.position.x, target.transform.position.y, 0) + randomPosition;
-                    if (MoveToPoint(movementPosition, 0, 0) == true)
-                        enemyActionTime = 0;
-                    LookAt(target.transform);
-                    break;
-
-                case 2:
-                    LookAt(target.transform);
-                    break;
-
-                case 3:
-                    movementPosition = new Vector3(target.transform.position.x, target.transform.position.y, 0) + randomPosition;
-                    if (MoveToPoint(movementPosition, 0, 0) == true)
-                    {
-                        Action(attackController);
-                        enemyPatternID = 4;
-                        enemyActionTime = 0;
-                    }
-                    LookAt(target.transform);
-                    break;
-
-                case 4:
-                    LookAt(target.transform);
-                    break;
-
-
-            }
-
         }
 
-
-
-        private void LookAt(Transform targetPos)
+        public void StopPattern()
         {
-            if (targetPos.position.x < this.transform.position.x)
-                direction = -1;
-            if (targetPos.position.x > this.transform.position.x)
-                direction = 1;
+            currentPattern = null;
+            enemyActionTime = 0;
         }
+
+        public void ForcePattern(EnemyBehavior behavior, Character character)
+        {
+            currentPattern = behavior;
+            enemyActionTime = currentPattern.StartBehavior(this, character);
+
+        }
+
+        public void ForceBehavior(EnemyBehavior behavior, Character character)
+        {
+            currentPattern = behavior;
+            enemyActionTime = currentPattern.StartBehavior(this, character);
+
+        }
+
+        public void PlaySequence(string sequenceID)
+        {
+
+        }
+
         #endregion
 
     } 

@@ -268,8 +268,9 @@ MonoBehaviour:
   attackBehavior:
     attackName: Super_PPPPPPPP
     attackAnimation: Usagi_SuperPunch
+    attackAnimation2: {fileID: 0}
     lifetime: 0.4
-    attackDamage: 9999
+    attackDamage: 0
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0

@@ -26,7 +26,7 @@ namespace VoiceActing
     }
 
 
-    public class Character: MonoBehaviour
+    public class Character: SerializedMonoBehaviour
     {
         #region Attributes 
 
@@ -81,14 +81,15 @@ namespace VoiceActing
         [SerializeField]
         BattleFeedbackManagerData battleFeedback;
 
-        [SerializeField]
-        protected PlayerData characterData;
-        public PlayerData CharacterData
+        /*[SerializeField]
+        protected CharacterData characterData;
+        public CharacterData CharacterData
         {
             get { return characterData; }
-        }
+        }*/
 
         [SerializeField]
+        [HideLabel]
         protected CharacterStatController characterStat;
         public CharacterStatController CharacterStat
         {
@@ -107,6 +108,13 @@ namespace VoiceActing
         public ICharacterInfoDrawer HealthBar
         {
             get { return healthBar; }
+        }
+
+        [SerializeField]
+        protected ICharacterController[] characterControllers;
+        public ICharacterController[] CharacterControllers
+        {
+            get { return characterControllers; }
         }
 
         [SerializeField]
@@ -154,6 +162,11 @@ namespace VoiceActing
 
         [SerializeField]
         protected CharacterState state = CharacterState.Idle;
+        public CharacterState State
+        {
+            get { return state; }
+        }
+
         protected bool inAir = false;
 
         protected float speedX = 0;
@@ -214,7 +227,7 @@ namespace VoiceActing
         {
             target = value;
             if (healthBar != null)
-                healthBar.DrawTarget(value.CharacterStat.GetHP(), value.CharacterStat.GetHPMax(), value.CharacterData.CharacterName);
+                healthBar.DrawTarget(value.CharacterStat.GetHP(), value.CharacterStat.GetHPMax(), value.CharacterStat.CharacterData.CharacterName);
         }
 
         public void SetActive(bool b)
@@ -225,7 +238,7 @@ namespace VoiceActing
         public void SetHealthBar(ICharacterInfoDrawer drawer)
         {
             healthBar = drawer;
-            healthBar.DrawCharacter(characterData);
+            healthBar.DrawCharacter(characterStat.CharacterData);
         }
 
         #endregion
@@ -245,16 +258,17 @@ namespace VoiceActing
             OnDead.RemoveAllListeners();
         }
 
-        public virtual void SetCharacter(PlayerData data, CharacterStatController stat)
+        public virtual void SetCharacter(CharacterData data, CharacterStatController stat)
         {
-            characterData = data;
+            //characterData = data;
             characterStat = stat;
         }
 
         protected virtual void Start()
         {
             battleFeedback.AddCharacter(this);
-            SetCharacter(characterData, new CharacterStatController(characterData));
+            characterStat.CreateStatController();
+            //SetCharacter(characterData, new CharacterStatController(characterData));
         }
 
         protected virtual void Update()
@@ -279,7 +293,8 @@ namespace VoiceActing
 
         protected virtual void UpdateController()
         {
-
+            for (int i = 0; i < characterControllers.Length; i++)
+                characterControllers[i].UpdateController(this);
         }
 
         protected void UpdateCollision()
@@ -897,6 +912,20 @@ namespace VoiceActing
             speedX = newSpeedX;
             speedY = newSpeedY;
         }
+
+        public void LookAt(Transform targetPos)
+        {
+            LookAtPosition(targetPos.transform.position);
+        }
+
+        public void LookAtPosition(Vector3 targetPos)
+        {
+            if (targetPos.x < this.transform.position.x)
+                direction = -1;
+            if (targetPos.x > this.transform.position.x)
+                direction = 1;
+        }
+
         public void TurnBack()
         {
             direction = -direction;
