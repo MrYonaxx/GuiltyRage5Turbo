@@ -134,288 +134,299 @@ namespace VoiceActing
             InputSpecial();*/
         }
 
-
-       /* private void InputAction()
+        public void LateUpdateController(Character c)
         {
-            if (state != CharacterState.Idle && state != CharacterState.Moving && state != CharacterState.Acting)
-            {
-                return;
-            }
-
-            if (bufferNormalActive == true)
-            {
-                if (CanAct() == true)
-                {
-                    NormalAttack();
-                    return;
-                }
-            }
-            if (Input.GetButtonDown("ControllerX"))
-            {
-                if (CanAct() == true)
-                {
-                    NormalAttack();
-                }
-                else
-                {
-                    bufferNormalActive = true;
-                    StartBuffer();
-                }
-            }
-        }
-
-        private void NormalAttack()
-        {
-            if(inAir == true && speedX != 0)
-            {
-                Action(jumpForwardAttack);
-            }
-            else if (inAir == true)
-            {
-                Action(jumpDefaultAttack);
-            }
-            else
-            {
-                Action(groundDefaultAttack);
-            }
-            StopBuffer();
-        }
-
-        // =========================================================================================
-        private void InputSpecial()
-        {
-            if (state != CharacterState.Idle && state != CharacterState.Moving && state != CharacterState.Acting)
-            {
-                return;
-            }
-
-            // Buffer
-            if (bufferSpecialActive == true && state == CharacterState.Acting && canMoveCancel == true)
-            {
-                SpecialAttack();
-            }
-
-            // Input
-            if (Input.GetButtonDown("ControllerY") && state == CharacterState.Acting)
-            {
-                if (canMoveCancel == true)
-                {
-                    SpecialAttack();
-                }
-                else
-                {
-                    bufferSpecialActive = true;
-                    StartBuffer();
-                }
-            }
-            else if (Input.GetButtonDown("ControllerY"))
-            {
-                SpecialAttack();
-            }
+            character = c;
+            /* InputThrow();
+             InputMovement();
+             InputDash();
+             InputJump();
+             InputAction();
+             InputSpecial();*/
         }
 
 
-        private void SpecialAttack()
+        /* private void InputAction()
+         {
+             if (state != CharacterState.Idle && state != CharacterState.Moving && state != CharacterState.Acting)
+             {
+                 return;
+             }
+
+             if (bufferNormalActive == true)
+             {
+                 if (CanAct() == true)
+                 {
+                     NormalAttack();
+                     return;
+                 }
+             }
+             if (Input.GetButtonDown("ControllerX"))
+             {
+                 if (CanAct() == true)
+                 {
+                     NormalAttack();
+                 }
+                 else
+                 {
+                     bufferNormalActive = true;
+                     StartBuffer();
+                 }
+             }
+         }
+
+         private void NormalAttack()
+         {
+             if(inAir == true && speedX != 0)
+             {
+                 Action(jumpForwardAttack);
+             }
+             else if (inAir == true)
+             {
+                 Action(jumpDefaultAttack);
+             }
+             else
+             {
+                 Action(groundDefaultAttack);
+             }
+             StopBuffer();
+         }
+
+         // =========================================================================================
+         private void InputSpecial()
+         {
+             if (state != CharacterState.Idle && state != CharacterState.Moving && state != CharacterState.Acting)
+             {
+                 return;
+             }
+
+             // Buffer
+             if (bufferSpecialActive == true && state == CharacterState.Acting && canMoveCancel == true)
+             {
+                 SpecialAttack();
+             }
+
+             // Input
+             if (Input.GetButtonDown("ControllerY") && state == CharacterState.Acting)
+             {
+                 if (canMoveCancel == true)
+                 {
+                     SpecialAttack();
+                 }
+                 else
+                 {
+                     bufferSpecialActive = true;
+                     StartBuffer();
+                 }
+             }
+             else if (Input.GetButtonDown("ControllerY"))
+             {
+                 SpecialAttack();
+             }
+         }
+
+
+         private void SpecialAttack()
+         {
+             if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+                 Action(specialForwardAttack);
+             else
+                 Action(specialAttack);
+             StopBuffer();
+         }
+
+
+
+
+         // =========================================================================================
+         private void InputThrow()
+         {
+             if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
+             {
+                 return;
+             }
+             if (Input.GetButton("ControllerR1"))
+             {
+                 Action(throwAttack);
+             }
+             StopBuffer();
+         }
+
+
+
+         // =========================================================================================
+         private void InputMovement()
+         {
+             if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
+             {
+                 return;
+             }
+             if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f)
+             {
+                 speedY = Input.GetAxis("Vertical");
+             }
+             else
+             {
+                 speedY = 0;
+             }
+
+             if (Input.GetAxis("Horizontal") > 0.2f)
+             {
+                 speedX = Input.GetAxis("Horizontal");
+                 direction = 1;
+             }
+             else if (Input.GetAxis("Horizontal") < -0.2f)
+             {
+                 speedX = Input.GetAxis("Horizontal");
+                 direction = -1;
+             }
+             else
+             {
+                 speedX = 0;
+             }
+             Vector2 move = new Vector2(speedX, speedY);
+             move.Normalize();
+             speedX = move.x * defaultSpeed;
+             speedY = move.y * defaultSpeed;
+             character.SetSpeed(move.x * defaultSpeed, move.y * defaultSpeed);
+
+         }
+
+         // =========================================================================================
+         private void InputDash()
+         {
+             if ((Input.GetButtonDown("ControllerB") || bufferDashActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
+             {
+                 if (currentAttack.AttackBehavior.DashCancel == true)
+                     CancelAction();
+             }
+             else if (Input.GetButtonDown("ControllerB") && state == CharacterState.Acting)
+             {
+                 bufferDashActive = true;
+                 StartBuffer();
+             }
+
+             if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
+             {
+                 return;
+             }
+
+             if(bufferDashActive == true)
+             {
+                 DashAction();
+             }
+             else if (Input.GetButtonDown("ControllerB"))
+             {
+                 DashAction();
+             }
+         }
+
+         private void DashAction()
+         {
+             if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
+             {
+                 Action(dashForward);
+             }
+             else
+             {
+                 Action(dashBack);
+             }
+             StopBuffer();
+         }
+
+
+         // =========================================================================================
+         private void InputJump()
+         {
+
+             if (crouchTime > 0)
+             {
+                 crouchTime -= Time.deltaTime * characterMotionSpeed;
+                 if(crouchTime <= 0)
+                 {
+                     speedX = defaultSpeed * direction;
+                     CancelAct();
+                     JumpDefault();
+                     /*endAction = true;
+                     EndActionState();*/
+        /*}
+    }
+
+    if((Input.GetButtonDown("ControllerA") || bufferJumpActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
+    {
+        if(currentAttack.AttackBehavior.JumpCancel == true)
+            CancelAction();
+        else
         {
-            if(Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
-                Action(specialForwardAttack);
-            else
-                Action(specialAttack);
-            StopBuffer();
+            bufferJumpActive = true;
+            StartBuffer();
         }
+    }
+    else if (Input.GetButtonDown("ControllerA") && state == CharacterState.Acting)
+    {
+        bufferJumpActive = true;
+        StartBuffer();
+    }
+    if (state != CharacterState.Idle && state != CharacterState.Moving)
+        return;
 
+    if(bufferJumpActive == true)
+    {
+        bufferJumpActive = false;
+        JumpAction();
+    }
+    if (Input.GetButtonDown("ControllerA"))
+    {
+        JumpAction();
+    }
+}
 
-
-
-        // =========================================================================================
-        private void InputThrow()
+private void JumpAction()
+{
+    if (inAir == false)
+    {
+        doubleJump = false;
+        if (Input.GetAxis("Horizontal") > 0.2f)
         {
-            if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
-            {
-                return;
-            }
-            if (Input.GetButton("ControllerR1"))
-            {
-                Action(throwAttack);
-            }
-            StopBuffer();
+            direction = 1;
+            crouchTime = crouchJumpTime;
+            Action(crouchController);
         }
-
-
-
-        // =========================================================================================
-        private void InputMovement()
+        else if (Input.GetAxis("Horizontal") < -0.2f)
         {
-            if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
-            {
-                return;
-            }
-            if (Mathf.Abs(Input.GetAxis("Vertical")) > 0.2f)
-            {
-                speedY = Input.GetAxis("Vertical");
-            }
-            else
-            {
-                speedY = 0;
-            }
-
-            if (Input.GetAxis("Horizontal") > 0.2f)
-            {
-                speedX = Input.GetAxis("Horizontal");
-                direction = 1;
-            }
-            else if (Input.GetAxis("Horizontal") < -0.2f)
-            {
-                speedX = Input.GetAxis("Horizontal");
-                direction = -1;
-            }
-            else
-            {
-                speedX = 0;
-            }
-            Vector2 move = new Vector2(speedX, speedY);
-            move.Normalize();
-            speedX = move.x * defaultSpeed;
-            speedY = move.y * defaultSpeed;
-            character.SetSpeed(move.x * defaultSpeed, move.y * defaultSpeed);
-
+            direction = -1;
+            crouchTime = crouchJumpTime;
+            Action(crouchController);
         }
-
-        // =========================================================================================
-        private void InputDash()
+        else
         {
-            if ((Input.GetButtonDown("ControllerB") || bufferDashActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
-            {
-                if (currentAttack.AttackBehavior.DashCancel == true)
-                    CancelAction();
-            }
-            else if (Input.GetButtonDown("ControllerB") && state == CharacterState.Acting)
-            {
-                bufferDashActive = true;
-                StartBuffer();
-            }
-
-            if (state != CharacterState.Idle && state != CharacterState.Moving || inAir != false)
-            {
-                return;
-            }
-
-            if(bufferDashActive == true)
-            {
-                DashAction();
-            }
-            else if (Input.GetButtonDown("ControllerB"))
-            {
-                DashAction();
-            }
+            speedX = 0;
+            speedY = 0;
+            JumpDefault();
         }
-
-        private void DashAction()
+    }
+    else if (inAir == true && speedZ > 0 && doubleJump == false)
+    {
+        doubleJump = true;
+        Jump(jumpImpulsion * 0.75f);
+        if (Input.GetAxis("Horizontal") > 0.2f)
         {
-            if (Mathf.Abs(Input.GetAxis("Horizontal")) > 0.2f)
-            {
-                Action(dashForward);
-            }
-            else
-            {
-                Action(dashBack);
-            }
-            StopBuffer();
+            speedX = defaultSpeed;
+            direction = 1;
         }
-
-
-        // =========================================================================================
-        private void InputJump()
+        else if (Input.GetAxis("Horizontal") < -0.2f)
         {
-
-            if (crouchTime > 0)
-            {
-                crouchTime -= Time.deltaTime * characterMotionSpeed;
-                if(crouchTime <= 0)
-                {
-                    speedX = defaultSpeed * direction;
-                    CancelAct();
-                    JumpDefault();
-                    /*endAction = true;
-                    EndActionState();*/
-                /*}
-            }
-
-            if((Input.GetButtonDown("ControllerA") || bufferJumpActive == true) && state == CharacterState.Acting && canMoveCancel == true && currentAttack != null)
-            {
-                if(currentAttack.AttackBehavior.JumpCancel == true)
-                    CancelAction();
-                else
-                {
-                    bufferJumpActive = true;
-                    StartBuffer();
-                }
-            }
-            else if (Input.GetButtonDown("ControllerA") && state == CharacterState.Acting)
-            {
-                bufferJumpActive = true;
-                StartBuffer();
-            }
-            if (state != CharacterState.Idle && state != CharacterState.Moving)
-                return;
-
-            if(bufferJumpActive == true)
-            {
-                bufferJumpActive = false;
-                JumpAction();
-            }
-            if (Input.GetButtonDown("ControllerA"))
-            {
-                JumpAction();
-            }
+            speedX = -defaultSpeed;
+            direction = -1;
         }
-
-        private void JumpAction()
+        else
         {
-            if (inAir == false)
-            {
-                doubleJump = false;
-                if (Input.GetAxis("Horizontal") > 0.2f)
-                {
-                    direction = 1;
-                    crouchTime = crouchJumpTime;
-                    Action(crouchController);
-                }
-                else if (Input.GetAxis("Horizontal") < -0.2f)
-                {
-                    direction = -1;
-                    crouchTime = crouchJumpTime;
-                    Action(crouchController);
-                }
-                else
-                {
-                    speedX = 0;
-                    speedY = 0;
-                    JumpDefault();
-                }
-            }
-            else if (inAir == true && speedZ > 0 && doubleJump == false)
-            {
-                doubleJump = true;
-                Jump(jumpImpulsion * 0.75f);
-                if (Input.GetAxis("Horizontal") > 0.2f)
-                {
-                    speedX = defaultSpeed;
-                    direction = 1;
-                }
-                else if (Input.GetAxis("Horizontal") < -0.2f)
-                {
-                    speedX = -defaultSpeed;
-                    direction = -1;
-                }
-                else
-                {
-                    speedX = 0;
-                    speedY = 0;
-                }
-            }
-            StopBuffer();
-        }*/
+            speedX = 0;
+            speedY = 0;
+        }
+    }
+    StopBuffer();
+}*/
 
 
         // =========================================================================================

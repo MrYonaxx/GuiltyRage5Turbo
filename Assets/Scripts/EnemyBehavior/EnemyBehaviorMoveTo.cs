@@ -53,6 +53,8 @@ namespace VoiceActing
             randomPosition = Random.insideUnitCircle * 1f;
             randomPosition.Normalize();
             randomPosition *= new Vector2(Random.Range(sizeMin.x, sizeMax.x), Random.Range(sizeMin.y, sizeMax.y));
+            randomPosition = new Vector2(Mathf.Sign(randomPosition.x) * Mathf.Clamp(randomPosition.x, sizeMin.x, sizeMax.x), 
+                                         Mathf.Sign(randomPosition.y) * Mathf.Clamp(randomPosition.y, sizeMin.y, sizeMax.y));
             if (nearestSide == true)
             {
                 character.LookAt(character.Target.transform);

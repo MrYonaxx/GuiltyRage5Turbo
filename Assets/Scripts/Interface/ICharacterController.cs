@@ -7,5 +7,7 @@ namespace VoiceActing
     public interface ICharacterController
     {
         void UpdateController(Character character);
+
+        void LateUpdateController(Character character);
     }
 }

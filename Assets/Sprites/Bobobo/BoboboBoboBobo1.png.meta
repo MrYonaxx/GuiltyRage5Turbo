@@ -1,0 +1,4307 @@
+fileFormatVersion: 2
+guid: 7befeb804143f904cb6e2cd5197c0df4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -718590014174604573
+    second: BoboboBoboBobo1_0
+  - first:
+      213: -7473172282883122385
+    second: BoboboBoboBobo1_1
+  - first:
+      213: -1498598462537956198
+    second: BoboboBoboBobo1_2
+  - first:
+      213: -8786355062160319828
+    second: BoboboBoboBobo1_3
+  - first:
+      213: -887304516209160570
+    second: BoboboBoboBobo1_4
+  - first:
+      213: -1575902906070604986
+    second: BoboboBoboBobo1_5
+  - first:
+      213: 1690572476719418154
+    second: BoboboBoboBobo1_6
+  - first:
+      213: -6653208295599467381
+    second: BoboboBoboBobo1_7
+  - first:
+      213: -68533238603458440
+    second: BoboboBoboBobo1_8
+  - first:
+      213: -5308184513227441520
+    second: BoboboBoboBobo1_9
+  - first:
+      213: 4618519800054708022
+    second: BoboboBoboBobo1_10
+  - first:
+      213: 7041879022034609389
+    second: BoboboBoboBobo1_11
+  - first:
+      213: -4002085055916408348
+    second: BoboboBoboBobo1_12
+  - first:
+      213: 5900050072319622870
+    second: BoboboBoboBobo1_13
+  - first:
+      213: 8226042556915011319
+    second: BoboboBoboBobo1_14
+  - first:
+      213: -6847500251463734714
+    second: BoboboBoboBobo1_15
+  - first:
+      213: 6021447055373840152
+    second: BoboboBoboBobo1_16
+  - first:
+      213: -536698311479572244
+    second: BoboboBoboBobo1_17
+  - first:
+      213: 4560745312001156569
+    second: BoboboBoboBobo1_18
+  - first:
+      213: -2326710572908905373
+    second: BoboboBoboBobo1_19
+  - first:
+      213: -1330856653237504443
+    second: BoboboBoboBobo1_20
+  - first:
+      213: 6932356953912624080
+    second: BoboboBoboBobo1_21
+  - first:
+      213: -9041340597875439484
+    second: BoboboBoboBobo1_22
+  - first:
+      213: 3969970758212831683
+    second: BoboboBoboBobo1_23
+  - first:
+      213: 2280433820594994952
+    second: BoboboBoboBobo1_24
+  - first:
+      213: 9151485361933125690
+    second: BoboboBoboBobo1_25
+  - first:
+      213: -618785616316893497
+    second: BoboboBoboBobo1_26
+  - first:
+      213: 7608395774744654730
+    second: BoboboBoboBobo1_27
+  - first:
+      213: 655618828116844300
+    second: BoboboBoboBobo1_28
+  - first:
+      213: -1601380347931101636
+    second: BoboboBoboBobo1_29
+  - first:
+      213: 4705210431153272002
+    second: BoboboBoboBobo1_30
+  - first:
+      213: 5970446703087349660
+    second: BoboboBoboBobo1_31
+  - first:
+      213: -712741437299941398
+    second: BoboboBoboBobo1_32
+  - first:
+      213: -8877875596309238167
+    second: BoboboBoboBobo1_33
+  - first:
+      213: -7717773261992465385
+    second: BoboboBoboBobo1_34
+  - first:
+      213: -7059539081255895433
+    second: BoboboBoboBobo1_35
+  - first:
+      213: -5251168127263543693
+    second: BoboboBoboBobo1_36
+  - first:
+      213: 2940030488505011966
+    second: BoboboBoboBobo1_37
+  - first:
+      213: -1158763801787954681
+    second: BoboboBoboBobo1_38
+  - first:
+      213: -3699391577558057255
+    second: BoboboBoboBobo1_39
+  - first:
+      213: -3532748872242113574
+    second: BoboboBoboBobo1_40
+  - first:
+      213: 3106842961907076991
+    second: BoboboBoboBobo1_41
+  - first:
+      213: 344794838781370637
+    second: BoboboBoboBobo1_42
+  - first:
+      213: -6676192765593799455
+    second: BoboboBoboBobo1_43
+  - first:
+      213: -291766968466825186
+    second: BoboboBoboBobo1_44
+  - first:
+      213: -2934893903459892609
+    second: BoboboBoboBobo1_45
+  - first:
+      213: 5933940577306598223
+    second: BoboboBoboBobo1_46
+  - first:
+      213: 7642909191857270121
+    second: BoboboBoboBobo1_47
+  - first:
+      213: 450199005344775749
+    second: BoboboBoboBobo1_48
+  - first:
+      213: 3244469230341918520
+    second: BoboboBoboBobo1_49
+  - first:
+      213: 4598104145152082274
+    second: BoboboBoboBobo1_50
+  - first:
+      213: 8279336062001267262
+    second: BoboboBoboBobo1_51
+  - first:
+      213: 5789574389540967455
+    second: BoboboBoboBobo1_52
+  - first:
+      213: -3394470403993100877
+    second: BoboboBoboBobo1_53
+  - first:
+      213: 3361779529718327813
+    second: BoboboBoboBobo1_54
+  - first:
+      213: -3315869317879073839
+    second: BoboboBoboBobo1_55
+  - first:
+      213: 4068772750723738430
+    second: BoboboBoboBobo1_56
+  - first:
+      213: 6274342143804034030
+    second: BoboboBoboBobo1_57
+  - first:
+      213: -1368742085330682372
+    second: BoboboBoboBobo1_58
+  - first:
+      213: 9079720451543981393
+    second: BoboboBoboBobo1_59
+  - first:
+      213: 2947647175597914982
+    second: BoboboBoboBobo1_60
+  - first:
+      213: -4622296576709002066
+    second: BoboboBoboBobo1_61
+  - first:
+      213: 6747391136824600477
+    second: BoboboBoboBobo1_62
+  - first:
+      213: 3249494619407905413
+    second: BoboboBoboBobo1_63
+  - first:
+      213: 7388518753026380095
+    second: BoboboBoboBobo1_64
+  - first:
+      213: -6655187480366102685
+    second: BoboboBoboBobo1_65
+  - first:
+      213: 5531199976068675333
+    second: BoboboBoboBobo1_66
+  - first:
+      213: -3762162614897610043
+    second: BoboboBoboBobo1_67
+  - first:
+      213: 4319782450874085142
+    second: BoboboBoboBobo1_68
+  - first:
+      213: -1950026607871410136
+    second: BoboboBoboBobo1_69
+  - first:
+      213: -2235704382940704470
+    second: BoboboBoboBobo1_70
+  - first:
+      213: 2831315245471234266
+    second: BoboboBoboBobo1_71
+  - first:
+      213: -6018439296705045736
+    second: BoboboBoboBobo1_72
+  - first:
+      213: 516385967417845774
+    second: BoboboBoboBobo1_73
+  - first:
+      213: 6317152903376246682
+    second: BoboboBoboBobo1_74
+  - first:
+      213: -4219778040972254559
+    second: BoboboBoboBobo1_75
+  - first:
+      213: 4888048236227780823
+    second: BoboboBoboBobo1_76
+  - first:
+      213: 8144274389668339646
+    second: BoboboBoboBobo1_77
+  - first:
+      213: 6382129648100915569
+    second: BoboboBoboBobo1_78
+  - first:
+      213: -834166930891790577
+    second: BoboboBoboBobo1_79
+  - first:
+      213: 7975361031607880668
+    second: BoboboBoboBobo1_80
+  - first:
+      213: -5369022680692307922
+    second: BoboboBoboBobo1_81
+  - first:
+      213: -3561634704879325753
+    second: BoboboBoboBobo1_82
+  - first:
+      213: -3067282418724993699
+    second: BoboboBoboBobo1_83
+  - first:
+      213: -1876597257039855144
+    second: BoboboBoboBobo1_84
+  - first:
+      213: -5109202541268655343
+    second: BoboboBoboBobo1_85
+  - first:
+      213: 3153155992818739301
+    second: BoboboBoboBobo1_86
+  - first:
+      213: 5385232739983647112
+    second: BoboboBoboBobo1_87
+  - first:
+      213: -3177613851559782166
+    second: BoboboBoboBobo1_88
+  - first:
+      213: -489476171184308265
+    second: BoboboBoboBobo1_89
+  - first:
+      213: 6971500810821861009
+    second: BoboboBoboBobo1_90
+  - first:
+      213: 3949590894816263501
+    second: BoboboBoboBobo1_91
+  - first:
+      213: -3606601695209214438
+    second: BoboboBoboBobo1_92
+  - first:
+      213: -482997440741752805
+    second: BoboboBoboBobo1_93
+  - first:
+      213: 7032984285235434886
+    second: BoboboBoboBobo1_94
+  - first:
+      213: 6298983066595872515
+    second: BoboboBoboBobo1_95
+  - first:
+      213: -5824312367260145537
+    second: BoboboBoboBobo1_96
+  - first:
+      213: -4732640940295736553
+    second: BoboboBoboBobo1_97
+  - first:
+      213: 5977683874413151593
+    second: BoboboBoboBobo1_98
+  - first:
+      213: -2702208292320007316
+    second: BoboboBoboBobo1_99
+  - first:
+      213: 2415247912380058566
+    second: BoboboBoboBobo1_100
+  - first:
+      213: -3748694868252626234
+    second: BoboboBoboBobo1_101
+  - first:
+      213: 4829748715240109046
+    second: BoboboBoboBobo1_102
+  - first:
+      213: 918159683562966766
+    second: BoboboBoboBobo1_103
+  - first:
+      213: -7125940164667136997
+    second: BoboboBoboBobo1_104
+  - first:
+      213: -7504238682435376451
+    second: BoboboBoboBobo1_105
+  - first:
+      213: 6589295527899044925
+    second: BoboboBoboBobo1_106
+  - first:
+      213: 2749390404637552782
+    second: BoboboBoboBobo1_107
+  - first:
+      213: -1776953014437098984
+    second: BoboboBoboBobo1_108
+  - first:
+      213: 7772515581994590714
+    second: BoboboBoboBobo1_109
+  - first:
+      213: 7390078557570625861
+    second: BoboboBoboBobo1_110
+  - first:
+      213: -957472979248092027
+    second: BoboboBoboBobo1_111
+  - first:
+      213: 2909286824827886547
+    second: BoboboBoboBobo1_112
+  - first:
+      213: 2760169514448543364
+    second: BoboboBoboBobo1_113
+  - first:
+      213: 3946110220174641061
+    second: BoboboBoboBobo1_114
+  - first:
+      213: 5909937107674973283
+    second: BoboboBoboBobo1_115
+  - first:
+      213: -5815766001094173033
+    second: BoboboBoboBobo1_116
+  - first:
+      213: -8735315454006744085
+    second: BoboboBoboBobo1_117
+  - first:
+      213: -231789479231330561
+    second: BoboboBoboBobo1_118
+  - first:
+      213: 5632171025176667903
+    second: BoboboBoboBobo1_119
+  - first:
+      213: -6815809617907980507
+    second: BoboboBoboBobo1_120
+  - first:
+      213: 1309890922199908501
+    second: BoboboBoboBobo1_121
+  - first:
+      213: -3400905618336103886
+    second: BoboboBoboBobo1_122
+  - first:
+      213: 3651433891864943515
+    second: BoboboBoboBobo1_123
+  - first:
+      213: 7325951394500792332
+    second: BoboboBoboBobo1_124
+  - first:
+      213: -7912092370619229756
+    second: BoboboBoboBobo1_125
+  - first:
+      213: -7628108658847328463
+    second: BoboboBoboBobo1_126
+  - first:
+      213: -8596466760474039009
+    second: BoboboBoboBobo1_127
+  - first:
+      213: 8028436691662641707
+    second: BoboboBoboBobo1_128
+  - first:
+      213: 8311621095965151164
+    second: BoboboBoboBobo1_129
+  - first:
+      213: -2017408280798983281
+    second: BoboboBoboBobo1_130
+  - first:
+      213: 8110985721206841190
+    second: BoboboBoboBobo1_131
+  - first:
+      213: 1181356639092041245
+    second: BoboboBoboBobo1_132
+  - first:
+      213: -4010073654407613250
+    second: BoboboBoboBobo1_133
+  - first:
+      213: -694467386410894770
+    second: BoboboBoboBobo1_134
+  - first:
+      213: 269237046270110487
+    second: BoboboBoboBobo1_135
+  - first:
+      213: 4034335008093354684
+    second: BoboboBoboBobo1_136
+  - first:
+      213: -6454782295638422359
+    second: BoboboBoboBobo1_137
+  - first:
+      213: -4337037577143440325
+    second: BoboboBoboBobo1_138
+  - first:
+      213: 8498152830002334444
+    second: BoboboBoboBobo1_139
+  - first:
+      213: -4349387835671300214
+    second: BoboboBoboBobo1_140
+  - first:
+      213: 7507647561610536922
+    second: BoboboBoboBobo1_141
+  - first:
+      213: 4170011455182509679
+    second: BoboboBoboBobo1_142
+  - first:
+      213: -8776639031400817859
+    second: BoboboBoboBobo1_143
+  - first:
+      213: 6338374644924961808
+    second: BoboboBoboBobo1_144
+  - first:
+      213: -7013771496395713905
+    second: BoboboBoboBobo1_145
+  - first:
+      213: -2115672252597730804
+    second: BoboboBoboBobo1_146
+  - first:
+      213: -7315955345869349919
+    second: BoboboBoboBobo1_147
+  - first:
+      213: -3352791454316738165
+    second: BoboboBoboBobo1_148
+  - first:
+      213: -4784082000634164803
+    second: BoboboBoboBobo1_149
+  - first:
+      213: -4977773853389746577
+    second: BoboboBoboBobo1_150
+  - first:
+      213: 8790797057326378142
+    second: BoboboBoboBobo1_151
+  - first:
+      213: -3635239638660083744
+    second: BoboboBoboBobo1_152
+  - first:
+      213: -5040551939344973600
+    second: BoboboBoboBobo1_0
+  - first:
+      213: 2490574324998291088
+    second: BoboboBoboBobo1_1
+  - first:
+      213: -8770539026570915993
+    second: BoboboBoboBobo1_2
+  - first:
+      213: -8784474055683665354
+    second: BoboboBoboBobo1_3
+  - first:
+      213: 6170508149485232882
+    second: BoboboBoboBobo1_4
+  - first:
+      213: 125186072334776817
+    second: BoboboBoboBobo1_5
+  - first:
+      213: -1821593044606367400
+    second: BoboboBoboBobo1_6
+  - first:
+      213: 4715855845398047906
+    second: BoboboBoboBobo1_7
+  - first:
+      213: 8748205353693067174
+    second: BoboboBoboBobo1_8
+  - first:
+      213: -3987272564549339906
+    second: BoboboBoboBobo1_9
+  - first:
+      213: 697497821371563537
+    second: BoboboBoboBobo1_10
+  - first:
+      213: 1729509366807283420
+    second: BoboboBoboBobo1_11
+  - first:
+      213: -7405663119583362165
+    second: BoboboBoboBobo1_12
+  - first:
+      213: -5287754741060634389
+    second: BoboboBoboBobo1_13
+  - first:
+      213: 7145966209882118023
+    second: BoboboBoboBobo1_14
+  - first:
+      213: 6038780178461738322
+    second: BoboboBoboBobo1_15
+  - first:
+      213: -2215652144494243702
+    second: BoboboBoboBobo1_16
+  - first:
+      213: 6943316658728918372
+    second: BoboboBoboBobo1_17
+  - first:
+      213: 8188902405156274604
+    second: BoboboBoboBobo1_18
+  - first:
+      213: -2420482422902171515
+    second: BoboboBoboBobo1_19
+  - first:
+      213: 1364778500950481576
+    second: BoboboBoboBobo1_20
+  - first:
+      213: 5854560457773262638
+    second: BoboboBoboBobo1_21
+  - first:
+      213: 8830387958312882239
+    second: BoboboBoboBobo1_22
+  - first:
+      213: 807281822537680886
+    second: BoboboBoboBobo1_23
+  - first:
+      213: -3665294921349649849
+    second: BoboboBoboBobo1_24
+  - first:
+      213: -1205889157826189181
+    second: BoboboBoboBobo1_25
+  - first:
+      213: -8070342841583180647
+    second: BoboboBoboBobo1_26
+  - first:
+      213: 9059435298807242458
+    second: BoboboBoboBobo1_27
+  - first:
+      213: 9136023900248768616
+    second: BoboboBoboBobo1_28
+  - first:
+      213: -7079106106839513916
+    second: BoboboBoboBobo1_29
+  - first:
+      213: 7433666632454918852
+    second: BoboboBoboBobo1_30
+  - first:
+      213: 3875156126884456926
+    second: BoboboBoboBobo1_31
+  - first:
+      213: -4431490122435848500
+    second: BoboboBoboBobo1_32
+  - first:
+      213: -2078896743681349377
+    second: BoboboBoboBobo1_33
+  - first:
+      213: -3799612846121719093
+    second: BoboboBoboBobo1_34
+  - first:
+      213: 5212652002735354452
+    second: BoboboBoboBobo1_35
+  - first:
+      213: 6210248831291600066
+    second: BoboboBoboBobo1_36
+  - first:
+      213: -7839320050331269943
+    second: BoboboBoboBobo1_37
+  - first:
+      213: 4797786474890552415
+    second: BoboboBoboBobo1_38
+  - first:
+      213: 6933996327578807533
+    second: BoboboBoboBobo1_39
+  - first:
+      213: -8608380379857612476
+    second: BoboboBoboBobo1_40
+  - first:
+      213: 3964061238401572832
+    second: BoboboBoboBobo1_41
+  - first:
+      213: 4472387304971861419
+    second: BoboboBoboBobo1_42
+  - first:
+      213: 7052915565316442803
+    second: BoboboBoboBobo1_43
+  - first:
+      213: -5147177910391979672
+    second: BoboboBoboBobo1_44
+  - first:
+      213: 8358231583612994951
+    second: BoboboBoboBobo1_45
+  - first:
+      213: -5875872453448828014
+    second: BoboboBoboBobo1_46
+  - first:
+      213: 8331047821188290512
+    second: BoboboBoboBobo1_47
+  - first:
+      213: 6404077243575254547
+    second: BoboboBoboBobo1_48
+  - first:
+      213: -1988266385592156732
+    second: BoboboBoboBobo1_49
+  - first:
+      213: 5876039485408390908
+    second: BoboboBoboBobo1_50
+  - first:
+      213: -6843546013225396301
+    second: BoboboBoboBobo1_51
+  - first:
+      213: 3458358810486222973
+    second: BoboboBoboBobo1_52
+  - first:
+      213: -2194595219317686597
+    second: BoboboBoboBobo1_53
+  - first:
+      213: 5463232866394952361
+    second: BoboboBoboBobo1_54
+  - first:
+      213: 7316782818689415859
+    second: BoboboBoboBobo1_55
+  - first:
+      213: 1705593032944109595
+    second: BoboboBoboBobo1_56
+  - first:
+      213: 6627725525452325746
+    second: BoboboBoboBobo1_57
+  - first:
+      213: 2939810610122101929
+    second: BoboboBoboBobo1_58
+  - first:
+      213: -3268357062088381857
+    second: BoboboBoboBobo1_59
+  - first:
+      213: -3396880505734319221
+    second: BoboboBoboBobo1_60
+  - first:
+      213: 4244056039104232365
+    second: BoboboBoboBobo1_61
+  - first:
+      213: -2871931069371262297
+    second: BoboboBoboBobo1_62
+  - first:
+      213: -5878174786652267797
+    second: BoboboBoboBobo1_63
+  - first:
+      213: -2373119737231677777
+    second: BoboboBoboBobo1_64
+  - first:
+      213: -7839701613727726468
+    second: BoboboBoboBobo1_65
+  - first:
+      213: -5049565624788166669
+    second: BoboboBoboBobo1_66
+  - first:
+      213: -2373800754941740055
+    second: BoboboBoboBobo1_67
+  - first:
+      213: -3977395628154160001
+    second: BoboboBoboBobo1_68
+  - first:
+      213: 4164379405549994649
+    second: BoboboBoboBobo1_69
+  - first:
+      213: -5353389857580392304
+    second: BoboboBoboBobo1_70
+  - first:
+      213: -4815956819286345568
+    second: BoboboBoboBobo1_71
+  - first:
+      213: -4936676868727465018
+    second: BoboboBoboBobo1_72
+  - first:
+      213: -8112562204376446476
+    second: BoboboBoboBobo1_73
+  - first:
+      213: 2928651741255974182
+    second: BoboboBoboBobo1_74
+  - first:
+      213: 1501316205309993203
+    second: BoboboBoboBobo1_75
+  - first:
+      213: 9181148353714854913
+    second: BoboboBoboBobo1_76
+  - first:
+      213: -8730170917360229363
+    second: BoboboBoboBobo1_77
+  - first:
+      213: 7025422595768462364
+    second: BoboboBoboBobo1_78
+  - first:
+      213: 880003997945852692
+    second: BoboboBoboBobo1_79
+  - first:
+      213: -7317079824729240361
+    second: BoboboBoboBobo1_80
+  - first:
+      213: -5316671685794159479
+    second: BoboboBoboBobo1_81
+  - first:
+      213: 2216296820807367591
+    second: BoboboBoboBobo1_82
+  - first:
+      213: 1955790510218823127
+    second: BoboboBoboBobo1_83
+  - first:
+      213: -2207704040837405917
+    second: BoboboBoboBobo1_84
+  - first:
+      213: -6017840700188803999
+    second: BoboboBoboBobo1_85
+  - first:
+      213: -9041938010585489408
+    second: BoboboBoboBobo1_86
+  - first:
+      213: 1470178640245512773
+    second: BoboboBoboBobo1_87
+  - first:
+      213: -4131299215764091779
+    second: BoboboBoboBobo1_88
+  - first:
+      213: 938974878008353914
+    second: BoboboBoboBobo1_89
+  - first:
+      213: -5447377464673875073
+    second: BoboboBoboBobo1_90
+  - first:
+      213: -2856448832589012446
+    second: BoboboBoboBobo1_91
+  - first:
+      213: -6796016369418686384
+    second: BoboboBoboBobo1_92
+  - first:
+      213: 2605529575368370517
+    second: BoboboBoboBobo1_93
+  - first:
+      213: -3699637109964633916
+    second: BoboboBoboBobo1_94
+  - first:
+      213: -6370366657748522870
+    second: BoboboBoboBobo1_95
+  - first:
+      213: -5968455901419203296
+    second: BoboboBoboBobo1_96
+  - first:
+      213: -3640786964117243091
+    second: BoboboBoboBobo1_97
+  - first:
+      213: -1497062560691799467
+    second: BoboboBoboBobo1_98
+  - first:
+      213: 3251914351438592957
+    second: BoboboBoboBobo1_99
+  - first:
+      213: 178374361340970650
+    second: BoboboBoboBobo1_100
+  - first:
+      213: 4485659792355619624
+    second: BoboboBoboBobo1_101
+  - first:
+      213: 6818006172950703075
+    second: BoboboBoboBobo1_102
+  - first:
+      213: 3249890878449453067
+    second: BoboboBoboBobo1_103
+  - first:
+      213: -6975124126530426088
+    second: BoboboBoboBobo1_104
+  - first:
+      213: 6198914016751836596
+    second: BoboboBoboBobo1_105
+  - first:
+      213: -7456377914053350644
+    second: BoboboBoboBobo1_106
+  - first:
+      213: 3769114411814075585
+    second: BoboboBoboBobo1_107
+  - first:
+      213: 3670565587325366652
+    second: BoboboBoboBobo1_108
+  - first:
+      213: 4658391549329778938
+    second: BoboboBoboBobo1_109
+  - first:
+      213: -666282276482793700
+    second: BoboboBoboBobo1_110
+  - first:
+      213: 2267404699220627796
+    second: BoboboBoboBobo1_111
+  - first:
+      213: -7129851783706045684
+    second: BoboboBoboBobo1_112
+  - first:
+      213: -6472424792888027052
+    second: BoboboBoboBobo1_113
+  - first:
+      213: -7188331642857943128
+    second: BoboboBoboBobo1_114
+  - first:
+      213: -7721439211302855250
+    second: BoboboBoboBobo1_115
+  - first:
+      213: 261545424134762655
+    second: BoboboBoboBobo1_116
+  - first:
+      213: 936000888663198506
+    second: BoboboBoboBobo1_117
+  - first:
+      213: 6160056047631766406
+    second: BoboboBoboBobo1_118
+  - first:
+      213: 6156179152746831759
+    second: BoboboBoboBobo1_119
+  - first:
+      213: -2742497440729365931
+    second: BoboboBoboBobo1_120
+  - first:
+      213: 1694182990379029369
+    second: BoboboBoboBobo1_121
+  - first:
+      213: -3277658530264506268
+    second: BoboboBoboBobo1_122
+  - first:
+      213: -3833953921608375923
+    second: BoboboBoboBobo1_123
+  - first:
+      213: -1737479175582176907
+    second: BoboboBoboBobo1_124
+  - first:
+      213: -1704294652334864651
+    second: BoboboBoboBobo1_125
+  - first:
+      213: 3249370507935453970
+    second: BoboboBoboBobo1_126
+  - first:
+      213: 5328793320627402239
+    second: BoboboBoboBobo1_127
+  - first:
+      213: 4168690784752511611
+    second: BoboboBoboBobo1_128
+  - first:
+      213: 6520838606272927345
+    second: BoboboBoboBobo1_129
+  - first:
+      213: -1416437226204061018
+    second: BoboboBoboBobo1_130
+  - first:
+      213: 4493579498325272484
+    second: BoboboBoboBobo1_131
+  - first:
+      213: -8912611482993467192
+    second: BoboboBoboBobo1_132
+  - first:
+      213: 93516915743470093
+    second: BoboboBoboBobo1_133
+  - first:
+      213: 7832696092346576351
+    second: BoboboBoboBobo1_134
+  - first:
+      213: -8877067023092211792
+    second: BoboboBoboBobo1_135
+  - first:
+      213: 8574060033260084851
+    second: BoboboBoboBobo1_136
+  - first:
+      213: 298578727203830193
+    second: BoboboBoboBobo1_137
+  - first:
+      213: -5744297987213123589
+    second: BoboboBoboBobo1_138
+  - first:
+      213: 3954006003522817046
+    second: BoboboBoboBobo1_139
+  - first:
+      213: -5707780943870292076
+    second: BoboboBoboBobo1_140
+  - first:
+      213: 1001460501356541368
+    second: BoboboBoboBobo1_141
+  - first:
+      213: -4028696382932244577
+    second: BoboboBoboBobo1_142
+  - first:
+      213: -4141854315108105658
+    second: BoboboBoboBobo1_143
+  - first:
+      213: 7034796588829106662
+    second: BoboboBoboBobo1_144
+  - first:
+      213: -85190020867106188
+    second: BoboboBoboBobo1_145
+  - first:
+      213: -4362897339686044695
+    second: BoboboBoboBobo1_146
+  - first:
+      213: 8148903920048446478
+    second: BoboboBoboBobo1_147
+  - first:
+      213: -5970915325817286994
+    second: BoboboBoboBobo1_148
+  - first:
+      213: 2946851684276838239
+    second: BoboboBoboBobo1_149
+  - first:
+      213: 2186331599090547035
+    second: BoboboBoboBobo1_150
+  - first:
+      213: 4020696974001605813
+    second: BoboboBoboBobo1_151
+  - first:
+      213: 5666346336986840476
+    second: BoboboBoboBobo1_152
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e0cf6797bc5c0ab0800000000000000
+      internalID: -5040551939344973600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_1
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09e3b38272c409220800000000000000
+      internalID: 2490574324998291088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_2
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f4a804939c84680800000000000000
+      internalID: -8770539026570915993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_3
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63217547367471680800000000000000
+      internalID: -8784474055683665354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_4
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f268bd187c02a550800000000000000
+      internalID: 6170508149485232882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_5
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f9375cc110ccb100800000000000000
+      internalID: 125186072334776817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_6
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8594ae2f6c668b6e0800000000000000
+      internalID: -1821593044606367400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_7
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac66ecd7e5127140800000000000000
+      internalID: 4715855845398047906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_8
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7bb015b6ed76970800000000000000
+      internalID: 8748205353693067174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_9
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1522
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef4306f5abc5aa8c0800000000000000
+      internalID: -3987272564549339906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ef572b2920ea900800000000000000
+      internalID: 697497821371563537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_11
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd642441b93700810800000000000000
+      internalID: 1729509366807283420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_12
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83c50f21acc93990800000000000000
+      internalID: -7405663119583362165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_13
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be871b7241f1e96b0800000000000000
+      internalID: -5287754741060634389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_14
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787d7fc28629b2360800000000000000
+      internalID: 7145966209882118023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_15
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 255c1e5d39e0ec350800000000000000
+      internalID: 6038780178461738322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_16
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8096951d1c6041e0800000000000000
+      internalID: -2215652144494243702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_17
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46dd69eb6bd9b5060800000000000000
+      internalID: 6943316658728918372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_18
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca18eafc953d4a170800000000000000
+      internalID: 8188902405156274604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_19
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1424
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588d6d58f08b86ed0800000000000000
+      internalID: -2420482422902171515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa5e32d0daa0f210800000000000000
+      internalID: 1364778500950481576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_21
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27af91b7b39f3150800000000000000
+      internalID: 5854560457773262638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_22
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30502c0017db8a70800000000000000
+      internalID: 8830387958312882239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_23
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f70df95a8a043b00800000000000000
+      internalID: 807281822537680886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_24
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a29e740b1422dc0800000000000000
+      internalID: -3665294921349649849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_25
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38866453332d34fe0800000000000000
+      internalID: -1205889157826189181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_26
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99461dfa1f1600090800000000000000
+      internalID: -8070342841583180647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_27
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ade5a03c76499bd70800000000000000
+      internalID: 9059435298807242458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_28
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8608ec1255da9ce70800000000000000
+      internalID: 9136023900248768616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_29
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1326
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c44886a086f1cd90800000000000000
+      internalID: -7079106106839513916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2562eba60b92760800000000000000
+      internalID: 7433666632454918852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_31
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9602847f157c530800000000000000
+      internalID: 3875156126884456926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_32
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc61f82763f2082c0800000000000000
+      internalID: -4431490122435848500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_33
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff828241d664623e0800000000000000
+      internalID: -2078896743681349377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_34
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bca67e66f30154bc0800000000000000
+      internalID: -3799612846121719093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_35
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 452f4c0f06f075840800000000000000
+      internalID: 5212652002735354452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_36
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccabe3a86c3f2650800000000000000
+      internalID: 6210248831291600066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_37
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4486fd2f3253390800000000000000
+      internalID: -7839320050331269943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_38
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5466001169259240800000000000000
+      internalID: 4797786474890552415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_39
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1228
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deca23b0ce08a3060800000000000000
+      internalID: 6933996327578807533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 441152757a3e88880800000000000000
+      internalID: -8608380379857612476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_41
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef12de91bc230730800000000000000
+      internalID: 3964061238401572832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_42
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad70d2ee8c111e30800000000000000
+      internalID: 4472387304971861419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_43
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba8285b65df0e160800000000000000
+      internalID: 7052915565316442803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_44
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861495f16fc8198b0800000000000000
+      internalID: -5147177910391979672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_45
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78504bb67576ef370800000000000000
+      internalID: 8358231583612994951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_46
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bfda2a225b47ea0800000000000000
+      internalID: -5875872453448828014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_47
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d758b48ad3dd9370800000000000000
+      internalID: 8331047821188290512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_48
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e3771a25adfd850800000000000000
+      internalID: 6404077243575254547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_49
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1130
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdfdefa1424864e0800000000000000
+      internalID: -1988266385592156732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfeafe587c2eb8150800000000000000
+      internalID: 5876039485408390908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_51
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7d8add827d601a0800000000000000
+      internalID: -6843546013225396301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_52
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70bfd4d30f8eff20800000000000000
+      internalID: 3458358810486222973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_53
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbe7cc6864b3b81e0800000000000000
+      internalID: -2194595219317686597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_54
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a2d5b6b85d41db40800000000000000
+      internalID: 5463232866394952361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_55
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3baf9a6253f6a8560800000000000000
+      internalID: 7316782818689415859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_56
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18c30ca3db7ba710800000000000000
+      internalID: 1705593032944109595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_57
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273006d00496afb50800000000000000
+      internalID: 6627725525452325746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_58
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a490439c2e4cc820800000000000000
+      internalID: 2939810610122101929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_59
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 1032
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a251b819674a2d0800000000000000
+      internalID: -3268357062088381857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b83b14f6d2bdbd0d0800000000000000
+      internalID: -3396880505734319221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_61
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dabb8a94b7ae5ea30800000000000000
+      internalID: 4244056039104232365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_62
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7aad7b698e9d428d0800000000000000
+      internalID: -2871931069371262297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_63
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea1fe9ec278c6ea0800000000000000
+      internalID: -5878174786652267797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_64
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa666dc1c2cf01fd0800000000000000
+      internalID: -2373119737231677777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_65
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74c3b83be8c33390800000000000000
+      internalID: -7839701613727726468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_66
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f75a7861d65ce9b0800000000000000
+      internalID: -5049565624788166669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_67
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ebb4225ac09e0fd0800000000000000
+      internalID: -2373800754941740055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_68
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7cfda4dfb37dc8c0800000000000000
+      internalID: -3977395628154160001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_69
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 934
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99282c96109dac930800000000000000
+      internalID: 4164379405549994649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090edbab940f4b5b0800000000000000
+      internalID: -5353389857580392304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_71
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a831d4f9c84a2db0800000000000000
+      internalID: -4815956819286345568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_72
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb9c942b866d7bb0800000000000000
+      internalID: -4936676868727465018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_73
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9c1e548a36a6f80800000000000000
+      internalID: -8112562204376446476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_74
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d3464fd39a4a820800000000000000
+      internalID: 2928651741255974182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_75
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f02a09622fb5d410800000000000000
+      internalID: 1501316205309993203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_76
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10c165da8cdf96f70800000000000000
+      internalID: 9181148353714854913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_77
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d042c4a1ec338d680800000000000000
+      internalID: -8730170917360229363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_78
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c28c9e0a05f7160800000000000000
+      internalID: 7025422595768462364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_79
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 836
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4137c7249f6663c00800000000000000
+      internalID: 880003997945852692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc06ddbaa2847a90800000000000000
+      internalID: -7317079824729240361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_81
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984acdc45436736b0800000000000000
+      internalID: -5316671685794159479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_82
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7abfc01573ed1ce10800000000000000
+      internalID: 2216296820807367591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_83
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d54ca85b1d542b10800000000000000
+      internalID: 1955790510218823127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_84
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32321bc2fd8ac51e0800000000000000
+      internalID: -2207704040837405917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_85
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16cbb5e54c55c7ca0800000000000000
+      internalID: -6017840700188803999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_86
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00023fd1945948280800000000000000
+      internalID: -9041938010585489408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_87
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a53381faf176410800000000000000
+      internalID: 1470178640245512773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_88
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7c0887704daaa6c0800000000000000
+      internalID: -4131299215764091779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_89
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 738
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7424b83da8e70d00800000000000000
+      internalID: 938974878008353914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7b45acae070764b0800000000000000
+      internalID: -5447377464673875073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_91
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222e37ebbeadb58d0800000000000000
+      internalID: -2856448832589012446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_92
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0503f0d6e13bfa1a0800000000000000
+      internalID: -6796016369418686384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_93
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5592b971853b82420800000000000000
+      internalID: 2605529575368370517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_94
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c884b666af38acc0800000000000000
+      internalID: -3699637109964633916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_95
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8828e3c649e797a0800000000000000
+      internalID: -6370366657748522870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_96
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 025135adaf8cb2da0800000000000000
+      internalID: -5968455901419203296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_97
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b3becbb83597dc0800000000000000
+      internalID: -3640786964117243091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_98
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55abd67688d593be0800000000000000
+      internalID: -1497062560691799467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_99
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 640
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbfd7d8fde112d20800000000000000
+      internalID: 3251914351438592957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9604cc5986b97200800000000000000
+      internalID: 178374361340970650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_101
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 823fb9aa0d3404e30800000000000000
+      internalID: 4485659792355619624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_102
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eba52fad7c6e9e50800000000000000
+      internalID: 6818006172950703075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_103
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0803c8098ee91d20800000000000000
+      internalID: 3249890878449453067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_104
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ba5ed0091633f90800000000000000
+      internalID: -6975124126530426088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_105
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bddea97477f60650800000000000000
+      internalID: 6198914016751836596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_106
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b28c1facf958890800000000000000
+      internalID: -7456377914053350644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_107
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccbbf186959e4430800000000000000
+      internalID: 3769114411814075585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_108
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c713d4544f770f230800000000000000
+      internalID: 3670565587325366652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_109
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 542
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af8ab72de6ee5a040800000000000000
+      internalID: 4658391549329778938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1fba16bcc3e0c6f0800000000000000
+      internalID: -666282276482793700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_111
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451d81b8f80777f10800000000000000
+      internalID: 2267404699220627796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_112
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03140b049dad0d90800000000000000
+      internalID: -7129851783706045684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_113
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4585a7871f35d26a0800000000000000
+      internalID: -6472424792888027052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_114
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af80cbc47aed3c90800000000000000
+      internalID: -7188331642857943128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_115
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead558f72ffe7d490800000000000000
+      internalID: -7721439211302855250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_116
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f907e227d2231a300800000000000000
+      internalID: 261545424134762655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_117
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2b483e59d75dfc00800000000000000
+      internalID: 936000888663198506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_118
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6839693865aec7550800000000000000
+      internalID: 6160056047631766406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_119
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 444
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8fd32592542f6550800000000000000
+      internalID: 6156179152746831759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55288e7ab11b0f9d0800000000000000
+      internalID: -2742497440729365931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_121
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9731d0e1472f28710800000000000000
+      internalID: 1694182990379029369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_122
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4602e88beea6382d0800000000000000
+      internalID: -3277658530264506268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_123
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d812151b83f0bcac0800000000000000
+      internalID: -3833953921608375923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_124
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57929c635eb33e7e0800000000000000
+      internalID: -1737479175582176907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_125
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f68bfe1b012958e0800000000000000
+      internalID: -1704294652334864651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_126
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2139f15d245181d20800000000000000
+      internalID: 3249370507935453970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_127
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff5787dba4da3f940800000000000000
+      internalID: 5328793320627402239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_128
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a2e9b9e2a2ad930800000000000000
+      internalID: 4168690784752511611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_129
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 346
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1761d8cd92cae7a50800000000000000
+      internalID: 6520838606272927345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_130
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a2a77de8ddc75ce0800000000000000
+      internalID: -1416437226204061018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_131
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a7e7a7eeb66c5e30800000000000000
+      internalID: 4493579498325272484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_132
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c06b17c31b005480800000000000000
+      internalID: -8912611482993467192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_133
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d02316fa32d3c4100800000000000000
+      internalID: 93516915743470093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_134
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdd68e9b89353bc60800000000000000
+      internalID: 7832696092346576351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_135
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bf114143925ec480800000000000000
+      internalID: -8877067023092211792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_136
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37e57554c2e2df670800000000000000
+      internalID: 8574060033260084851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_137
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b9f87c35c3c42400800000000000000
+      internalID: 298578727203830193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_138
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bff9b2c4a672840b0800000000000000
+      internalID: -5744297987213123589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_139
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 248
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c4dbfc2837fd630800000000000000
+      internalID: 3954006003522817046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_140
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f0ed00973e9c0b0800000000000000
+      internalID: -5707780943870292076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_141
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b5f0ff1507e5ed00800000000000000
+      internalID: 1001460501356541368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_142
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f972c631cf13718c0800000000000000
+      internalID: -4028696382932244577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_143
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6420094e17d2586c0800000000000000
+      internalID: -4141854315108105658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_144
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e1e940c93e90a160800000000000000
+      internalID: 7034796588829106662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_145
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47adecb902851def0800000000000000
+      internalID: -85190020867106188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_146
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 150
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb34843cffd373c0800000000000000
+      internalID: -4362897339686044695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c9647c0f8b61170800000000000000
+      internalID: 8148903920048446478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_148
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eae89bc752c032da0800000000000000
+      internalID: -5970915325817286994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_149
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f15176ef155e820800000000000000
+      internalID: 2946851684276838239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_150
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59f0057109675e10800000000000000
+      internalID: 2186331599090547035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_151
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bc8ad468926cc730800000000000000
+      internalID: 4020696974001605813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoboboBoboBobo1_152
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 52
+        width: 138
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9dbf6ec8f7e2ae40800000000000000
+      internalID: 5666346336986840476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

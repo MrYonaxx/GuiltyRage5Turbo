@@ -178,6 +178,8 @@ namespace VoiceActing
 
         public void DrawTarget(int hp, int maxHp, string targetName)
         {
+            if (targetTransform == null)
+                return;
             if (targetCoroutine != null)
                 StopCoroutine(targetCoroutine);
             targetTransform.gameObject.SetActive(true);

@@ -45,6 +45,14 @@ namespace VoiceActing
         [SerializeField]
         Animator animatorTextCardBreak;
 
+        [Title("Ultra")]
+        [SerializeField]
+        ParticleSystem particleUltra;
+        [SerializeField]
+        Animator animatorUltra;
+        [SerializeField]
+        Animator animatorBackgroundUltra;
+
 
         [SerializeField]
         FeedbackManager feedbackManager;
@@ -194,6 +202,20 @@ namespace VoiceActing
             animatorPixelize.gameObject.SetActive(true);
             animatorPixelize.SetTrigger("CardBreak");
         }
+
+
+        [ContextMenu("Ultra")]
+        public void UltraEffect()
+        {
+            SetBattleMotionSpeed(0, 1.5f);
+            zoom.SetTrigger("BigZoom");
+            CameraShake();
+            particleUltra.Play();
+            animatorUltra.gameObject.SetActive(true);
+            animatorBackgroundUltra.gameObject.SetActive(true);
+
+        }
+
 
         #endregion
 

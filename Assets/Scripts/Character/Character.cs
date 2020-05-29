@@ -136,30 +136,6 @@ namespace VoiceActing
 
 
 
-
-        [Title("Event")]
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEventCharacterBattle OnDead;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEventAttackBehavior OnHit;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEventCharacterBattle OnGuard;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEvent OnActionHit;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEvent OnActionEnd;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEventCharacterBattle OnGuardBreak;
-        [FoldoutGroup("Events")]
-        [SerializeField]
-        UnityEventCharacterBattle OnWallBounce;
-
         [SerializeField]
         protected CharacterState state = CharacterState.Idle;
         public CharacterState State
@@ -167,7 +143,8 @@ namespace VoiceActing
             get { return state; }
         }
 
-        protected bool inAir = false;
+
+
 
         protected float speedX = 0;
         protected float speedY = 0;
@@ -200,7 +177,43 @@ namespace VoiceActing
         protected bool canMoveCancel = false;
         protected bool canTargetCombo = false;
 
+
+        [FoldoutGroup("Advanced")]
+        [SerializeField]
         protected bool active = true;
+
+        [FoldoutGroup("Advanced")]
+        [SerializeField]
+        protected bool inAir = false;
+
+        [FoldoutGroup("Advanced")]
+        [SerializeField]
+        protected bool autoCombo = false;
+
+
+        [Title("Event")]
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEventCharacterBattle OnDead;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEventAttackBehavior OnHit;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEventCharacterBattle OnGuard;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEvent OnActionHit;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEvent OnActionEnd;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEventCharacterBattle OnGuardBreak;
+        [FoldoutGroup("Events")]
+        [SerializeField]
+        UnityEventCharacterBattle OnWallBounce;
+
 
 
         int layerMask;
@@ -287,14 +300,27 @@ namespace VoiceActing
                 UpdateKnockback();
             UpdateCollision();
             SetAnimation();
+
+            LateUpdateController();
+                         
             EndActionState();
             // Les animations events sont joué après l'Update
         }
 
         protected virtual void UpdateController()
         {
+            if (characterControllers == null)
+                return;
             for (int i = 0; i < characterControllers.Length; i++)
                 characterControllers[i].UpdateController(this);
+        }
+
+        protected virtual void LateUpdateController()
+        {
+            if (characterControllers == null)
+                return;
+            for (int i = 0; i < characterControllers.Length; i++)
+                characterControllers[i].LateUpdateController(this);
         }
 
         protected void UpdateCollision()
@@ -579,6 +605,7 @@ namespace VoiceActing
 
         public void Knockback(AttackController attack)
         {
+            CancelAct();
             if (attack.AttackBehavior.ThrowState == true)
                 return;
             if(state != CharacterState.Dead)
@@ -814,6 +841,14 @@ namespace VoiceActing
             }
         }
 
+        public void ActionReactive()
+        {
+            if (currentAttack != null)
+            {
+                currentAttackController.ActionActive();
+            }
+        }
+
         // Appelé par les anims
         public void ActionActiveInstant(AttackController attack)
         {
@@ -827,6 +862,10 @@ namespace VoiceActing
             if (canTargetCombo == false && currentAttack.AttackBehavior.CancelOnlyOnHit == true)
                 return;
             canMoveCancel = true;
+            if(autoCombo == true && canTargetCombo == true)
+            {
+                Action(currentAttack.AttackBehavior.ComboTo);
+            }
         }
 
         // Appelé par les anims
@@ -878,6 +917,24 @@ namespace VoiceActing
         {
             OnGuardBreak.Invoke(this);
         }
+
+
+
+
+
+
+
+
+
+
+
+        public void ResetToIdle()
+        {
+            state = CharacterState.Idle;
+            characterAnimator.SetTrigger("Idle");
+        }
+
+
 
 
         public void MoveToPointInstant(Vector3 point)

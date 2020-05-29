@@ -190,8 +190,7 @@ namespace VoiceActing
         public void HasHit(Character target)
         {
             user.SetTarget(target);
-            if (attackBehavior.TargetCombo != null || attackBehavior.CancelOnlyOnHit)
-                user.HitConfirm();
+            user.HitConfirm();
             if (attackBehavior.OnHitCombo != null)
                 user.Action(attackBehavior.OnHitCombo);
             if (attackBehavior.ThrowState == true)

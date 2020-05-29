@@ -8,9 +8,7 @@ namespace VoiceActing
     [System.Serializable]
     public class EnemyBehavior
     {
-        [SerializeField]
-        [LabelWidth(117)]
-        protected string note;
+
         [VerticalGroup("Time", PaddingBottom = 5)]
         [HorizontalGroup("Time/a", LabelWidth = 100)]
         [SerializeField]
@@ -29,6 +27,10 @@ namespace VoiceActing
         public virtual void UpdateBehavior(EnemyController enemyController, Character character)
         {
 
+        }
+
+        public virtual void EndBehavior(EnemyController enemyController, Character character)
+        {
         }
     }
 }

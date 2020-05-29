@@ -20,7 +20,7 @@ namespace VoiceActing
     }
 
     [System.Serializable]
-    public struct EnemyBehaviorSequence
+    public struct EnemyPatternSequence
     {
         [VerticalGroup(PaddingTop = 20)]
         [SerializeField]
@@ -45,8 +45,9 @@ namespace VoiceActing
         [SerializeField]
         [VerticalGroup("Pattern", PaddingBottom = 30)]
         [HorizontalGroup("Pattern/Right", LabelWidth = 100, Width = 200)]
-        [ListDrawerSettings(Expanded = true, AlwaysAddDefaultValue = true)]
-        public List<EnemyCondition> conditions;
+        [HideLabel]
+        //[ListDrawerSettings(Expanded = true, AlwaysAddDefaultValue = true)]
+        public EnemyCondition conditions;
 
         [OdinSerialize]
         [HorizontalGroup("Pattern/Right")]
@@ -58,12 +59,52 @@ namespace VoiceActing
     [System.Serializable]
     public struct EnemyCondition
     {
-        [HorizontalGroup]
-        public CharacterState targetState;
-        /*[HorizontalGroup]
-        public Logique logique;*/
+        [SerializeField]
+        public Vector3 Distance;
+
+        [ListDrawerSettings(Expanded = true)]
+        [SerializeField]
+        public List<CharacterState> targetStates;
+
+        public bool CheckCondition(Character character)
+        {
+            Vector3 dist = character.transform.position - character.Target.transform.position;
+            if(Distance.x != 0)
+            {
+                if (Mathf.Abs(dist.x) > Distance.x)
+                    return false;
+            }
+            if (Distance.y != 0)
+            {
+                if (Mathf.Abs(dist.y) > Distance.y)
+                    return false;
+            }
+            if (Distance.z != 0)
+            {
+                if (character.Target.SpriteRenderer.transform.localPosition.y > Distance.z)
+                    return false;
+            }
+
+
+            if(targetStates == null)
+            {
+                return true;
+            }
+            for (int j = 0; j < targetStates.Count; j++)
+            {
+                if (targetStates[j] == character.Target.State)
+                {
+                    return true;
+                }
+            }
+
+
+            return false;
+        }
 
     }
+
+
     public class EnemyController : SerializedMonoBehaviour, ICharacterController
     {
         #region Attributes 
@@ -80,12 +121,19 @@ namespace VoiceActing
         [OdinSerialize]
         [TabGroup("Decision Tree")]
         [System.NonSerialized]
-        EnemyPattern[] patterns = new EnemyPattern[0];
+        [ListDrawerSettings(Expanded = true)]
+        EnemyPattern[] patterns;
+
+        [OdinSerialize]
+        [TabGroup("Decision Tree Wakeup")]
+        [System.NonSerialized]
+        [ListDrawerSettings(Expanded = true)]
+        EnemyPattern[] wakeUpBehaviors;
 
         [OdinSerialize]
         [TabGroup("Sequence")]
         [System.NonSerialized]
-        EnemyBehaviorSequence[] behaviorSequences;
+        EnemyPatternSequence[] behaviorSequences;
 
         [OdinSerialize]
         [System.NonSerialized]
@@ -93,9 +141,11 @@ namespace VoiceActing
         EnemyBehavior startUpPattern;
 
 
-        EnemyBehavior currentPattern;
+
+        List<EnemyBehavior> currentPattern = new List<EnemyBehavior>();
 
         float enemyActionTime = 1;
+        bool isHit = false;
 
         #endregion
 
@@ -115,7 +165,7 @@ namespace VoiceActing
 
         private void Start()
         {
-            currentPattern = startUpPattern;
+            currentPattern.Add(startUpPattern);
             EnemyAppear(true);
         }
 
@@ -172,17 +222,7 @@ namespace VoiceActing
         {
             EnemyDecision(character);
         }
-        public void LateUpdateController(Character character)
-        {
-            CheckInterrupt(character);
-        }
-        private void CheckInterrupt(Character character)
-        {
-            if (character.State == CharacterState.Hit)
-            {
-                currentPattern = null;
-            }
-        }
+
 
 
 
@@ -191,56 +231,92 @@ namespace VoiceActing
             if (character.State == CharacterState.Hit || character.State == CharacterState.Down || character.State == CharacterState.Dead)
                 return;
             //patterns
-            if (currentPattern == null)
+            if (currentPattern.Count == 0)
             {
-                SelectAction(character);
-                enemyActionTime = currentPattern.StartBehavior(this, character);
+                SelectAction(patterns, character);
             }
-
-            enemyActionTime -= Time.deltaTime;
-            currentPattern.UpdateBehavior(this, character);
             if (enemyActionTime <= 0)
-                currentPattern = null;
+            {
+                enemyActionTime = currentPattern[0].StartBehavior(this, character);
+            }
+            enemyActionTime -= Time.deltaTime;
+            currentPattern[0].UpdateBehavior(this, character);
+            if (enemyActionTime <= 0)
+            {
+                currentPattern[0].EndBehavior(this, character);
+                currentPattern.RemoveAt(0);
+            }
         }
 
-        private void SelectAction(Character character)
+        private void SelectAction(EnemyPattern[] enemyPatterns, Character character)
         {
-            for(int i = 0; i < patterns.Length; i++)
+            for(int i = 0; i < enemyPatterns.Length; i++)
             {
-                for (int j = 0; j < patterns[i].conditions.Count; j++)
+                if (enemyPatterns[i].conditions.CheckCondition(character) == true)
                 {
-                    if (patterns[i].conditions[j].targetState == character.Target.State)
-                    {
-                        currentPattern = patterns[i].behaviours[Random.Range(0, patterns[i].behaviours.Count)];
-                        return;
-                    }
+                    currentPattern.Add(enemyPatterns[i].behaviours[Random.Range(0, enemyPatterns[i].behaviours.Count)]);
+                    return;
                 }
             }
         }
 
         public void StopPattern()
         {
-            currentPattern = null;
             enemyActionTime = 0;
         }
 
         public void ForcePattern(EnemyBehavior behavior, Character character)
         {
-            currentPattern = behavior;
-            enemyActionTime = currentPattern.StartBehavior(this, character);
+            currentPattern[0] = behavior;
+            enemyActionTime = currentPattern[0].StartBehavior(this, character);
 
         }
 
         public void ForceBehavior(EnemyBehavior behavior, Character character)
         {
-            currentPattern = behavior;
-            enemyActionTime = currentPattern.StartBehavior(this, character);
-
+            currentPattern[0] = behavior;
+            enemyActionTime = currentPattern[0].StartBehavior(this, character);
         }
 
         public void PlaySequence(string sequenceID)
         {
+            for(int i = 0; i < behaviorSequences.Length; i++)
+            {
+                if(behaviorSequences[i].SequenceID == sequenceID)
+                {
+                    for(int j = 0; j < behaviorSequences[i].behaviours.Count; j++)
+                    {
+                        currentPattern.Add(behaviorSequences[i].behaviours[j]);
+                    }
+                    currentPattern.RemoveAt(0);
+                    return;
+                }
+            }
+        }
 
+
+
+
+        public void LateUpdateController(Character character)
+        {
+            CheckInterrupt(character);
+        }
+        private void CheckInterrupt(Character character)
+        {
+            if (character.State == CharacterState.Hit)
+            {
+                currentPattern.Clear();
+                isHit = true;
+            }
+            else if (isHit == true && character.State == CharacterState.Idle)
+            {
+                if (wakeUpBehaviors != null)
+                {
+                    SelectAction(wakeUpBehaviors, character);
+                    enemyActionTime = currentPattern[0].StartBehavior(this, character);
+                }
+                isHit = false;
+            }
         }
 
         #endregion

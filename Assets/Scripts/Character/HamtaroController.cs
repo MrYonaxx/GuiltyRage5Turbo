@@ -63,6 +63,7 @@ namespace VoiceActing
         [SerializeField]
         AttackController specialRunAttack;
 
+
         [SerializeField]
         AttackController dashBack;
         [SerializeField]
@@ -74,7 +75,9 @@ namespace VoiceActing
         [SerializeField]
         float chargeTotalTime = 0.5f;
 
-
+        [Title("Ultra")]
+        [SerializeField]
+        AttackController ultraAttack;
 
         [Title("Parameter")]
         [SerializeField]
@@ -178,6 +181,7 @@ namespace VoiceActing
                 InputCharged();
                 InputAction();
                 InputSpecial();
+                InputUltra();
             }
         }
 
@@ -716,6 +720,18 @@ namespace VoiceActing
         }
 
 
+        private void InputUltra()
+        {
+            if (state != CharacterState.Hit && state != CharacterState.Down && state != CharacterState.Dead)
+                return;
+
+            if (Input.GetButton(controllerY) && Input.GetButton(controllerX))
+            {
+                CancelAct();
+                Action(ultraAttack);
+
+            }
+        }
 
 
 
