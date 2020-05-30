@@ -144,7 +144,7 @@ namespace VoiceActing
 
         List<EnemyBehavior> currentPattern = new List<EnemyBehavior>();
 
-        float enemyActionTime = 1;
+        float enemyActionTime = 0;
         bool isHit = false;
 
         #endregion
@@ -164,9 +164,9 @@ namespace VoiceActing
         \* ======================================== */
 
         private void Start()
-        {
+        {        
             currentPattern.Add(startUpPattern);
-            EnemyAppear(true);
+            //EnemyAppear(true);
         }
 
         public void EnemyAppear(bool b)
@@ -239,7 +239,8 @@ namespace VoiceActing
             {
                 enemyActionTime = currentPattern[0].StartBehavior(this, character);
             }
-            enemyActionTime -= Time.deltaTime;
+            if(character.State != CharacterState.Acting)
+                enemyActionTime -= Time.deltaTime;
             currentPattern[0].UpdateBehavior(this, character);
             if (enemyActionTime <= 0)
             {

@@ -246,12 +246,22 @@ namespace VoiceActing
         public void SetActive(bool b)
         {
             active = b;
+            if(b == false)
+            {
+                CancelAction();
+                SetSpeed(0, 0);
+            }
         }
 
         public void SetHealthBar(ICharacterInfoDrawer drawer)
         {
             healthBar = drawer;
             healthBar.DrawCharacter(characterStat.CharacterData);
+        }
+
+        public void SetAutoCombo(bool b)
+        {
+            autoCombo = b;
         }
 
         #endregion
@@ -607,7 +617,10 @@ namespace VoiceActing
         {
             CancelAct();
             if (attack.AttackBehavior.ThrowState == true)
+            {
+                state = CharacterState.Throw;
                 return;
+            }
             if(state != CharacterState.Dead)
                 state = CharacterState.Hit;
 
@@ -734,6 +747,7 @@ namespace VoiceActing
                 knockbackAnimation = 0;
             characterAnimator.SetTrigger("Hit");
             characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
+            //this.transform.SetParent(throwTransform);
         }
 
         public void UpdateThrow()
@@ -741,7 +755,7 @@ namespace VoiceActing
             float x = throwTransform.position.x - (throwTransform.localPosition.x * throwerScale) + (throwTransform.localPosition.x * throwerScale * throwDirection);
             float y = throwTransform.position.y - (throwTransform.localPosition.y * throwerScale);
             MoveToPointInstant(new Vector3(x, y, throwTransform.position.z));
-            spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, throwTransform.localPosition.y * throwerScale, spriteRenderer.transform.localPosition.z);
+            spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, throwTransform.localPosition.y * throwerScale, throwTransform.localPosition.z);
         }
 
 
@@ -935,6 +949,19 @@ namespace VoiceActing
         }
 
 
+        public void MoveToTarget()
+        {
+            Vector2 direction = target.transform.position - this.transform.position;
+            direction.Normalize();
+            SetSpeed(direction.x * defaultSpeed, direction.y * defaultSpeed);
+        }
+
+        public void MoveToTargetHorizontal(float multiplier)
+        {
+            Vector2 direction = target.transform.position - this.transform.position;
+            direction.Normalize();
+            SetSpeed((1 * GetDirection() * defaultSpeed * multiplier), direction.y * defaultSpeed * multiplier);
+        }
 
 
         public void MoveToPointInstant(Vector3 point)

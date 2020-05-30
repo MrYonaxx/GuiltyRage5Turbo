@@ -2491,7 +2491,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 230039007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 058cba836c1846c3aa1c5fd2e28aea77, type: 3}
   m_Name: 
@@ -5324,6 +5324,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 425798171}
   m_CullTransparentMesh: 0
+--- !u!1 &440833703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 440833704}
+  m_Layer: 0
+  m_Name: ParticleTransform
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &440833704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440833703}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1615050368}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &443275151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6111,7 +6141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 519420031}
   focusTarget: {fileID: 1079504038}
-  focusTargetLock: {fileID: 588618727}
+  focusTargetLock: {fileID: 0}
   smoothCamera: 0.7
   cameraOffset: {x: 0, y: 0.48, z: 0}
   clampLeft: -2
@@ -7297,7 +7327,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &588618722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7318,6 +7348,8 @@ MonoBehaviour:
     - {fileID: 7406510549977438232, guid: 34cdbe2d49ac36142a6a00b1a10bb7d7, type: 3}
     - {fileID: 592615373216595027, guid: 8e4f9b36cd9630d41b68929aeddc1ab6, type: 3}
     - {fileID: 4453672715119350222, guid: 7608aee75ad0e5f4a846dc2e466aef7a, type: 3}
+    - {fileID: 2489706371383798360, guid: 647688a55d0c0544eb835a08238426e7, type: 3}
+    - {fileID: 1330191306515187262, guid: aa5dc7aefa055c546bd3b13cff115760, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -7391,6 +7423,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: true
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -7524,7 +7562,7 @@ MonoBehaviour:
         mscorlib
     - Name: 
       Entry: 12
-      Data: 4
+      Data: 5
     - Name: 
       Entry: 7
       Data: 8|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -7590,10 +7628,16 @@ MonoBehaviour:
       Data: 10|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
-      Data: 2
+      Data: 1
     - Name: behaviorMaxTime
       Entry: 4
-      Data: 2
+      Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: true
+    - Name: autoCombo
+      Entry: 5
+      Data: true
     - Name: attackController
       Entry: 10
       Data: 1
@@ -7649,23 +7693,56 @@ MonoBehaviour:
       Entry: 5
       Data: true
     - Name: behaviourDestination
-      Entry: 6
+      Entry: 7
+      Data: 12|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
+    - Name: behaviorTime
+      Entry: 4
+      Data: 0.3
+    - Name: behaviorMaxTime
+      Entry: 4
+      Data: 0.6
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: 
+      Entry: 8
       Data: 
     - Name: 
       Entry: 8
       Data: 
     - Name: 
       Entry: 7
-      Data: 12|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
+      Data: 13|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 0
     - Name: behaviorMaxTime
       Entry: 4
       Data: 0
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: true
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 14|VoiceActing.EnemyBehaviorStartSequence, Assembly-CSharp
+    - Name: behaviorTime
+      Entry: 4
+      Data: 0
+    - Name: behaviorMaxTime
+      Entry: 4
+      Data: 0
+    - Name: sequenceID
+      Entry: 1
+      Data: Shoulder
     - Name: 
       Entry: 8
       Data: 
@@ -7686,7 +7763,7 @@ MonoBehaviour:
       Data: 
     - Name: wakeUpBehaviors
       Entry: 7
-      Data: 13|VoiceActing.EnemyPattern[], Assembly-CSharp
+      Data: 15|VoiceActing.EnemyPattern[], Assembly-CSharp
     - Name: 
       Entry: 12
       Data: 2
@@ -7722,20 +7799,26 @@ MonoBehaviour:
       Data: 
     - Name: behaviours
       Entry: 7
-      Data: 14|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
+      Data: 16|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 15|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
+      Data: 17|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 0.1
     - Name: behaviorMaxTime
       Entry: 4
       Data: 0.2
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -7744,7 +7827,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 16|VoiceActing.EnemyBehaviorStartSequence, Assembly-CSharp
+      Data: 18|VoiceActing.EnemyBehaviorStartSequence, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 0
@@ -7798,14 +7881,14 @@ MonoBehaviour:
       Data: 
     - Name: behaviours
       Entry: 7
-      Data: 17|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
+      Data: 19|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 7
-      Data: 18|VoiceActing.EnemyBehaviorMoveTo, Assembly-CSharp
+      Data: 20|VoiceActing.EnemyBehaviorMoveTo, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 1
@@ -7871,10 +7954,10 @@ MonoBehaviour:
       Data: 
     - Name: behaviorSequences
       Entry: 7
-      Data: 19|VoiceActing.EnemyPatternSequence[], Assembly-CSharp
+      Data: 21|VoiceActing.EnemyPatternSequence[], Assembly-CSharp
     - Name: 
       Entry: 12
-      Data: 1
+      Data: 2
     - Name: 
       Entry: 7
       Data: VoiceActing.EnemyPatternSequence, Assembly-CSharp
@@ -7883,14 +7966,14 @@ MonoBehaviour:
       Data: Counter
     - Name: behaviours
       Entry: 7
-      Data: 20|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
+      Data: 22|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
         mscorlib
     - Name: 
       Entry: 12
       Data: 2
     - Name: 
       Entry: 7
-      Data: 21|VoiceActing.EnemyBehaviorGuard, Assembly-CSharp
+      Data: 23|VoiceActing.EnemyBehaviorGuard, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 1
@@ -7905,16 +7988,131 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 7
-      Data: 22|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
+      Data: 24|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 1
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1.5
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: true
     - Name: attackController
       Entry: 10
       Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: VoiceActing.EnemyPatternSequence, Assembly-CSharp
+    - Name: SequenceID
+      Entry: 1
+      Data: Shoulder
+    - Name: behaviours
+      Entry: 7
+      Data: 25|System.Collections.Generic.List`1[[VoiceActing.EnemyBehavior, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 7
+      Data: 26|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
+    - Name: behaviorTime
+      Entry: 4
+      Data: 0
+    - Name: behaviorMaxTime
+      Entry: 4
+      Data: 0
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: true
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 27|VoiceActing.EnemyBehaviorMoveTo, Assembly-CSharp
+    - Name: behaviorTime
+      Entry: 4
+      Data: 0.5
+    - Name: behaviorMaxTime
+      Entry: 4
+      Data: 0.5
+    - Name: sizeMin
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: sizeMax
+      Entry: 7
+      Data: UnityEngine.Vector2, UnityEngine.CoreModule
+    - Name: 
+      Entry: 4
+      Data: 1
+    - Name: 
+      Entry: 4
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: nearestSide
+      Entry: 5
+      Data: true
+    - Name: lookAtPosition
+      Entry: 5
+      Data: true
+    - Name: targetIsSelf
+      Entry: 5
+      Data: true
+    - Name: alwaysUpdatePosition
+      Entry: 5
+      Data: false
+    - Name: behaviourDestination
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 28|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
+    - Name: behaviorTime
+      Entry: 4
+      Data: 1
+    - Name: behaviorMaxTime
+      Entry: 4
+      Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: true
+    - Name: autoCombo
+      Entry: 5
+      Data: true
+    - Name: attackController
+      Entry: 10
+      Data: 4
     - Name: 
       Entry: 8
       Data: 
@@ -7935,7 +8133,7 @@ MonoBehaviour:
       Data: 
     - Name: startUpPattern
       Entry: 7
-      Data: 23|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
+      Data: 29|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
     - Name: behaviorTime
       Entry: 4
       Data: 1
@@ -7944,7 +8142,13 @@ MonoBehaviour:
       Data: 1
     - Name: lookAtPlayer
       Entry: 5
+      Data: true
+    - Name: autoCombo
+      Entry: 5
       Data: false
+    - Name: attackController
+      Entry: 10
+      Data: 5
     - Name: 
       Entry: 8
       Data: 
@@ -8062,7 +8266,7 @@ MonoBehaviour:
   characterAnimator: {fileID: 588618723}
   spriteRenderer: {fileID: 758108032}
   particlePoint: {fileID: 1992228906}
-  throwPoint: {fileID: 0}
+  throwPoint: {fileID: 799913864}
   offsetRaycastX: 0.0001
   offsetRaycastY: 0.0001
   numberRaycastVertical: 2
@@ -8101,7 +8305,7 @@ MonoBehaviour:
       WakeUpRecovery: 0
       customStats: []
   target: {fileID: 1079504037}
-  jumpImpulsion: 1
+  jumpImpulsion: 7
   gravity: 20
   gravityMax: -5
   defaultSpeed: 3
@@ -8110,8 +8314,8 @@ MonoBehaviour:
   direction: 1
   state: 0
   active: 1
-  inAir: 0
-  autoCombo: 1
+  inAir: 1
+  autoCombo: 0
   OnDead:
     m_PersistentCalls:
       m_Calls:
@@ -14432,10 +14636,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 758108028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1992228906}
+  - {fileID: 799913864}
   m_Father: {fileID: 588618727}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14478,7 +14683,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 10
-  m_Sprite: {fileID: -887304516209160570, guid: 7befeb804143f904cb6e2cd5197c0df4,
+  m_Sprite: {fileID: 6932356953912624080, guid: 7befeb804143f904cb6e2cd5197c0df4,
     type: 3}
   m_Color: {r: 0.8679245, g: 0.8679245, b: 0.8679245, a: 1}
   m_FlipX: 1
@@ -15110,6 +15315,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &799913863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 799913864}
+  m_Layer: 0
+  m_Name: ThrowParent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &799913864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799913863}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1531527596}
+  m_Father: {fileID: 758108031}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &800785129
 GameObject:
   m_ObjectHideFlags: 0
@@ -16040,6 +16276,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -16161,6 +16403,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 1
@@ -16287,6 +16535,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -19635,6 +19889,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -19756,6 +20016,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 1
@@ -19882,6 +20148,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -20774,7 +21046,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1079504033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: 0, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1896451608}
@@ -23258,6 +23530,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250066138}
   m_CullTransparentMesh: 0
+--- !u!1 &1251712567
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251712568}
+  - component: {fileID: 1251712570}
+  - component: {fileID: 1251712569}
+  m_Layer: 0
+  m_Name: PlayerSpriteReflection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251712568
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251712567}
+  m_LocalRotation: {x: -0.17364825, y: -0, z: -0, w: 0.9848078}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: -2, z: 2}
+  m_Children: []
+  m_Father: {fileID: 1531527596}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: -20, y: 0, z: 0}
+--- !u!114 &1251712569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251712567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319e8af3142bfc741aa52df9beffb73a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteReflection: {fileID: 1251712570}
+  spriteToReflect: {fileID: 1615050366}
+--- !u!212 &1251712570
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251712567}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
+  m_Sprite: {fileID: 21300000, guid: a97dd66f8ab395740b74f858b3fd129f, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.19607843}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1267108845
 GameObject:
   m_ObjectHideFlags: 0
@@ -26430,6 +26798,230 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1492059861
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492059865}
+  - component: {fileID: 1492059864}
+  - component: {fileID: 1492059863}
+  - component: {fileID: 1492059862}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1492059862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492059861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e55e706f2a85047980c9161d36f0be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cinematicEvents:
+  - cineEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 588618721}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1079504037}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 519420030}
+          m_MethodName: SetTarget
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 588618727}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    timeEvent: 0.8
+  - cineEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 519420033}
+          m_MethodName: ShakeEffect
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 553859878}
+          m_MethodName: SetTrigger
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: BattleTheme
+            m_BoolArgument: 0
+          m_CallState: 2
+    timeEvent: 3.5
+  - cineEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 519420030}
+          m_MethodName: SetTarget
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1079504038}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 519420030}
+          m_MethodName: SetLocked
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 588618727}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    timeEvent: 0.5
+  - cineEvent:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1079504037}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1625773747}
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+    timeEvent: 0
+--- !u!114 &1492059863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492059861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a7fc3fc018d4424dbdc9c09fe6d4446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1492059862}
+        m_MethodName: StartCinematic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1492059864}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!61 &1492059864
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492059861}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1492059865
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492059861}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1519827253
 GameObject:
   m_ObjectHideFlags: 0
@@ -26676,6 +27268,161 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1525848789}
   m_CullTransparentMesh: 0
+--- !u!1 &1531527595
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531527596}
+  - component: {fileID: 1531527600}
+  - component: {fileID: 1531527599}
+  - component: {fileID: 1531527598}
+  - component: {fileID: 1531527597}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Enemy
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1531527596
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531527595}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_Children:
+  - {fileID: 1615050368}
+  - {fileID: 1251712568}
+  m_Father: {fileID: 799913864}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1531527597
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531527595}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aaaf63f6dc2ae364e9fbeac7bb9afe9a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &1531527598
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531527595}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!61 &1531527599
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531527595}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.04}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.5, y: 0.32}
+  m_EdgeRadius: 0
+--- !u!114 &1531527600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531527595}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e72a340e8749e444b9f03f8153f52195, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: patterns
+      Entry: 7
+      Data: 0|VoiceActing.EnemyPattern[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: wakeUpBehaviors
+      Entry: 7
+      Data: 1|VoiceActing.EnemyPattern[], Assembly-CSharp
+    - Name: 
+      Entry: 12
+      Data: 0
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: behaviorSequences
+      Entry: 6
+      Data: 
+    - Name: startUpPattern
+      Entry: 6
+      Data: 
+  timeEnemyAppear: 0.5
+  timeEnemyDisappear: 2
 --- !u!1 &1547912700
 GameObject:
   m_ObjectHideFlags: 0
@@ -27352,6 +28099,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -27473,6 +28226,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 1
@@ -27599,6 +28358,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -28379,6 +29144,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -28808,6 +29579,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1614361324}
   m_CullTransparentMesh: 0
+--- !u!1 &1615050365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1615050368}
+  - component: {fileID: 1615050366}
+  - component: {fileID: 1615050367}
+  m_Layer: 0
+  m_Name: PlayerSprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1615050366
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615050365}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 5107004252377745830, guid: 6d11b0dd94b348146a323dddeb03522d,
+    type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &1615050367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615050365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d44e634138a51e740a08858a938ab4fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1615050368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615050365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_Children:
+  - {fileID: 440833704}
+  m_Father: {fileID: 1531527596}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1616753026
 GameObject:
   m_ObjectHideFlags: 0
@@ -28920,6 +29787,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -29041,6 +29914,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 1
@@ -29167,6 +30046,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -29653,6 +30538,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 0
@@ -29774,6 +30665,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 1
@@ -29900,6 +30797,12 @@ MonoBehaviour:
     - Name: behaviorMaxTime
       Entry: 4
       Data: 1
+    - Name: lookAtPlayer
+      Entry: 5
+      Data: false
+    - Name: autoCombo
+      Entry: 5
+      Data: false
     - Name: attackController
       Entry: 10
       Data: 2
@@ -30293,7 +31196,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1625773748
 RectTransform:
   m_ObjectHideFlags: 0

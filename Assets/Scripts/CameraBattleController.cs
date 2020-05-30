@@ -93,6 +93,10 @@ namespace VoiceActing
             actualFocusPosition = focusTarget.position;
         }
 
+        public void SetTarget(Transform lockTransform)
+        {
+            focusTarget = lockTransform;
+        }
         public void SetLocked(Transform lockTransform)
         {
             focusTargetLock = lockTransform;

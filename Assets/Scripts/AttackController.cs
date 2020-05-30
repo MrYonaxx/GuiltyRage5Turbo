@@ -194,7 +194,9 @@ namespace VoiceActing
             if (attackBehavior.OnHitCombo != null)
                 user.Action(attackBehavior.OnHitCombo);
             if (attackBehavior.ThrowState == true)
+            {
                 target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);
+            }
             if (attackBehavior.OnHitKnockback != 0)
                 user.SetSpeed(attackBehavior.OnHitKnockback * -direction, 0);
 
