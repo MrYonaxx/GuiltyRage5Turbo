@@ -8963,6 +8963,12 @@ MonoBehaviour:
   transformBarNumber: {fileID: 1301321463}
   transformBar: {fileID: 125545719}
   healthBarAmount: 1000
+  targetTransform: {fileID: 0}
+  targetHealthGauge: {fileID: 0}
+  textTargetName: {fileID: 0}
+  targetHealthBarAmount: 1000
+  timeTargetDisappearNormal: 3
+  timeTargetDisappearDead: 1
 --- !u!1 &1078539434
 GameObject:
   m_ObjectHideFlags: 0
@@ -9138,50 +9144,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89585f0e964d24c45af7ba2d4f057dba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: healthBar
+      Entry: 6
+      Data: 
+    - Name: characterControllers
+      Entry: 6
+      Data: 
   characterRigidbody: {fileID: 1079504035}
   characterCollider: {fileID: 1079504036}
   characterAnimator: {fileID: 1079504034}
   spriteRenderer: {fileID: 981988819}
   particlePoint: {fileID: 0}
   throwPoint: {fileID: 2012286181}
-  characterData: {fileID: 0}
+  offsetRaycastX: 0.001
+  offsetRaycastY: 0.001
+  numberRaycastVertical: 3
+  numberRaycastHorizontal: 3
+  battleFeedback: {fileID: 0}
   characterStat:
-    characterBaseStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
+    characterData: {fileID: 0}
     characterBonusStat:
       hp: 0
       HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
+      AttackMultiplier: 0
+      DefenseMultiplier: 0
+      MotionSpeed: 0
       Speed: 0
+      JumpImpulsion: 0
+      Gravity: 0
+      GravityMax: 0
       Mass: 0
       KnockbackTime: 0
+      KnockdownResistance: 0
+      WakeUpRecovery: 0
+      customStats: []
     characterPercentageBonusStat:
       hp: 0
       HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
+      AttackMultiplier: 0
+      DefenseMultiplier: 0
+      MotionSpeed: 0
       Speed: 0
+      JumpImpulsion: 0
+      Gravity: 0
+      GravityMax: 0
       Mass: 0
       KnockbackTime: 0
+      KnockdownResistance: 0
+      WakeUpRecovery: 0
+      customStats: []
   target: {fileID: 0}
   jumpImpulsion: 8.5
   gravity: 22
@@ -9190,10 +9210,10 @@ MonoBehaviour:
   wakeUpRecovery: 1
   defaultMotionSpeed: 1
   direction: 1
-  offsetRaycastX: 0.001
-  offsetRaycastY: 0.001
-  numberRaycastVertical: 3
-  numberRaycastHorizontal: 3
+  state: 0
+  active: 1
+  inAir: 0
+  autoCombo: 0
   OnDead:
     m_PersistentCalls:
       m_Calls: []
@@ -9283,7 +9303,8 @@ MonoBehaviour:
     type: 3}
   specialForwardAttack: {fileID: 979252468491068342, guid: c46ae6e5e1d51e94282ffd2217d5af61,
     type: 3}
-  specialAerialAttack: {fileID: 0}
+  specialAerialAttack: {fileID: 8527577937789488017, guid: 0ec9dad6bfd1c3f4fb161c8e8e307edc,
+    type: 3}
   specialAerialForwardAttack: {fileID: 0}
   specialRunAttack: {fileID: 5764859613020119145, guid: 57494e84959856e4c8acf26bfe53499c,
     type: 3}
@@ -9291,6 +9312,7 @@ MonoBehaviour:
   dashForward: {fileID: 0}
   chargedAttack: {fileID: 0}
   chargeTotalTime: 0.5
+  ultraAttack: {fileID: 0}
   canRunY: 0
   crouchJumpTime: 0.1
   runSpeedBonus: 2
@@ -10098,207 +10120,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72a340e8749e444b9f03f8153f52195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterRigidbody: {fileID: 1189884493}
-  characterCollider: {fileID: 1189884494}
-  characterAnimator: {fileID: 1189884492}
-  spriteRenderer: {fileID: 807214972}
-  particlePoint: {fileID: 565648303}
-  throwPoint: {fileID: 0}
-  characterData: {fileID: 0}
-  characterStat:
-    characterBaseStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-    characterBonusStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-    characterPercentageBonusStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-  target: {fileID: 0}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 2
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 2
-  direction: 1
-  offsetRaycastX: 0.0001
-  offsetRaycastY: 0.0001
-  numberRaycastVertical: 2
-  numberRaycastHorizontal: 2
-  OnDead:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationDeath
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578947}
-        m_MethodName: CharacterDead
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1646922390}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Distortion
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnHit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578947}
-        m_MethodName: DrawHpEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: ApplyFeedback
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 807214973}
-        m_MethodName: Shake
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578949}
-        m_MethodName: AddCombo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnGuard:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: Guard
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 807214973}
-        m_MethodName: Shake
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnActionHit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnActionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGuardBreak:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationCardBreak
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnWallBounce:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationWallBounce
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: patterns
+      Entry: 6
+      Data: 
+    - Name: wakeUpBehaviors
+      Entry: 6
+      Data: 
+    - Name: behaviorSequences
+      Entry: 6
+      Data: 
+    - Name: startUpPattern
+      Entry: 6
+      Data: 
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
-  debugPoint: {fileID: 0}
 --- !u!1 &1198324901
 GameObject:
   m_ObjectHideFlags: 0
@@ -11302,6 +11146,12 @@ MonoBehaviour:
   transformBarNumber: {fileID: 2094124144}
   transformBar: {fileID: 1428909175}
   healthBarAmount: 1000
+  targetTransform: {fileID: 0}
+  targetHealthGauge: {fileID: 0}
+  textTargetName: {fileID: 0}
+  targetHealthBarAmount: 1000
+  timeTargetDisappearNormal: 3
+  timeTargetDisappearDead: 1
 --- !u!1 &1397739274
 GameObject:
   m_ObjectHideFlags: 0
@@ -11426,88 +11276,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runData: {fileID: 11400000, guid: 1aae71d6d0b174646afb7b05a8a06b1f, type: 2}
   cameraController: {fileID: 519420030}
-  battleFeedbackManager: {fileID: 1402578948}
-  enemiesDatas:
-  - {fileID: 11400000, guid: 815e1d707b0f81f40932e738aa64c953, type: 2}
-  players:
-  - {fileID: 1079504037}
-  playerHealthBar: {fileID: 1067843554}
-  enemyPrefab: {fileID: 1599405552}
-  enemyHealthBar: {fileID: 1383924038}
-  enemiesName: []
-  OnEventBattleStart:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 981657178}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 553859878}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BattleTheme
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnEventBattleEnd:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1450267815}
-        m_MethodName: InitializeBattleReward
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 981657178}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1646922390}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Transition
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 553859878}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: ExplorationTheme
-          m_BoolArgument: 0
-        m_CallState: 2
-  enemiesController: []
 --- !u!114 &1402578948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11521,7 +11289,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraMain: {fileID: 519420031}
-  cameraController: {fileID: 519420030}
   cameraShake: {fileID: 519420033}
   zoom: {fileID: 519420035}
   rippleEffect: {fileID: 519420038}
@@ -11532,7 +11299,11 @@ MonoBehaviour:
   cardBreakAnimation: {fileID: 1060929033}
   animatorPixelize: {fileID: 1519827255}
   animatorTextCardBreak: {fileID: 1732692003}
-  battleCharacters: []
+  particleUltra: {fileID: 0}
+  animatorUltra: {fileID: 0}
+  animatorBackgroundUltra: {fileID: 0}
+  feedbackManager: {fileID: 0}
+  battleCharacters: {fileID: 0}
 --- !u!114 &1402578949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13432,207 +13203,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e72a340e8749e444b9f03f8153f52195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterRigidbody: {fileID: 1599405548}
-  characterCollider: {fileID: 1599405549}
-  characterAnimator: {fileID: 1599405551}
-  spriteRenderer: {fileID: 878990880}
-  particlePoint: {fileID: 2050931603}
-  throwPoint: {fileID: 0}
-  characterData: {fileID: 0}
-  characterStat:
-    characterBaseStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-    characterBonusStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-    characterPercentageBonusStat:
-      hp: 0
-      HpMax: 0
-      Attack: 0
-      Magic: 0
-      Defense: 0
-      Reload: 0
-      Recovery: 0
-      RecoveryKnockback: 0
-      Speed: 0
-      Mass: 0
-      KnockbackTime: 0
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 2
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
-  offsetRaycastX: 0.0001
-  offsetRaycastY: 0.0001
-  numberRaycastVertical: 2
-  numberRaycastHorizontal: 2
-  OnDead:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationDeath
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578947}
-        m_MethodName: CharacterDead
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1646922390}
-        m_MethodName: SetTrigger
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Distortion
-          m_BoolArgument: 1
-        m_CallState: 2
-  OnHit:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578947}
-        m_MethodName: DrawHpEnemy
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: ApplyFeedback
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 878990879}
-        m_MethodName: Shake
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1402578949}
-        m_MethodName: AddCombo
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnGuard:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: Guard
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 878990879}
-        m_MethodName: Shake
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnActionHit:
-    m_PersistentCalls:
-      m_Calls: []
-  OnActionEnd:
-    m_PersistentCalls:
-      m_Calls: []
-  OnGuardBreak:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationCardBreak
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnWallBounce:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1402578948}
-        m_MethodName: AnimationWallBounce
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: patterns
+      Entry: 6
+      Data: 
+    - Name: wakeUpBehaviors
+      Entry: 6
+      Data: 
+    - Name: behaviorSequences
+      Entry: 6
+      Data: 
+    - Name: startUpPattern
+      Entry: 6
+      Data: 
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
-  debugPoint: {fileID: 0}
 --- !u!1 &1638933550
 GameObject:
   m_ObjectHideFlags: 0
@@ -19714,6 +19307,7 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: 
+    attackAnimation2: {fileID: 0}
     lifetime: 0
     attackDamage: 0
     comboCost: 0
@@ -25589,6 +25183,7 @@ MonoBehaviour:
   attackBehavior:
     attackName: 
     attackAnimation: 
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -26046,12 +25641,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runData: {fileID: 11400000, guid: 1aae71d6d0b174646afb7b05a8a06b1f, type: 2}
-  playerData: {fileID: 11400000, guid: 2218a8dd4e847e24284c9ce9901fc5de, type: 2}
-  playerController: {fileID: 0}
-  enemyDatas:
-  - {fileID: 11400000, guid: 815e1d707b0f81f40932e738aa64c953, type: 2}
-  - {fileID: 11400000, guid: 815e1d707b0f81f40932e738aa64c953, type: 2}
-  battleManager: {fileID: 1402578947}
+  players: []
+  healthBarPrefab: {fileID: 0}
+  healthParent: {fileID: 0}
 --- !u!4 &1988792567
 Transform:
   m_ObjectHideFlags: 0
