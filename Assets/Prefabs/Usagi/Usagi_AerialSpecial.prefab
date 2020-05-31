@@ -95,7 +95,7 @@ MonoBehaviour:
     isMultiHit: 1
     noDirection: 0
     linkToCharacter: 1
-    linkToCharacterAerial: 0
+    linkToCharacterAerial: 1
     guardBreak: 1
     wakeUpAttack: 0
     throwState: 0
@@ -116,8 +116,9 @@ MonoBehaviour:
     knockbackAerialPowerZ: 1
     blockStun: 0.3
     blockKnockback: 0
-    onHitKnockback: 0
-    hitStop: 0.1
+    userKnockbackX: 0
+    userKnockbackZ: 0
+    hitStop: 0.05
     hitStopGlobal: 0
     targetShakePower: 0.2
     zoom: 0

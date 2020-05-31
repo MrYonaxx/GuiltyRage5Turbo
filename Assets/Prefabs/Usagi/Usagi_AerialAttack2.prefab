@@ -196,10 +196,10 @@ MonoBehaviour:
     knockbackPowerX: 1
     knockbackPowerZ: 0
     knockbackAerialPowerX: 2
-    knockbackAerialPowerZ: 5
+    knockbackAerialPowerZ: 8
     blockStun: 0.1
     blockKnockback: 0
-    userKnockbackX: 1
+    userKnockbackX: -2
     userKnockbackZ: 5
     hitStop: 0.2
     hitStopGlobal: 0
