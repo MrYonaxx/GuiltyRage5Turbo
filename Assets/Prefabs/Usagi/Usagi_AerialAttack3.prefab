@@ -80,7 +80,7 @@ MonoBehaviour:
     attackAnimation: Usagi_AerialAttack3
     attackAnimation2: {fileID: 7400000, guid: bc44e6ee68359c544a6810449f2c578e, type: 2}
     lifetime: 0.1
-    attackDamage: 0
+    attackDamage: 300
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
     userKnockbackZ: 0
     hitStop: 0.3
     hitStopGlobal: 0
-    targetShakePower: 0.2
+    targetShakePower: 0
     zoom: 0.1
     shakeScreen: 0
     shakeScreenTime: 0

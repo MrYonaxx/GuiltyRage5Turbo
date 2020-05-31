@@ -270,7 +270,7 @@ MonoBehaviour:
     attackAnimation: Usagi_SuperPunch
     attackAnimation2: {fileID: 0}
     lifetime: 0.4
-    attackDamage: 0
+    attackDamage: 100
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
@@ -306,7 +306,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     hitStop: 0.15
     hitStopGlobal: 0
     targetShakePower: 0.1

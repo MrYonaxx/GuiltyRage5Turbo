@@ -80,7 +80,7 @@ MonoBehaviour:
     attackAnimation: Usagi_Jump_Special
     attackAnimation2: {fileID: 7400000, guid: e212a425a8291904c808c98e35487ef2, type: 2}
     lifetime: 0.4
-    attackDamage: 0
+    attackDamage: 50
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
