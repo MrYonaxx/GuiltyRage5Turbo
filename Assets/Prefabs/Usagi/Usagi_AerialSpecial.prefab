@@ -77,8 +77,8 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: aerialSPECIAL
-    attackAnimation: jump_special attack
-    attackAnimation2: {fileID: 0}
+    attackAnimation: Usagi_Jump_Special
+    attackAnimation2: {fileID: 7400000, guid: e212a425a8291904c808c98e35487ef2, type: 2}
     lifetime: 0.4
     attackDamage: 0
     comboCost: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
     throwState: 0
     attackThrow: 0
     cancelOnlyOnHit: 0
-    keepMomentum: 0
+    keepMomentum: 1
     jumpCancel: 0
     dashCancel: 0
     runCancel: 0
@@ -273,7 +273,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8527577938356649425
 Transform:
   m_ObjectHideFlags: 0
