@@ -626,6 +626,8 @@ namespace VoiceActing
         private void InputJump()
         {
 
+            if (crouchTime > 0 && state != CharacterState.Acting)
+                crouchTime = 0;
             if (crouchTime > 0)
             {
                 crouchTime -= Time.deltaTime * characterMotionSpeed;
