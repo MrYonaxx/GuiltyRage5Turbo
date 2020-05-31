@@ -15,8 +15,8 @@ MonoBehaviour:
   characterFace: {fileID: 0}
   characterName: Enemy Test
   characterStat:
-    hp: 2000
-    HpMax: 2000
+    hp: 500
+    HpMax: 500
     AttackMultiplier: 1
     DefenseMultiplier: 1
     MotionSpeed: 1

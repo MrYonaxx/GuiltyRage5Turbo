@@ -8766,6 +8766,22 @@ PrefabInstance:
       propertyPath: m_textInfo.materialCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7582859702567664, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859702567664, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859938003038, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859938003038, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7582860165515473, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: players.Array.size
       value: 1
@@ -8845,6 +8861,18 @@ PrefabInstance:
     - target: {fileID: 7582860388104061, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860388104062, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860588263334, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860588263334, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7582860614128560, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_textInfo.characterCount
@@ -22882,7 +22910,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     hitStop: 0
     hitStopGlobal: 0
     targetShakePower: 0
@@ -29518,7 +29547,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05

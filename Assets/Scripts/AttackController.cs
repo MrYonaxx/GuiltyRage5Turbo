@@ -197,8 +197,11 @@ namespace VoiceActing
             {
                 target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);
             }
-            if (attackBehavior.OnHitKnockback != 0)
-                user.SetSpeed(attackBehavior.OnHitKnockback * -direction, 0);
+            if (attackBehavior.UserKnockbackX != 0 || attackBehavior.UserKnockbackZ != 0)
+            {
+                user.SetSpeed(attackBehavior.UserKnockbackX * -direction, 0);
+                user.Jump(attackBehavior.UserKnockbackZ);
+            }
 
             //Feedback
             if (attackBehavior.OnHitAnimation != null)

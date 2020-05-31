@@ -502,7 +502,7 @@ namespace VoiceActing
             inAir = true;
         }
 
-        protected void Jump(float impulsion)
+        public void Jump(float impulsion)
         {
             speedZ = impulsion;
             inAir = true;

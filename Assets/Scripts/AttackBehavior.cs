@@ -384,11 +384,19 @@ namespace VoiceActing
             get { return blockKnockback; }
         }
 
+        [HorizontalGroup("UserKnockback")]
         [SerializeField]
-        float onHitKnockback = 0;
-        public float OnHitKnockback
+        float userKnockbackX = 0;
+        public float UserKnockbackX
         {
-            get { return onHitKnockback; }
+            get { return userKnockbackX; }
+        }
+        [HorizontalGroup("UserKnockback")]
+        [SerializeField]
+        float userKnockbackZ = 0;
+        public float UserKnockbackZ
+        {
+            get { return userKnockbackZ; }
         }
 
 
