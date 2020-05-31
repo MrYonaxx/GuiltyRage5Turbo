@@ -78,6 +78,7 @@ MonoBehaviour:
   attackBehavior:
     attackName: Normal03
     attackAnimation: Usagi_Attack03
+    attackAnimation2: {fileID: 0}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -115,7 +116,7 @@ MonoBehaviour:
     knockbackAerialPowerZ: 6
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
+    onHitKnockback: 2
     hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05

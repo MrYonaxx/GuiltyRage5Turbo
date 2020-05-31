@@ -117,7 +117,7 @@ MonoBehaviour:
     knockbackAerialPowerZ: 1
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 2
+    onHitKnockback: 0
     hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
