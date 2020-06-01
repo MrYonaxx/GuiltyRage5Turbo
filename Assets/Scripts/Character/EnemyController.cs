@@ -233,6 +233,8 @@ namespace VoiceActing
 
         private bool CheckPhases(Character character)
         {
+            if(phasesTrigger == null)
+                return false;
             if (phase - 1 < phasesTrigger.Length)
             {
                 if (character.CharacterStat.GetHP() < phasesTrigger[phase - 1].HpTrigger)

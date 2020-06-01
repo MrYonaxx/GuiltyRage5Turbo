@@ -10,22 +10,22 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 120dbf4ca0770fb4890a4e640ec4ea4a, type: 3}
-  m_Name: Bobobo
+  m_Name: DigiData
   m_EditorClassIdentifier: 
   characterFace: {fileID: 0}
-  characterName: Bobobo
+  characterName: Bobo Digi
   characterStat:
-    hp: 9500
-    HpMax: 9500
+    hp: 1200
+    HpMax: 1200
     AttackMultiplier: 1
     DefenseMultiplier: 1
     MotionSpeed: 1
-    Speed: 3
-    JumpImpulsion: 8.5
+    Speed: 1.5
+    JumpImpulsion: 8
     Gravity: 22
-    GravityMax: -4
+    GravityMax: -10
     Mass: 1
     KnockbackTime: 0.4
-    KnockdownResistance: 90
-    WakeUpRecovery: 0.75
+    KnockdownResistance: 100
+    WakeUpRecovery: 1
     customStats: []

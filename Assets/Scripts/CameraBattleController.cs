@@ -59,8 +59,8 @@ namespace VoiceActing
             if (focusTargetLock != null)
                 targetPos = targetPos + ((focusTargetLock.position - focusTarget.position) / 2);
 
-            float realClampLeft = clampLeft * ((orthographicDefaultSize / mainCamera.orthographicSize));
-            float realClampRight = clampRight * ((orthographicDefaultSize / mainCamera.orthographicSize));
+            float realClampLeft = clampLeft;// * ((orthographicDefaultSize / mainCamera.orthographicSize));
+            float realClampRight = clampRight;// * ((orthographicDefaultSize / mainCamera.orthographicSize));
             targetPos = new Vector3(Mathf.Clamp(targetPos.x, realClampLeft, realClampRight), Mathf.Clamp(targetPos.y, clampDown, clampUp), 0);
 
             transform.position = Vector3.SmoothDamp(transform.position, targetPos + new Vector3(0, 0, this.transform.position.z) + cameraOffset, ref velocity, smoothCamera);
