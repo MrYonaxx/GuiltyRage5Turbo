@@ -297,6 +297,8 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -305,9 +307,10 @@ MonoBehaviour:
     knockbackPowerZ: 0
     knockbackAerialPowerX: 0
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05

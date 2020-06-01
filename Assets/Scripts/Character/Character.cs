@@ -96,7 +96,8 @@ namespace VoiceActing
             get { return characterStat; }
         }
 
-        [SerializeField]
+        //[HideInInspector]
+        //[SerializeField]
         protected Character target;
         public Character Target
         {
@@ -116,23 +117,6 @@ namespace VoiceActing
         {
             get { return characterControllers; }
         }
-
-        [SerializeField]
-        protected float jumpImpulsion = 1;
-        [SerializeField]
-        protected float gravity = 1;
-        [SerializeField]
-        protected float gravityMax = -10;
-        [SerializeField]
-        protected float defaultSpeed = 1;
-        [SerializeField]
-        protected float wakeUpRecovery = 1;
-        [SerializeField]
-        protected float defaultMotionSpeed = 1;
-
-
-        [SerializeField]
-        protected int direction = 1;
 
 
 
@@ -155,14 +139,14 @@ namespace VoiceActing
 
         protected float characterMotionSpeed = 1;
 
+        protected bool invulnerableState = false;
         protected bool noKnockback = false;
+
         protected float knockbackTime = 0;
         protected int knockbackAnimation = 0;
 
         protected float knockdownValue = 0;
 
-        protected bool invulnerableState = false;
-        protected float invulnerableTime = 0;
 
         protected AttackController previousAttack; // Pour les combos
         protected AttackController currentAttack;
@@ -184,11 +168,16 @@ namespace VoiceActing
 
         [FoldoutGroup("Advanced")]
         [SerializeField]
+        protected int direction = 1;
+
+        [FoldoutGroup("Advanced")]
+        [SerializeField]
         protected bool inAir = false;
 
         [FoldoutGroup("Advanced")]
         [SerializeField]
         protected bool autoCombo = false;
+
 
 
         [Title("Event")]
@@ -243,6 +232,15 @@ namespace VoiceActing
                 healthBar.DrawTarget(value.CharacterStat.GetHP(), value.CharacterStat.GetHPMax(), value.CharacterStat.CharacterData.CharacterName);
         }
 
+        public void ShowCharacter(bool b)
+        {
+            if(b == false)
+                this.transform.localScale = Vector3.zero;
+            else
+                this.transform.localScale = Vector3.one;
+            SetActive(b);
+        }
+
         public void SetActive(bool b)
         {
             active = b;
@@ -250,6 +248,10 @@ namespace VoiceActing
             {
                 CancelAction();
                 SetSpeed(0, 0);
+            }
+            else
+            {
+                ResetToIdle();
             }
         }
 
@@ -319,6 +321,8 @@ namespace VoiceActing
 
         protected virtual void UpdateController()
         {
+            if (active == false)
+                return;
             if (characterControllers == null)
                 return;
             for (int i = 0; i < characterControllers.Length; i++)
@@ -327,6 +331,8 @@ namespace VoiceActing
 
         protected virtual void LateUpdateController()
         {
+            if (active == false)
+                return;
             if (characterControllers == null)
                 return;
             for (int i = 0; i < characterControllers.Length; i++)
@@ -498,7 +504,7 @@ namespace VoiceActing
 
         protected void JumpDefault()
         {
-            speedZ = jumpImpulsion;
+            speedZ = characterStat.GetJumpImpulsion();
             inAir = true;
         }
 
@@ -512,8 +518,8 @@ namespace VoiceActing
         {
             if(inAir == true)
             {
-                speedZ -= ((gravity * Time.deltaTime) * characterMotionSpeed);
-                speedZ = Mathf.Max(speedZ, gravityMax);
+                speedZ -= ((characterStat.GetGravity() * Time.deltaTime) * characterMotionSpeed);
+                speedZ = Mathf.Max(speedZ, characterStat.GetGravityMax());
                 spriteRenderer.transform.localPosition += new Vector3(0, (speedZ * Time.deltaTime) * characterMotionSpeed, 0);
                 if (spriteRenderer.transform.localPosition.y <= 0 && characterMotionSpeed != 0)
                 {
@@ -589,6 +595,8 @@ namespace VoiceActing
 
         private bool CheckIfHit(AttackController attack)
         {
+            if (invulnerableState == true)
+                return false;
             if (attack.CheckCollisionY(this.transform.position.y) == false)
                 return false;
             if (state == CharacterState.Dead && inAir == false)
@@ -615,6 +623,13 @@ namespace VoiceActing
 
         public void Knockback(AttackController attack)
         {
+            if(noKnockback == true && state != CharacterState.Dead)
+            {
+                if (healthBar != null)
+                    healthBar.DrawHealth(characterStat.GetHP(), characterStat.GetHPMax());
+                OnHit.Invoke(attack.AttackBehavior);
+                return;
+            }
             CancelAct();
             if (attack.AttackBehavior.ThrowState == true)
             {
@@ -705,7 +720,7 @@ namespace VoiceActing
             }
             state = CharacterState.Down;
             characterAnimator.SetTrigger("Down");
-            knockbackTime = wakeUpRecovery;
+            knockbackTime = characterStat.GetWakeUpRecovery();
             speedX = 0;
             speedY = 0;
 
@@ -778,6 +793,9 @@ namespace VoiceActing
             endAction = false;
             canTargetCombo = false;
 
+            noKnockback = false;
+            invulnerableState = false;
+
             state = CharacterState.Idle;
         }
 
@@ -837,7 +855,9 @@ namespace VoiceActing
             canEndAction = false;
             canMoveCancel = false;
             canTargetCombo = false;
-            if(currentAttack.AttackBehavior.KeepMomentum == false) 
+            noKnockback = action.AttackBehavior.IsArmor;
+            invulnerableState = action.AttackBehavior.IsInvulnerable;
+            if (currentAttack.AttackBehavior.KeepMomentum == false) 
             {
                 speedX = 0;
                 speedY = 0;
@@ -948,19 +968,23 @@ namespace VoiceActing
             characterAnimator.SetTrigger("Idle");
         }
 
+        public void MoveTo(Transform t)
+        {
+            this.transform.position = t.position;
+        }
 
         public void MoveToTarget()
         {
             Vector2 direction = target.transform.position - this.transform.position;
             direction.Normalize();
-            SetSpeed(direction.x * defaultSpeed, direction.y * defaultSpeed);
+            SetSpeed(direction.x * characterStat.GetSpeed(), direction.y * characterStat.GetSpeed());
         }
 
         public void MoveToTargetHorizontal(float multiplier)
         {
             Vector2 direction = target.transform.position - this.transform.position;
             direction.Normalize();
-            SetSpeed((1 * GetDirection() * defaultSpeed * multiplier), direction.y * defaultSpeed * multiplier);
+            SetSpeed((1 * GetDirection() * characterStat.GetSpeed() * multiplier), direction.y * characterStat.GetSpeed() * multiplier);
         }
 
 
@@ -982,13 +1006,13 @@ namespace VoiceActing
             else
             {
                 direction.Normalize();
-                SetSpeed(direction.x * defaultSpeed, direction.y * defaultSpeed);
+                SetSpeed(direction.x * characterStat.GetSpeed(), direction.y * characterStat.GetSpeed());
                 return false;
             }
         }
         public void MoveForward(float multiplier)
         {
-            SetSpeed(defaultSpeed * multiplier * direction, 0);
+            SetSpeed(characterStat.GetSpeed() * multiplier * direction, 0);
         }
 
         public void SetSpeed(float newSpeedX, float newSpeedY)
@@ -1040,7 +1064,7 @@ namespace VoiceActing
                 time -= Time.deltaTime;
                 yield return null;
             }
-            characterMotionSpeed = defaultMotionSpeed;
+            characterMotionSpeed = characterStat.GetMotionSpeed();
             characterAnimator.speed = characterMotionSpeed;
             if (currentAttackController != null)
                 currentAttackController.AttackMotionSpeed(characterMotionSpeed);

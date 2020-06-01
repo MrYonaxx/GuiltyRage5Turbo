@@ -16,16 +16,16 @@ MonoBehaviour:
   characterName: Bobobo
   characterStat:
     hp: 8000
-    HpMax: 8000
+    HpMax: 8001
     AttackMultiplier: 1
     DefenseMultiplier: 1
     MotionSpeed: 1
-    Speed: 2
-    JumpImpulsion: 0
+    Speed: 3
+    JumpImpulsion: 8.5
     Gravity: 22
     GravityMax: -4
     Mass: 1
     KnockbackTime: 0.4
     KnockdownResistance: 90
-    WakeUpRecovery: 0.4
+    WakeUpRecovery: 0.75
     customStats: []

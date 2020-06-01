@@ -291,6 +291,22 @@ namespace VoiceActing
         }
 
 
+        [Space]
+        [HorizontalGroup("AttackParameter15")]
+        [SerializeField]
+        bool isArmor = false;
+        public bool IsArmor
+        {
+            get { return isArmor; }
+        }
+        [Space]
+        [HorizontalGroup("AttackParameter15")]
+        [SerializeField]
+        bool isInvulnerable = false;
+        public bool IsInvulnerable
+        {
+            get { return isInvulnerable; }
+        }
 
 
         [Space]
@@ -368,6 +384,25 @@ namespace VoiceActing
         }
 
         [Space]
+        [HorizontalGroup("UserKnockback")]
+        [SerializeField]
+        float userKnockbackX = 0;
+        public float UserKnockbackX
+        {
+            get { return userKnockbackX; }
+        }
+        [Space]
+        [HorizontalGroup("UserKnockback")]
+        [SerializeField]
+        float userKnockbackZ = 0;
+        public float UserKnockbackZ
+        {
+            get { return userKnockbackZ; }
+        }
+
+
+
+        [Space]
         [HorizontalGroup("Block")]
         [SerializeField]
         float blockStun = 0.1f;
@@ -384,20 +419,7 @@ namespace VoiceActing
             get { return blockKnockback; }
         }
 
-        [HorizontalGroup("UserKnockback")]
-        [SerializeField]
-        float userKnockbackX = 0;
-        public float UserKnockbackX
-        {
-            get { return userKnockbackX; }
-        }
-        [HorizontalGroup("UserKnockback")]
-        [SerializeField]
-        float userKnockbackZ = 0;
-        public float UserKnockbackZ
-        {
-            get { return userKnockbackZ; }
-        }
+
 
 
         [Space]

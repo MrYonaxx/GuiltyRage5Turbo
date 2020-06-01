@@ -39,6 +39,8 @@ namespace VoiceActing
         [SerializeField]
         CharacterStat characterPercentageBonusStat;
 
+         // A optimiser en sauvegardant les résultats dans un 3e character stat et en le mettant à jour à chaque changement de stat
+
         #endregion
 
         #region GettersSetters 
@@ -56,6 +58,41 @@ namespace VoiceActing
             return Mathf.RoundToInt((characterData.CharacterStat.HpMax + characterBonusStat.HpMax) * characterPercentageBonusStat.HpMax);
         }
 
+        public float GetMotionSpeed()
+        {
+            return (characterData.CharacterStat.MotionSpeed + characterBonusStat.MotionSpeed) * characterPercentageBonusStat.MotionSpeed;
+        }
+
+
+
+
+        public float GetSpeed()
+        {
+            return (characterData.CharacterStat.Speed + characterBonusStat.Speed) * characterPercentageBonusStat.Speed;
+        }
+
+        public float GetJumpImpulsion()
+        {
+            return (characterData.CharacterStat.JumpImpulsion + characterBonusStat.JumpImpulsion) * characterPercentageBonusStat.JumpImpulsion;
+        }
+
+        public float GetGravity()
+        {
+            return (characterData.CharacterStat.Gravity + characterBonusStat.Gravity) * characterPercentageBonusStat.Gravity;
+        }
+
+        public float GetGravityMax()
+        {
+            return (characterData.CharacterStat.GravityMax + characterBonusStat.GravityMax) * characterPercentageBonusStat.GravityMax;
+        }
+
+        public float GetMass()
+        {
+            return (characterData.CharacterStat.Mass + characterBonusStat.Mass) * characterPercentageBonusStat.Mass;
+        }
+
+
+
 
         public float GetKnockdownResistance()
         {
@@ -67,17 +104,15 @@ namespace VoiceActing
             return (characterData.CharacterStat.KnockbackTime + characterBonusStat.KnockbackTime) * characterPercentageBonusStat.KnockbackTime;
         }
 
-
-
-        public float GetMass()
+        public float GetWakeUpRecovery()
         {
-            return (characterData.CharacterStat.Mass + characterBonusStat.Mass) * characterPercentageBonusStat.Mass;
+            return (characterData.CharacterStat.WakeUpRecovery + characterBonusStat.WakeUpRecovery) * characterPercentageBonusStat.WakeUpRecovery;
         }
 
-        public float GetSpeed()
-        {
-            return (characterData.CharacterStat.Speed + characterBonusStat.Speed) * characterPercentageBonusStat.Speed;
-        }
+
+
+
+
 
         #endregion
 

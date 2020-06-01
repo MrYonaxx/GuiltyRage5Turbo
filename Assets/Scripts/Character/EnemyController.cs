@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Sirenix.OdinInspector;
 using Sirenix.Serialization;
+using UnityEngine.Events;
 
 namespace VoiceActing
 {
@@ -59,6 +60,10 @@ namespace VoiceActing
     [System.Serializable]
     public struct EnemyCondition
     {
+
+        [SerializeField]
+        public int Phase;
+
         [SerializeField]
         public Vector3 Distance;
 
@@ -66,8 +71,11 @@ namespace VoiceActing
         [SerializeField]
         public List<CharacterState> targetStates;
 
-        public bool CheckCondition(Character character)
+        public bool CheckCondition(Character character, int characterPhase)
         {
+            if (Phase > characterPhase)
+                return false;
+
             Vector3 dist = character.transform.position - character.Target.transform.position;
             if(Distance.x != 0)
             {
@@ -84,7 +92,6 @@ namespace VoiceActing
                 if (character.Target.SpriteRenderer.transform.localPosition.y > Distance.z)
                     return false;
             }
-
 
             if(targetStates == null)
             {
@@ -104,6 +111,12 @@ namespace VoiceActing
 
     }
 
+    public struct EnemyHPTrigger
+    {
+        public float HpTrigger;
+        public UnityEvent HPTriggerEvent;
+    }
+
 
     public class EnemyController : SerializedMonoBehaviour, ICharacterController
     {
@@ -113,6 +126,8 @@ namespace VoiceActing
          *               ATTRIBUTES                 *
         \* ======================================== */
         [Title("Enemy")]
+        [SerializeField]
+        TargetController targetController;
         [SerializeField]
         float timeEnemyAppear = 0.5f;
         [SerializeField]
@@ -135,6 +150,10 @@ namespace VoiceActing
         [System.NonSerialized]
         EnemyPatternSequence[] behaviorSequences;
 
+        [TabGroup("PhaseTrigger")]
+        [SerializeField]
+        EnemyHPTrigger[] phasesTrigger;
+
         [OdinSerialize]
         [System.NonSerialized]
         [SerializeField]
@@ -146,6 +165,7 @@ namespace VoiceActing
 
         float enemyActionTime = 0;
         bool isHit = false;
+        int phase = 1;
 
         #endregion
 
@@ -164,9 +184,8 @@ namespace VoiceActing
         \* ======================================== */
 
         private void Start()
-        {        
+        {
             currentPattern.Add(startUpPattern);
-            //EnemyAppear(true);
         }
 
         public void EnemyAppear(bool b)
@@ -212,14 +231,26 @@ namespace VoiceActing
 
 
 
-
-
-
-
+        private bool CheckPhases(Character character)
+        {
+            if (phase - 1 < phasesTrigger.Length)
+            {
+                if (character.CharacterStat.GetHP() < phasesTrigger[phase - 1].HpTrigger)
+                {
+                    character.CancelAct();
+                    phasesTrigger[phase - 1].HPTriggerEvent.Invoke();
+                    phase += 1;
+                    return true;
+                }
+            }
+            return false;
+        }
 
 
         public void UpdateController(Character character)
         {
+            if(CheckPhases(character) == true)
+                return;
             EnemyDecision(character);
         }
 
@@ -233,14 +264,19 @@ namespace VoiceActing
             //patterns
             if (currentPattern.Count == 0)
             {
+                SelectTarget(character);
                 SelectAction(patterns, character);
             }
+            if (character.Target == null)
+                character.SetTarget(character);
             if (enemyActionTime <= 0)
             {
                 enemyActionTime = currentPattern[0].StartBehavior(this, character);
             }
+
             if(character.State != CharacterState.Acting)
                 enemyActionTime -= Time.deltaTime;
+
             currentPattern[0].UpdateBehavior(this, character);
             if (enemyActionTime <= 0)
             {
@@ -253,7 +289,7 @@ namespace VoiceActing
         {
             for(int i = 0; i < enemyPatterns.Length; i++)
             {
-                if (enemyPatterns[i].conditions.CheckCondition(character) == true)
+                if (enemyPatterns[i].conditions.CheckCondition(character, phase) == true)
                 {
                     currentPattern.Add(enemyPatterns[i].behaviours[Random.Range(0, enemyPatterns[i].behaviours.Count)]);
                     return;
@@ -320,6 +356,14 @@ namespace VoiceActing
             }
         }
 
+
+
+        public void SelectTarget(Character c)
+        {
+            c.SetTarget(targetController.GetTarget());
+            if (c.Target == null)
+                c.SetTarget(c);
+        }
         #endregion
 
     } 

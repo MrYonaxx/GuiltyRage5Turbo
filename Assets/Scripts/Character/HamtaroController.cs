@@ -281,8 +281,8 @@ namespace VoiceActing
             }
             Vector2 move = new Vector2(speedX, speedY);
             move.Normalize();
-            speedX = move.x * defaultSpeed;
-            speedY = move.y * defaultSpeed;
+            speedX = move.x * characterStat.GetSpeed();
+            speedY = move.y * characterStat.GetSpeed();
 
         }
 
@@ -343,7 +343,7 @@ namespace VoiceActing
 
             if(isRunning == true && (state == CharacterState.Moving || state == CharacterState.Idle) && inAir == false)
             {
-                speedX = (defaultSpeed + runSpeedBonus) * direction;
+                speedX = (characterStat.GetSpeed() + runSpeedBonus) * direction;
                 //speedY = 0;
                 characterAnimator.SetBool("Run", true);
             }
@@ -633,7 +633,7 @@ namespace VoiceActing
                 crouchTime -= Time.deltaTime * characterMotionSpeed;
                 if (crouchTime <= 0)
                 {
-                    speedX = defaultSpeed * direction;
+                    speedX = characterStat.GetSpeed() * direction;
                     if (isRunning == true)
                         speedX += runSpeedBonus * direction;
                     //endAction = true;
@@ -699,15 +699,15 @@ namespace VoiceActing
             {
                 characterAnimator.SetTrigger("DoubleJump");
                 doubleJump = true;
-                Jump(jumpImpulsion * doubleJumpRatio);
+                Jump(characterStat.GetJumpImpulsion() * doubleJumpRatio);
                 if (Input.GetAxis(controllerLeftHorizontal) > 0.2f)
                 {
-                    speedX = defaultSpeed;
+                    speedX = characterStat.GetSpeed();
                     direction = 1;
                 }
                 else if (Input.GetAxis(controllerLeftHorizontal) < -0.2f)
                 {
-                    speedX = -defaultSpeed;
+                    speedX = -characterStat.GetSpeed();
                     direction = -1;
                 }
                 else

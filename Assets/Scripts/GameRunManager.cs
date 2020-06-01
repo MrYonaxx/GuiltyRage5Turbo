@@ -71,6 +71,26 @@ namespace VoiceActing
             healthBarPrefab.gameObject.SetActive(false);
         }
 
+
+
+
+        public void ActivateCharacters(bool b)
+        {
+            for(int i = 0; i < players.Count; i++)
+            {
+                players[i].SetActive(b);
+            }
+        }
+
+        public void ShowCharacters(bool b)
+        {
+            for (int i = 0; i < players.Count; i++)
+            {
+                players[i].ShowCharacter(b);
+            }
+        }
+
+
         #endregion
 
     } 
