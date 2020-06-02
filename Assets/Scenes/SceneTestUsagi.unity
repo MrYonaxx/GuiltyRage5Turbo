@@ -1571,9 +1571,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &123156794
@@ -5813,9 +5817,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &639748339
@@ -5980,6 +5988,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -6041,6 +6052,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -6114,6 +6128,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -6196,6 +6213,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 9|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -6211,6 +6231,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &640132334
@@ -6362,16 +6383,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 1.5
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -6945,6 +6959,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -7006,6 +7023,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -7079,6 +7099,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -7161,6 +7184,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 9|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -7176,6 +7202,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &672440891
@@ -7327,16 +7354,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 1.5
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -9588,6 +9608,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -9649,6 +9672,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -9722,6 +9748,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -9804,6 +9833,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 9|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -9819,6 +9851,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &860402951
@@ -9970,16 +10003,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 1.5
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -13008,16 +13034,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 0}
-  jumpImpulsion: 8.5
-  gravity: 22
-  gravityMax: -10
-  defaultSpeed: 2.2
-  wakeUpRecovery: 1
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -14030,9 +14049,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &1198324901
@@ -15076,6 +15099,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -15222,6 +15248,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -15482,6 +15511,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -15564,6 +15596,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -15837,6 +15872,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 29|VoiceActing.EnemyBehaviorAction, Assembly-CSharp
@@ -15858,6 +15896,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &1378531622
@@ -16009,16 +16048,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1378531625}
-  jumpImpulsion: 7
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 3
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 1
   autoCombo: 0
   OnDead:
@@ -18531,9 +18563,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &1623111530
@@ -18626,16 +18662,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 0}
-  jumpImpulsion: 8.5
-  gravity: 22
-  gravityMax: -10
-  defaultSpeed: 2.2
-  wakeUpRecovery: 1
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -18709,7 +18738,7 @@ MonoBehaviour:
     type: 3}
   jumpUpAttack: {fileID: 8014497293985825660, guid: cf4169bdf0612744084852a5ab42bf3a,
     type: 3}
-  jumpDownAttack: {fileID: 8014497293985825660, guid: cf4169bdf0612744084852a5ab42bf3a,
+  jumpDownAttack: {fileID: 7937319124321608277, guid: a5a6298c6d3c63d49bb74e930a147ff3,
     type: 3}
   throwAttack: {fileID: 0}
   specialAttack: {fileID: 979252468491068342, guid: c46ae6e5e1d51e94282ffd2217d5af61,
@@ -24926,6 +24955,8 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 0}
@@ -24933,10 +24964,10 @@ MonoBehaviour:
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
-    blockStun: 0.1
-    blockKnockback: 0
     userKnockbackX: 0
     userKnockbackZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
     hitStop: 0
     hitStopGlobal: 0
     targetShakePower: 0
@@ -25923,6 +25954,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -25984,6 +26018,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -26057,6 +26094,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -26139,6 +26179,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 9|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -26154,6 +26197,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &1889561339
@@ -26305,16 +26349,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 1.5
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -31686,6 +31723,8 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
@@ -31694,10 +31733,10 @@ MonoBehaviour:
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
-    blockStun: 0.1
-    blockKnockback: 0
     userKnockbackX: 0
     userKnockbackZ: 0
+    blockStun: 0.1
+    blockKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05
@@ -33081,6 +33120,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3d3499510814c294d90e8ae5fb5d5e7b, type: 3}
+--- !u!1001 &3629727388782568723
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3601469995552479145, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_Name
+      value: AttackControllerDefault (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5658328444809208786, guid: a5a6298c6d3c63d49bb74e930a147ff3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a5a6298c6d3c63d49bb74e930a147ff3, type: 3}
 --- !u!1001 &4050385926433692594
 PrefabInstance:
   m_ObjectHideFlags: 0

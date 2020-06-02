@@ -166,7 +166,8 @@ MonoBehaviour:
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
-    comboTo: {fileID: 0}
+    comboTo: {fileID: 1141108377661332516, guid: 7de44735548c17c4ea946098b79e8721,
+      type: 3}
     targetCombo: {fileID: 1141108377661332516, guid: 7de44735548c17c4ea946098b79e8721,
       type: 3}
     onHitCombo: {fileID: 4745007424879779763, guid: 7d8675f6f77a9dd42aa576dc7a89355c,
@@ -190,6 +191,8 @@ MonoBehaviour:
     dashCancel: 1
     runCancel: 0
     specialCancel: 1
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
@@ -198,10 +201,10 @@ MonoBehaviour:
     knockbackPowerZ: 0
     knockbackAerialPowerX: 2
     knockbackAerialPowerZ: 8
-    blockStun: 0.1
-    blockKnockback: 0
     userKnockbackX: -2.5
     userKnockbackZ: 5
+    blockStun: 0.1
+    blockKnockback: 0
     hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
