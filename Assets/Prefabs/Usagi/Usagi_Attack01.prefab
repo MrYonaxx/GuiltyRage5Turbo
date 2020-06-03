@@ -79,6 +79,7 @@ MonoBehaviour:
     attackName: Normal01
     attackAnimation: Usagi_Attack01
     attackAnimation2: {fileID: 7400000, guid: a7e9468067faefb478b0563050722e96, type: 2}
+    userSound: []
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -113,11 +114,12 @@ MonoBehaviour:
     allyAttack: 0
     onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 0
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 1
-    userKnockbackX: -3
+    userKnockbackX: -0.5
     userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0

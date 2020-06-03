@@ -79,6 +79,7 @@ MonoBehaviour:
     attackName: aeriaaaal kickkkkku
     attackAnimation: Usagi_Aerial_Normal1
     attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -114,9 +115,10 @@ MonoBehaviour:
     allyAttack: 0
     onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 1
-    knockbackAerialPowerX: 3
+    knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 3
     userKnockbackX: 0
     userKnockbackZ: 0

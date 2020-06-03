@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 2964663970960592894}
   - component: {fileID: 7937319124321608277}
   m_Layer: 9
-  m_Name: AttackControllerDefault (1)
+  m_Name: Usagi_AerialDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
     attackName: epic attack down jump super for
     attackAnimation: Usagi_Jump_Attack_Down
     attackAnimation2: {fileID: 7400000, guid: bdaa7483cc35f6049b87badc4573f6e7, type: 2}
+    userSound: []
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -298,16 +299,17 @@ MonoBehaviour:
     specialCancel: 0
     isArmor: 0
     isInvulnerable: 0
-    resetGravity: 0
+    resetGravity: 1
     allyAttack: 0
-    onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
+    onHitAnimation: {fileID: 8014497293985825659, guid: cf4169bdf0612744084852a5ab42bf3a,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
-    knockbackAerialPowerZ: 0
+    knockbackAerialPowerZ: 1
     userKnockbackX: 0
-    userKnockbackZ: 0
+    userKnockbackZ: -10
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.1
@@ -317,10 +319,11 @@ MonoBehaviour:
     shakeScreen: 0
     shakeScreenTime: 0
     attackBehaviorDatas:
-    - frame: 25
+    - frame: 20
       action: 1
       argument: 
       argument1: {x: 0, y: 0, z: 0}
-      anim: {fileID: 0}
+      anim: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
+        type: 3}
       move: {fileID: 0}
   direction: 0
