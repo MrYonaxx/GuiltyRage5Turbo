@@ -297,6 +297,7 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 1
     specialCancel: 0
+    groundBounce: 1
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 1
@@ -310,6 +311,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 1
     userKnockbackX: 0
     userKnockbackZ: -10
+    groundBounceX: 0
+    groundBounceZ: 5
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.1
