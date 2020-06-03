@@ -161,6 +161,9 @@ namespace VoiceActing
         protected bool canMoveCancel = false;
         protected bool canTargetCombo = false;
 
+        protected float bounceX = 0;
+        protected float bounceZ = 0;
+
 
         [FoldoutGroup("Advanced")]
         [SerializeField]
@@ -275,6 +278,12 @@ namespace VoiceActing
                 characterToThrow.JumpDefault();
             }
             characterToThrow = chara;
+        }
+
+        public void SetGroundBounce(float x, float z)
+        {
+            bounceX = x;
+            bounceZ = z;
         }
 
         #endregion
@@ -544,13 +553,13 @@ namespace VoiceActing
                 spriteRenderer.transform.localPosition += new Vector3(0, (speedZ * Time.deltaTime) * characterMotionSpeed, 0);
                 if (spriteRenderer.transform.localPosition.y <= 0 && characterMotionSpeed != 0)
                 {
-                    if(state == CharacterState.Hit || state == CharacterState.Dead)
-                    {
-                        CharacterDown();
-                    }
                     inAir = false;
                     speedZ = 0;
                     spriteRenderer.transform.localPosition = new Vector3(spriteRenderer.transform.localPosition.x, 0, spriteRenderer.transform.localPosition.z);
+                    if (state == CharacterState.Hit || state == CharacterState.Dead)
+                    {
+                        CharacterDown();
+                    }
                     OnGroundCollision();
                 }
             }
@@ -669,7 +678,6 @@ namespace VoiceActing
                 characterToThrow.JumpDefault();
                 characterToThrow = null;
             }
-
             if(inAir == true)
             {
                 if (attack.Direction == 0)
@@ -678,9 +686,14 @@ namespace VoiceActing
                     speedX = attack.AttackBehavior.KnockbackAerialPowerX * characterStat.GetMass() * attack.Direction;
                 speedY = 0;
                 if (attack.AttackBehavior.ResetGravity == true)
+                {
                     speedZ = attack.AttackBehavior.KnockbackAerialPowerZ * characterStat.GetMass();
+                    SetGroundBounce(0, 0);
+                }
                 else
+                {
                     speedZ += attack.AttackBehavior.KnockbackAerialPowerZ * characterStat.GetMass();
+                }
             }
             else
             {
@@ -694,6 +707,10 @@ namespace VoiceActing
                 {
                     inAir = true;
                 }
+            }
+            if (attack.AttackBehavior.GroundBounce == true)
+            {
+                SetGroundBounce(attack.AttackBehavior.GroundBounceX * Mathf.Sign(speedX), attack.AttackBehavior.GroundBounceZ);
             }
 
             knockdownValue += attack.AttackBehavior.KnockdownValue;
@@ -755,7 +772,31 @@ namespace VoiceActing
             knockbackTime = characterStat.GetWakeUpRecovery();
             speedX = 0;
             speedY = 0;
+            if (bounceX != 0 || bounceZ != 0)
+            {
+                GroundBounce();
+            }
+            bounceX = 0;
+            bounceZ = 0;
 
+        }
+
+        private void GroundBounce()
+        {
+            state = CharacterState.Hit;
+            speedX = bounceX;
+            speedZ = bounceZ;
+            if (speedZ != 0)
+                inAir = true;
+            //characterAnimator.ResetTrigger("Down");
+            SetCharacterMotionSpeed(0, 0.2f);
+            knockbackTime = characterStat.GetKnockbackTime();
+            knockbackAnimation += 1;
+            if (knockbackAnimation == 2)
+                knockbackAnimation = 0;
+            characterAnimator.SetTrigger("Hit");
+            characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
+            OnWallBounce.Invoke(this);
         }
 
 
@@ -826,6 +867,9 @@ namespace VoiceActing
 
             noKnockback = false;
             invulnerableState = false;
+
+            bounceX = 0;
+            bounceZ = 0;
 
             state = CharacterState.Idle;
         }

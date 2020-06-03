@@ -296,6 +296,14 @@ namespace VoiceActing
             get { return specialCancel; }
         }
 
+        [Space]
+        [HorizontalGroup("AttackParameter20")]
+        [SerializeField]
+        bool groundBounce = false;
+        public bool GroundBounce
+        {
+            get { return groundBounce; }
+        }
 
         [Space]
         [HorizontalGroup("AttackParameter15")]
@@ -413,6 +421,26 @@ namespace VoiceActing
         public float UserKnockbackZ
         {
             get { return userKnockbackZ; }
+        }
+
+        [Space]
+        [HorizontalGroup("GroundBounce")]
+        [ShowIf("groundBounce", true)]
+        [SerializeField]
+        float groundBounceX = 0;
+        public float GroundBounceX
+        {
+            get { return groundBounceX; }
+        }
+
+        [Space]
+        [HorizontalGroup("GroundBounce")]
+        [ShowIf("groundBounce", true)]
+        [SerializeField]
+        float groundBounceZ = 0;
+        public float GroundBounceZ
+        {
+            get { return groundBounceZ; }
         }
 
 
