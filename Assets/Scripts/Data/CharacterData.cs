@@ -42,7 +42,36 @@ namespace VoiceActing
             get { return characterStat; }
         }
 
+        [Space]
+        [Space]
+        [Space]
+        [Title("Audio")]
+        [SerializeField]
+        private AudioClip[] hitVoice;
+        public AudioClip[] HitVoice
+        {
+            get { return hitVoice; }
+        }
+        [SerializeField]
+        private AudioClip[] guardVoice;
+        public AudioClip[] GuardVoice
+        {
+            get { return guardVoice; }
+        }
+        [SerializeField]
+        private AudioClip[] deadVoice;
+        public AudioClip[] DeadVoice
+        {
+            get { return deadVoice; }
+        }
 
+
+        [SerializeField]
+        private AudioClip[] downSound;
+        public AudioClip[] DownSound
+        {
+            get { return downSound; }
+        }
 
 
         #endregion

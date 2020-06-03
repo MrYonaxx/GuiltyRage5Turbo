@@ -127,7 +127,7 @@ namespace VoiceActing
             get { return state; }
         }
 
-
+        protected Character characterToThrow;
 
 
         protected float speedX = 0;
@@ -266,6 +266,17 @@ namespace VoiceActing
             autoCombo = b;
         }
 
+        public void SetCharacterToThrow(Character chara)
+        {
+            if(characterToThrow != null)
+            {
+                characterToThrow.CancelAction();
+                characterToThrow.state = CharacterState.Hit;
+                characterToThrow.JumpDefault();
+            }
+            characterToThrow = chara;
+        }
+
         #endregion
 
         #region Functions 
@@ -304,10 +315,19 @@ namespace VoiceActing
 
             UpdateController();
 
+            if (characterToThrow != null)
+            {
+                if(characterToThrow.State != CharacterState.Throw)
+                {
+                    characterToThrow = null;
+                }
+                else
+                {
+                    characterToThrow.UpdateThrow();
+                }
+            }
             if (state != CharacterState.Throw)
                 ApplyGravity();
-            else
-                UpdateThrow();
             if (knockbackTime > 0)
                 UpdateKnockback();
             UpdateCollision();
@@ -362,8 +382,9 @@ namespace VoiceActing
 
             UpdatePositionY();
 
-            transform.position += new Vector3(actualSpeedX * Time.deltaTime, actualSpeedY * Time.deltaTime, actualSpeedY * Time.deltaTime);
-
+            //transform.position += new Vector3(actualSpeedX * Time.deltaTime, actualSpeedY * Time.deltaTime, actualSpeedY * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x + (actualSpeedX * Time.deltaTime), transform.position.y + (actualSpeedY * Time.deltaTime), 
+                                             transform.position.y + (actualSpeedY * Time.deltaTime));
         }
 
         private void UpdatePositionX()
@@ -603,6 +624,8 @@ namespace VoiceActing
                 return false;
             if (state == CharacterState.Throw && attack.AttackBehavior.AttackThrow == false)
                 return false;
+            if (state != CharacterState.Throw && attack.AttackBehavior.AttackThrow == true)
+                return false;
             if (inAir == true && attack.AttackBehavior.ThrowState == true)
                 return false;
             if (state == CharacterState.Down && attack.AttackBehavior.WakeUpAttack == false)
@@ -630,14 +653,22 @@ namespace VoiceActing
                 OnHit.Invoke(attack.AttackBehavior);
                 return;
             }
-            CancelAct();
+            if (state != CharacterState.Dead)
+            {
+                CancelAct();
+                state = CharacterState.Hit;
+            }
             if (attack.AttackBehavior.ThrowState == true)
             {
                 state = CharacterState.Throw;
                 return;
             }
-            if(state != CharacterState.Dead)
-                state = CharacterState.Hit;
+            if(characterToThrow != null)
+            {
+                characterToThrow.CancelAction();
+                characterToThrow.JumpDefault();
+                characterToThrow = null;
+            }
 
             if(inAir == true)
             {
@@ -666,7 +697,7 @@ namespace VoiceActing
             }
 
             knockdownValue += attack.AttackBehavior.KnockdownValue;
-            if (knockdownValue >= characterStat.GetKnockdownResistance())
+            if (knockdownValue >= characterStat.GetKnockdownResistance() && state != CharacterState.Dead)
             {
                 CharacterDown();
             }
@@ -679,7 +710,8 @@ namespace VoiceActing
                 characterAnimator.SetTrigger("Hit");
                 characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
             }
-            if(healthBar != null)
+            PlayVoice(characterStat.CharacterData.HitVoice);
+            if (healthBar != null)
                 healthBar.DrawHealth(characterStat.GetHP(), characterStat.GetHPMax());
             OnHit.Invoke(attack.AttackBehavior);
         }
@@ -762,7 +794,6 @@ namespace VoiceActing
                 knockbackAnimation = 0;
             characterAnimator.SetTrigger("Hit");
             characterAnimator.SetInteger("HitAnimation", knockbackAnimation);
-            //this.transform.SetParent(throwTransform);
         }
 
         public void UpdateThrow()
@@ -857,6 +888,7 @@ namespace VoiceActing
             canTargetCombo = false;
             noKnockback = action.AttackBehavior.IsArmor;
             invulnerableState = action.AttackBehavior.IsInvulnerable;
+            PlayVoice(action.AttackBehavior.UserSound);
             if (currentAttack.AttackBehavior.KeepMomentum == false) 
             {
                 speedX = 0;
@@ -952,12 +984,43 @@ namespace VoiceActing
             OnGuardBreak.Invoke(this);
         }
 
+        public void SetArmor(bool b)
+        {
+            noKnockback = b;
+        }
+
+        public void SetInvulnerable(bool b)
+        {
+            invulnerableState = b;
+        }
 
 
 
+        public void PlayVoice(AudioClip[] voices)
+        {
+            if (voices == null)
+                return;
+            if (voices.Length == 0)
+                return;
+            AudioManager.Instance.PlayVoice(voices[Random.Range(0, voices.Length)]);
+        }
+        public void PlayVoice(AudioClip voice)
+        {
+            AudioManager.Instance.PlayVoice(voice);
+        }
 
-
-
+        public void PlaySound(AudioClip[] sounds)
+        {
+            if (sounds == null)
+                return;
+            if (sounds.Length == 0)
+                return;
+            AudioManager.Instance.PlayVoice(sounds[Random.Range(0, sounds.Length)]);
+        }
+        public void PlaySound(AudioClip sound)
+        {
+            AudioManager.Instance.PlayVoice(sound);
+        }
 
 
 

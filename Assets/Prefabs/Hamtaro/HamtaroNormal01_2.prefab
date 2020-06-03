@@ -218,6 +218,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: Hamtaro_Attack01
     attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -246,17 +247,22 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 1
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound:
+    - {fileID: 8300000, guid: 3dde72144e0f3594a9c04c3ad43fe08f, type: 3}
     knockbackPowerX: 2.2
     knockbackPowerZ: 0
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05

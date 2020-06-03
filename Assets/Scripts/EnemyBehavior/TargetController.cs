@@ -149,8 +149,6 @@ namespace VoiceActing
                 res = GetRandom(characters);
             if (getNearest == true)
                 res = GetNearest(characters);
-
-            Debug.Log(characters[res].name);
             return characters[res];
         }
 

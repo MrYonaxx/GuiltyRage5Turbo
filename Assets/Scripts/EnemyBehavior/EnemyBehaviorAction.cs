@@ -19,7 +19,6 @@ namespace VoiceActing
 
         public override float StartBehavior(EnemyController enemyController, Character character)
         {
-            Debug.Log(attackController);
             if (lookAtPlayer == true) 
                 character.LookAt(character.Target.transform);
             character.SetAutoCombo(autoCombo);

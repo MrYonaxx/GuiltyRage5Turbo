@@ -46,6 +46,12 @@ namespace VoiceActing
             get { return attackAnimation2; }
         }
 
+        [SerializeField]
+        private AudioClip[] userSound;
+        public AudioClip[] UserSound
+        {
+            get { return userSound; }
+        }
 
         [SerializeField]
         private float lifetime;
@@ -352,7 +358,15 @@ namespace VoiceActing
             get { return onHitAnimation; }
         }
 
+        [SerializeField]
+        private AudioClip[] onHitSound;
+        public AudioClip[] OnHitSound
+        {
+            get { return onHitSound; }
+        }
 
+
+        [Space]
         [HorizontalGroup("Knockback")]
         [SerializeField]
         float knockbackPowerX = 1;
@@ -360,6 +374,7 @@ namespace VoiceActing
         {
             get { return knockbackPowerX; }
         }
+        [Space]
         [HorizontalGroup("Knockback")]
         [SerializeField]
         float knockbackPowerZ = 0;

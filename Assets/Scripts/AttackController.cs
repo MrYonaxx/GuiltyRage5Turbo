@@ -53,7 +53,6 @@ namespace VoiceActing
             get { return direction; }
         }
 
-
         Vector3 speed = Vector3.zero;
         float motionSpeed = 1f;
         List<AttackController> subActions = new List<AttackController>();
@@ -189,14 +188,11 @@ namespace VoiceActing
 
         public void HasHit(Character target)
         {
+            target.PlaySound(attackBehavior.OnHitSound);
             user.SetTarget(target);
             user.HitConfirm();
             if (attackBehavior.OnHitCombo != null)
                 user.Action(attackBehavior.OnHitCombo);
-            if (attackBehavior.ThrowState == true)
-            {
-                target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);
-            }
             if (attackBehavior.UserKnockbackX != 0 || attackBehavior.UserKnockbackZ != 0)
             {
                 user.SetSpeed(attackBehavior.UserKnockbackX * -direction, 0);
@@ -212,6 +208,11 @@ namespace VoiceActing
                 user.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
             }
 
+            if (attackBehavior.ThrowState == true)
+            {
+                target.Throw(user.ThrowPoint, direction, user.SpriteRenderer.transform.localScale.x);
+                user.SetCharacterToThrow(target);
+            }
             if (attackBehavior.IsMultiHit == false)
             {
                 ActionEnd();
