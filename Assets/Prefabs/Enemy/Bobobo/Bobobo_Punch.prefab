@@ -124,7 +124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4774376298519177382
 Transform:
   m_ObjectHideFlags: 0
@@ -269,6 +269,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: Bobobo_Punch
     attackAnimation2: {fileID: 7400000, guid: 6138f1e5922a64f4b9ceec06e0dc16b9, type: 2}
+    userSound: []
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -303,6 +304,7 @@ MonoBehaviour:
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 5
     knockbackPowerZ: 0
     knockbackAerialPowerX: 0

@@ -20,7 +20,7 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 1, b: 1, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
@@ -1388,7 +1388,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 29d95ad97685e8743adc280e0c03561c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6505,7 +6505,7 @@ MonoBehaviour:
       Data: VoiceActing.EnemyHPTrigger, Assembly-CSharp
     - Name: HpTrigger
       Entry: 4
-      Data: 9499
+      Data: 6000
     - Name: HPTriggerEvent
       Entry: 7
       Data: 53|UnityEngine.Events.UnityEvent, UnityEngine.CoreModule
@@ -6973,6 +6973,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1402578949}
         m_MethodName: AddCombo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 758108033}
+        m_MethodName: Blink
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8223,6 +8234,7 @@ GameObject:
   - component: {fileID: 758108032}
   - component: {fileID: 758108029}
   - component: {fileID: 758108030}
+  - component: {fileID: 758108033}
   m_Layer: 0
   m_Name: PlayerSprite
   m_TagString: Enemy
@@ -8302,7 +8314,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57d45580fd9a0d647b2330870c95b7b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8335,6 +8347,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &758108033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 758108028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b507cd49ba320fa47ab1593079cb0de8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &765974527
 GameObject:
   m_ObjectHideFlags: 0
@@ -12210,7 +12234,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57d45580fd9a0d647b2330870c95b7b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13844,7 +13868,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  playerID: 2
+  playerID: 1
   controllerConfig: {fileID: 0}
   crouchController: {fileID: 1301823558944014507, guid: 69f88571c7c24534fa616e5c6e7997e9,
     type: 3}
@@ -17061,6 +17085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e55e706f2a85047980c9161d36f0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugColor: {r: 0, g: 0, b: 0, a: 0}
   cinematicEvents:
   - cineEvent:
       m_PersistentCalls:
@@ -17828,7 +17853,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  playerID: 1
+  playerID: 2
   controllerConfig: {fileID: 11400000, guid: ade9f2cb9c2916b4190da0086e45d215, type: 2}
   crouchController: {fileID: 6337745606615018979, guid: d80a52316277b93458b957c5dd3a963c,
     type: 3}
@@ -18183,6 +18208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e55e706f2a85047980c9161d36f0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugColor: {r: 0, g: 0, b: 0, a: 0}
   cinematicEvents:
   - cineEvent:
       m_PersistentCalls:
@@ -27278,6 +27304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17e55e706f2a85047980c9161d36f0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  debugColor: {r: 1, g: 0.4292453, b: 0.4292453, a: 1}
   cinematicEvents:
   - cineEvent:
       m_PersistentCalls:
@@ -27355,6 +27382,17 @@ MonoBehaviour:
         - m_Target: {fileID: 1677360083}
           m_MethodName: SetActive
           m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+        - m_Target: {fileID: 1760962808}
+          m_MethodName: SetAmbientLight
+          m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -40123,7 +40161,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57d45580fd9a0d647b2330870c95b7b9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

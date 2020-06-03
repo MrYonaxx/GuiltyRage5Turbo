@@ -79,6 +79,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: Bobobo_SuperKick
     attackAnimation2: {fileID: 7400000, guid: 1bea8bcfb7613d74b88531396c6a1a7f, type: 2}
+    userSound: []
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -106,17 +107,21 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 1
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 40
     knockbackPowerZ: 2
     knockbackAerialPowerX: 40
     knockbackAerialPowerZ: 2
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 1
     hitStopGlobal: 1
     targetShakePower: 0.1
@@ -249,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &9165701992346766239
 Transform:
   m_ObjectHideFlags: 0

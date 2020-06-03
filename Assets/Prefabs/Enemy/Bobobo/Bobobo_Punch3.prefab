@@ -187,6 +187,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: 
     attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0.1
     attackDamage: 75
     comboCost: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 2
     knockbackPowerZ: 3
     knockbackAerialPowerX: 2
@@ -252,7 +254,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6426253808925421752
 Transform:
   m_ObjectHideFlags: 0

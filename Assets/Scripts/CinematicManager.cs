@@ -15,6 +15,9 @@ public class CinematicEvent
 public class CinematicManager : MonoBehaviour
 {
     [SerializeField]
+    Color debugColor;
+
+    [SerializeField]
     List<CinematicEvent> cinematicEvents = new List<CinematicEvent>();
 
     public void StartCinematic()
@@ -29,6 +32,12 @@ public class CinematicManager : MonoBehaviour
             cinematicEvents[i].cineEvent.Invoke();
             yield return new WaitForSeconds(cinematicEvents[i].timeEvent);
         }
+    }
+
+
+    public void SetAmbientLight()
+    {
+        RenderSettings.ambientLight = debugColor;
     }
 
 }
