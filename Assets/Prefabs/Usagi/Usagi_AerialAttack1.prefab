@@ -117,9 +117,9 @@ MonoBehaviour:
       type: 3}
     onHitSound: []
     knockbackPowerX: 1
-    knockbackPowerZ: 1
+    knockbackPowerZ: 6
     knockbackAerialPowerX: 1
-    knockbackAerialPowerZ: 3
+    knockbackAerialPowerZ: 6
     userKnockbackX: 0
     userKnockbackZ: 0
     blockStun: 0.1

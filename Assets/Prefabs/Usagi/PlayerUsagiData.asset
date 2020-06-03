@@ -15,8 +15,8 @@ MonoBehaviour:
   characterFace: {fileID: 21300000, guid: 04780fad0a704a441a1e16f7e7bb50c1, type: 3}
   characterName: Usagi
   characterStat:
-    hp: 2000
-    HpMax: 2000
+    hp: 9999
+    HpMax: 9999
     AttackMultiplier: 1
     DefenseMultiplier: 1
     MotionSpeed: 1
@@ -29,3 +29,7 @@ MonoBehaviour:
     KnockdownResistance: 100
     WakeUpRecovery: 0.5
     customStats: []
+  hitVoice: []
+  guardVoice: []
+  deadVoice: []
+  downSound: []

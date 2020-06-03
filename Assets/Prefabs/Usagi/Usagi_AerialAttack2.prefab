@@ -161,7 +161,8 @@ MonoBehaviour:
     attackName: kickku TSU
     attackAnimation: Usagi_Aerial_Normal2
     attackAnimation2: {fileID: 0}
-    lifetime: 0.1
+    userSound: []
+    lifetime: 0.25
     attackDamage: 200
     comboCost: 0
     knockbackDurationBonus: 0
@@ -193,12 +194,13 @@ MonoBehaviour:
     specialCancel: 1
     isArmor: 0
     isInvulnerable: 0
-    resetGravity: 0
+    resetGravity: 1
     allyAttack: 0
     onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
-    knockbackPowerZ: 0
+    knockbackPowerZ: 8
     knockbackAerialPowerX: 2
     knockbackAerialPowerZ: 8
     userKnockbackX: -2.5
@@ -319,5 +321,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.64}
+  m_Size: {x: 0.32, y: 1}
   m_EdgeRadius: 0
