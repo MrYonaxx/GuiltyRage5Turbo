@@ -8346,7 +8346,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.45, y: 0.72}
+  m_Size: {x: 0.95, y: 0.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8370,7 +8370,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
     oldSize: {x: 0.68, y: 0.77}
-    newSize: {x: 1.45, y: 0.72}
+    newSize: {x: 0.95, y: 0.77}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -9390,7 +9390,7 @@ MonoBehaviour:
   numberRaycastHorizontal: 3
   battleFeedback: {fileID: 11400000, guid: 69377216e89a1ef468347670b5b9aa31, type: 2}
   characterStat:
-    characterData: {fileID: 11400000, guid: 82ef94b5bb0f14f44aab5fecdfb74a0d, type: 2}
+    characterData: {fileID: 11400000, guid: 2573a965bf6c0974fbecb7ecc9119172, type: 2}
     characterBonusStat:
       hp: 0
       HpMax: 0
@@ -9421,16 +9421,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 0}
-  jumpImpulsion: 7
-  gravity: 22
-  gravityMax: -10
-  defaultSpeed: 2.2
-  wakeUpRecovery: 1
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -9477,30 +9470,29 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerID: 1
-  controllerConfig: {fileID: 0}
+  controllerConfig: {fileID: 11400000, guid: 5c1391c0dbda12d4bbaff8c660f3a1a7, type: 2}
   crouchController: {fileID: 897661490472993470, guid: 43e96204941939e41897fe36d2c0aa09,
     type: 3}
   jumpLand: {fileID: 0}
   runEnd: {fileID: 0}
   groundDefaultAttack: {fileID: 4984044858319813305, guid: 8f0bff926265ce84b83fd1888fb37ba5,
     type: 3}
-  groundRunAttack: {fileID: 8119933654453206164, guid: 0cff73193f8cd664c8f7ec5f99cc8d79,
+  groundRunAttack: {fileID: 2925811188883674159, guid: bddedd4a46784cf4dad5563a2ed4cc4b,
     type: 3}
   jumpDefaultAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
     type: 3}
-  jumpForwardAttack: {fileID: 0}
+  jumpForwardAttack: {fileID: 1651371730959565605, guid: 6f0a47b74df1ae243926f766044556a5,
+    type: 3}
   jumpUpAttack: {fileID: 5675724579743022368, guid: 62c3ebffb2eedad40a7b742246fd37b3,
     type: 3}
   jumpDownAttack: {fileID: 0}
   throwAttack: {fileID: 0}
   specialAttack: {fileID: 8775327884234781867, guid: c3d1a33ecda7b8a49856916d9b432c4d,
     type: 3}
-  specialForwardAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
+  specialForwardAttack: {fileID: 8775327884234781867, guid: c3d1a33ecda7b8a49856916d9b432c4d,
     type: 3}
-  specialAerialAttack: {fileID: 8369298451744960502, guid: 8dd93a762594a984e8166e3d99cd1779,
-    type: 3}
-  specialAerialForwardAttack: {fileID: 1912206292486497067, guid: 998d09b8ffc5f0a45be11fefcfcf9786,
-    type: 3}
+  specialAerialAttack: {fileID: 0}
+  specialAerialForwardAttack: {fileID: 0}
   specialRunAttack: {fileID: 5428025765668806407, guid: e7c483b30639b5c428f6daeffd6abe7e,
     type: 3}
   dashBack: {fileID: 0}
@@ -10333,9 +10325,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &1198324901
@@ -13233,6 +13229,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -13294,6 +13293,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -13367,6 +13369,9 @@ MonoBehaviour:
     - Name: conditions
       Entry: 7
       Data: VoiceActing.EnemyCondition, Assembly-CSharp
+    - Name: Phase
+      Entry: 3
+      Data: 0
     - Name: Distance
       Entry: 7
       Data: UnityEngine.Vector3, UnityEngine.CoreModule
@@ -13449,6 +13454,9 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 7
       Data: 9|VoiceActing.EnemyBehaviorWait, Assembly-CSharp
@@ -13464,6 +13472,7 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!95 &1588520117
@@ -13615,16 +13624,9 @@ MonoBehaviour:
       KnockdownResistance: 0
       WakeUpRecovery: 0
       customStats: []
-  target: {fileID: 1079504037}
-  jumpImpulsion: 1
-  gravity: 20
-  gravityMax: -5
-  defaultSpeed: 1.5
-  wakeUpRecovery: 0.6
-  defaultMotionSpeed: 1
-  direction: 1
   state: 0
   active: 1
+  direction: 1
   inAir: 0
   autoCombo: 0
   OnDead:
@@ -13992,9 +13994,13 @@ MonoBehaviour:
     - Name: behaviorSequences
       Entry: 6
       Data: 
+    - Name: phasesTrigger
+      Entry: 6
+      Data: 
     - Name: startUpPattern
       Entry: 6
       Data: 
+  targetController: {fileID: 0}
   timeEnemyAppear: 0.5
   timeEnemyDisappear: 2
 --- !u!1 &1635119693
@@ -15128,6 +15134,10 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7582859381592324, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7582859543714210, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -15184,6 +15194,30 @@ PrefabInstance:
       propertyPath: m_textInfo.materialCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7582859702567664, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859702567664, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859702567664, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859938003038, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859938003038, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582859938003038, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7582860165515473, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: players.Array.size
       value: 1
@@ -15192,6 +15226,10 @@ PrefabInstance:
       propertyPath: players.Array.data[0]
       value: 
       objectReference: {fileID: 1079504037}
+    - target: {fileID: 7582860177570619, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7582860232435897, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_AnchorMin.y
       value: 0
@@ -15263,6 +15301,22 @@ PrefabInstance:
     - target: {fileID: 7582860388104061, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860388104062, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860588263334, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860588263334, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582860588263334, guid: 070d382e0a5af8946906081bec39641b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7582860614128560, guid: 070d382e0a5af8946906081bec39641b, type: 3}
       propertyPath: m_textInfo.characterCount
@@ -15395,6 +15449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GamePrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5287514524404732846, guid: 070d382e0a5af8946906081bec39641b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 070d382e0a5af8946906081bec39641b, type: 3}
@@ -20414,6 +20473,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: 
     attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0
     attackDamage: 0
     comboCost: 0
@@ -20441,16 +20501,20 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 0}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0
     hitStopGlobal: 0
     targetShakePower: 0
@@ -26290,6 +26354,7 @@ MonoBehaviour:
     attackName: 
     attackAnimation: 
     attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -26317,17 +26382,21 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05

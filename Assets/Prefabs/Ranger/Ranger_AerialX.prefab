@@ -268,6 +268,8 @@ MonoBehaviour:
   attackBehavior:
     attackName: Aerial X
     attackAnimation: Ranger_aerialneutral
+    attackAnimation2: {fileID: 0}
+    userSound: []
     lifetime: 0.4
     attackDamage: 0
     comboCost: 0
@@ -295,17 +297,21 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 1
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 3
     knockbackAerialPowerX: 1
-    knockbackAerialPowerZ: 3
+    knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05
@@ -319,20 +325,26 @@ MonoBehaviour:
       argument1: {x: 0, y: 0, z: 0}
       anim: {fileID: 0}
       move: {fileID: 0}
-    - frame: 5
+    - frame: 4
       action: 1
       argument: 
       argument1: {x: 0, y: 0, z: 0}
       anim: {fileID: 0}
       move: {fileID: 0}
-    - frame: 10
+    - frame: 8
       action: 1
       argument: 
       argument1: {x: 0, y: 0, z: 0}
       anim: {fileID: 0}
       move: {fileID: 0}
-    - frame: 15
+    - frame: 12
       action: 1
+      argument: 
+      argument1: {x: 0, y: 0, z: 0}
+      anim: {fileID: 0}
+      move: {fileID: 0}
+    - frame: 16
+      action: 0
       argument: 
       argument1: {x: 0, y: 0, z: 0}
       anim: {fileID: 0}
