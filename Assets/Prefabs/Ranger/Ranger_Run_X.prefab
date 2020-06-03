@@ -189,7 +189,7 @@ MonoBehaviour:
     attackAnimation2: {fileID: 0}
     userSound: []
     lifetime: 0.5
-    attackDamage: 0
+    attackDamage: 30
     comboCost: 0
     knockbackDurationBonus: 0
     knockdownValue: 0
@@ -215,6 +215,7 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 1
@@ -228,6 +229,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 2
     userKnockbackX: 0
     userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.1

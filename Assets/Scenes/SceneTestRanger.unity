@@ -9470,7 +9470,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   playerID: 1
-  controllerConfig: {fileID: 11400000, guid: 5c1391c0dbda12d4bbaff8c660f3a1a7, type: 2}
+  controllerConfig: {fileID: 11400000, guid: ade9f2cb9c2916b4190da0086e45d215, type: 2}
   crouchController: {fileID: 897661490472993470, guid: 43e96204941939e41897fe36d2c0aa09,
     type: 3}
   jumpLand: {fileID: 0}
@@ -20501,6 +20501,7 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 0
@@ -20513,6 +20514,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 0
     userKnockbackX: 0
     userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0
@@ -26382,6 +26385,7 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 0
@@ -26395,6 +26399,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 0
     userKnockbackX: 0
     userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.1
