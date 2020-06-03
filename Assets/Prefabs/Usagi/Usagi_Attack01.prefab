@@ -79,7 +79,8 @@ MonoBehaviour:
     attackName: Normal01
     attackAnimation: Usagi_Attack01
     attackAnimation2: {fileID: 7400000, guid: a7e9468067faefb478b0563050722e96, type: 2}
-    userSound: []
+    userSound:
+    - {fileID: 8300000, guid: 14fef20801e152c4a8ed500b5f3712e9, type: 3}
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -108,6 +109,7 @@ MonoBehaviour:
     dashCancel: 1
     runCancel: 1
     specialCancel: 1
+    groundBounce: 0
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 1
@@ -121,6 +123,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 1
     userKnockbackX: -0.5
     userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.2

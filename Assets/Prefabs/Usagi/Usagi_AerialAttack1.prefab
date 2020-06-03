@@ -79,7 +79,8 @@ MonoBehaviour:
     attackName: aeriaaaal kickkkkku
     attackAnimation: Usagi_Aerial_Normal1
     attackAnimation2: {fileID: 0}
-    userSound: []
+    userSound:
+    - {fileID: 8300000, guid: 14fef20801e152c4a8ed500b5f3712e9, type: 3}
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -109,6 +110,7 @@ MonoBehaviour:
     dashCancel: 1
     runCancel: 0
     specialCancel: 1
+    groundBounce: 0
     isArmor: 0
     isInvulnerable: 0
     resetGravity: 0
@@ -122,6 +124,8 @@ MonoBehaviour:
     knockbackAerialPowerZ: 6
     userKnockbackX: 0
     userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.2
