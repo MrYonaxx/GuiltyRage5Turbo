@@ -269,6 +269,7 @@ MonoBehaviour:
     attackName: Coup de poing
     attackAnimation: Hamtaro_Charged
     attackAnimation2: {fileID: 7400000, guid: 4229983300324074a9a7dca1041bc564, type: 2}
+    userSound: []
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -296,17 +297,24 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 0
     knockbackPowerZ: 0
     knockbackAerialPowerX: 0
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05

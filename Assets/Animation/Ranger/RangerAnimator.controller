@@ -917,31 +917,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &632663151324031209
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: CardBreak
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 883193428008221144}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.673913
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1102 &883193428008221144
 AnimatorState:
   serializedVersion: 5
@@ -1343,31 +1318,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1101 &3250298251776479851
-AnimatorStateTransition:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_Conditions:
-  - m_ConditionMode: 1
-    m_ConditionEvent: CardBreak
-    m_EventTreshold: 0
-  m_DstStateMachine: {fileID: 0}
-  m_DstState: {fileID: 5415688445205412634}
-  m_Solo: 0
-  m_Mute: 0
-  m_IsExit: 0
-  serializedVersion: 3
-  m_TransitionDuration: 0
-  m_TransitionOffset: 0
-  m_ExitTime: 0.75
-  m_HasExitTime: 0
-  m_HasFixedDuration: 1
-  m_InterruptionSource: 0
-  m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
 --- !u!1101 &3320920771274889824
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -1549,9 +1499,6 @@ AnimatorStateMachine:
     m_State: {fileID: 3189911175423514233}
     m_Position: {x: 50, y: 510, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 5415688445205412634}
-    m_Position: {x: -20, y: 240, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: -1371974386731323319}
     m_Position: {x: 550, y: 590, z: 0}
   - serializedVersion: 1
@@ -1571,7 +1518,7 @@ AnimatorStateMachine:
     m_Position: {x: 410, y: 100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 6589132007458658288}
-    m_Position: {x: 230, y: 670, z: 0}
+    m_Position: {x: 220, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 139473471589427069}
     m_Position: {x: -410, y: 80, z: 0}
@@ -1616,7 +1563,7 @@ AnimatorStateMachine:
     m_Position: {x: 790, y: 650, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1999339969741050478}
-    m_Position: {x: 340, y: 720, z: 0}
+    m_Position: {x: 430, y: 720, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -504530838993079642}
     m_Position: {x: -330, y: -200, z: 0}
@@ -1652,7 +1599,6 @@ AnimatorStateMachine:
   - {fileID: 2946907730882757430}
   - {fileID: 6680390025809453647}
   - {fileID: -3190954045393704363}
-  - {fileID: 3250298251776479851}
   - {fileID: 1034369125475658813}
   - {fileID: 3320920771274889824}
   - {fileID: -9039904127200429429}
@@ -1764,33 +1710,6 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7400000, guid: 971427e3702452941af4ffe77eced7ab, type: 2}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
---- !u!1102 &5415688445205412634
-AnimatorState:
-  serializedVersion: 5
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Lia_CardBreak
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions:
-  - {fileID: 632663151324031209}
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 381f340c2ace8e144b3d95eb2f6ce624, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

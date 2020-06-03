@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: -7531349496435177077
     second: Usagi_Normal01_1
+  - first:
+      213: -8547402812526490119
+    second: Usagi_Normal01_0
+  - first:
+      213: -8488430323115729436
+    second: Usagi_Normal01_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,7 +104,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 71
+        width: 81
         height: 103
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -107,8 +113,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 571b1ff3c00cd2990800000000000000
-      internalID: -7409054653109653131
+      spriteID: 9fd0f279d66816980800000000000000
+      internalID: -8547402812526490119
       vertices: []
       indices: 
       edges: []
@@ -117,9 +123,9 @@ TextureImporter:
       name: Usagi_Normal01_1
       rect:
         serializedVersion: 2
-        x: 71
+        x: 81
         y: 0
-        width: 71
+        width: 81
         height: 103
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -128,8 +134,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b890aa929854b7790800000000000000
-      internalID: -7531349496435177077
+      spriteID: 4ed58024899033a80800000000000000
+      internalID: -8488430323115729436
       vertices: []
       indices: 
       edges: []

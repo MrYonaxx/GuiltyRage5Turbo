@@ -312,7 +312,7 @@ MonoBehaviour:
     userKnockbackX: 0
     userKnockbackZ: 0
     groundBounceX: 3
-    groundBounceZ: 5
+    groundBounceZ: 10
     blockStun: 0.1
     blockKnockback: 0
     hitStop: 0.1
