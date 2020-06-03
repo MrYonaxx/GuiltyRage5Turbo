@@ -20,12 +20,16 @@ MonoBehaviour:
     AttackMultiplier: 1
     DefenseMultiplier: 1
     MotionSpeed: 1
-    Speed: 0
-    JumpImpulsion: 0
-    Gravity: 0
-    GravityMax: 0
+    Speed: 1
+    JumpImpulsion: 7
+    Gravity: 22
+    GravityMax: -10
     Mass: 1
     KnockbackTime: 0.4
     KnockdownResistance: 100
-    WakeUpRecovery: 0
+    WakeUpRecovery: 1
     customStats: []
+  hitVoice: []
+  guardVoice: []
+  deadVoice: []
+  downSound: []
