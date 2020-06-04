@@ -114,6 +114,7 @@ namespace VoiceActing
     public struct EnemyHPTrigger
     {
         public float HpTrigger;
+        public bool resetState;
         public UnityEvent HPTriggerEvent;
     }
 
@@ -239,7 +240,8 @@ namespace VoiceActing
             {
                 if (character.CharacterStat.GetHP() < phasesTrigger[phase - 1].HpTrigger)
                 {
-                    character.CancelAct();
+                    if(phasesTrigger[phase - 1].resetState == true)
+                        character.CancelAct();
                     phasesTrigger[phase - 1].HPTriggerEvent.Invoke();
                     phase += 1;
                     return true;
