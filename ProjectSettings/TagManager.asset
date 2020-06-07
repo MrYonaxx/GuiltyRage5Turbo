@@ -24,7 +24,7 @@ TagManager:
   - WallPlayer
   - LockOn
   - CharacterBase
-  - 
+  - CharacterHitbox
   - 
   - 
   - 

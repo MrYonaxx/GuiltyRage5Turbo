@@ -91,13 +91,16 @@ namespace VoiceActing
             lockedCharacter = lockedTarget;
 
             // direction
-            this.transform.localScale = new Vector3(user.SpriteRenderer.transform.localScale.x * cUser.GetDirection(), user.SpriteRenderer.transform.localScale.y, user.SpriteRenderer.transform.localScale.z);
+            //Debug.Log(user.SpriteRenderer.transform.localScale.y);
+            // direction
+            this.transform.localScale = new Vector3(this.transform.localScale.x * user.SpriteRenderer.transform.localScale.x * cUser.GetDirection(), this.transform.localScale.y * user.SpriteRenderer.transform.localScale.y, user.SpriteRenderer.transform.localScale.z);
             if (attackBehavior.NoDirection == false)
                 direction = cUser.GetDirection();
 
             // hitbox
             hitbox.enabled = attackBehavior.IsActive;
 
+            // Link to user
             if (attackBehavior.LinkToCharacterAerial == true)
             {
                 this.transform.SetParent(cUser.SpriteRenderer.transform);
@@ -109,8 +112,11 @@ namespace VoiceActing
             {
                 this.transform.SetParent(cUser.transform);
             }
-            this.tag = cUser.tag + "Attack";
 
+
+
+            // Tag
+            this.tag = cUser.tag;
 
             if (attackCoroutine != null)
                 StopCoroutine(attackCoroutine);
@@ -153,6 +159,12 @@ namespace VoiceActing
                 case AttackBehaviorAction.MoveForward:
                     speed = new Vector3(attackBehaviorData.argument1.x * direction, 0, 0);
                     break;
+                case AttackBehaviorAction.MoveTo:
+                    this.transform.position = new Vector3(attackBehaviorData.argument1.x, attackBehaviorData.argument1.y, attackBehaviorData.argument1.z);
+                    break;
+                case AttackBehaviorAction.Move:
+                    this.transform.position += new Vector3(attackBehaviorData.argument1.x * direction, attackBehaviorData.argument1.y, attackBehaviorData.argument1.z);
+                    break;
             }
             if (attackBehaviorData.anim != null)
             {
@@ -189,7 +201,7 @@ namespace VoiceActing
         public void HasHit(Character target)
         {
             target.PlaySound(attackBehavior.OnHitSound);
-            user.SetTarget(target);
+            //user.SetTarget(target);
             user.HitConfirm();
             if (attackBehavior.OnHitCombo != null)
                 user.Action(attackBehavior.OnHitCombo);
@@ -205,7 +217,13 @@ namespace VoiceActing
             if (attackBehavior.HitStopGlobal == false && attackBehavior.HitStop > 0) 
             {
                 target.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
-                user.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
+                if(attackBehavior.HitStopUser == true)
+                    user.SetCharacterMotionSpeed(0, attackBehavior.HitStop);
+                else if (attackBehavior.HitStopProjectile == true)
+                {
+                    AttackMotionSpeed(0);
+                    StartCoroutine(MotionSpeedCoroutine(attackBehavior.HitStop));
+                }
             }
 
             if (attackBehavior.ThrowState == true)
@@ -232,6 +250,26 @@ namespace VoiceActing
             {
                 subActions[i].AttackMotionSpeed(newMotionSpeed);
             }
+        }
+
+        /*public void SetCharacterMotionSpeed(float newSpeed, float time = 0)
+        {
+            AttackMotionSpeed(newSpeed);
+            if (time > 0)
+            {
+                StartCoroutine(MotionSpeedCoroutine(time));
+            }
+        }*/
+
+
+        private IEnumerator MotionSpeedCoroutine(float time)
+        {
+            while (time > 0)
+            {
+                time -= Time.deltaTime;
+                yield return null;
+            }
+            AttackMotionSpeed(1);
         }
 
 

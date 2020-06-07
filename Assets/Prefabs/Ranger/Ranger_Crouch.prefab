@@ -185,7 +185,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: 
-    attackAnimation: Ranger_Crouch
+    attackAnimation: {fileID: 7400000, guid: 4dbc1a16d56da0c4bb6e1d35440e9ab5, type: 2}
     lifetime: 0.1
     attackDamage: 0
     comboCost: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
     onGroundCombo: {fileID: 0}
     cancelOnWall: 0
     onWallCombo: {fileID: 0}
+    userSound: []
     isActive: 0
     isMultiHit: 0
     noDirection: 0
@@ -213,17 +214,25 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
+    spawnAtSpritePosition: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 1
     knockbackPowerZ: 1
     knockbackAerialPowerX: 1
     knockbackAerialPowerZ: 0
+    userKnockbackX: 0
+    userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.1
     hitStopGlobal: 0
     targetShakePower: 0.05

@@ -29,3 +29,7 @@ MonoBehaviour:
     KnockdownResistance: 90
     WakeUpRecovery: 0.75
     customStats: []
+  hitVoice: []
+  guardVoice: []
+  deadVoice: []
+  downSound: []

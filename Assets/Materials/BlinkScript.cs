@@ -28,7 +28,6 @@ public class BlinkScript : MonoBehaviour
         float t = 0f;
         while(t < 0.5f)
         {
-            Debug.Log(flash);
             flash = Mathf.Lerp(1, 0, t * 2);
             t += Time.deltaTime;
             spriteRenderer.material.SetFloat("_FlashAmount", flash);

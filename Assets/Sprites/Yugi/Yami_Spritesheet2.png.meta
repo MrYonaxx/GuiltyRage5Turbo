@@ -1,0 +1,3311 @@
+fileFormatVersion: 2
+guid: 39661f1e22c6a3d41ab539fd10bff9d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1300943479124046251
+    second: Yami_Spritesheet2_0
+  - first:
+      213: -8820553615569637887
+    second: Yami_Spritesheet2_1
+  - first:
+      213: 7860781913281189672
+    second: Yami_Spritesheet2_2
+  - first:
+      213: -988954852451690384
+    second: Yami_Spritesheet2_3
+  - first:
+      213: -6439870073265036109
+    second: Yami_Spritesheet2_4
+  - first:
+      213: 2964863751748986924
+    second: Yami_Spritesheet2_5
+  - first:
+      213: -7400359547424831398
+    second: Yami_Spritesheet2_6
+  - first:
+      213: -1360449389809019652
+    second: Yami_Spritesheet2_7
+  - first:
+      213: 6471839562430869475
+    second: Yami_Spritesheet2_8
+  - first:
+      213: 7162453468782506970
+    second: Yami_Spritesheet2_9
+  - first:
+      213: -8906697956447263860
+    second: Yami_Spritesheet2_10
+  - first:
+      213: 7704790009847157489
+    second: Yami_Spritesheet2_11
+  - first:
+      213: 640390518297332609
+    second: Yami_Spritesheet2_12
+  - first:
+      213: 4096726073874892073
+    second: Yami_Spritesheet2_13
+  - first:
+      213: -7266600569305276820
+    second: Yami_Spritesheet2_14
+  - first:
+      213: 1564695104472651140
+    second: Yami_Spritesheet2_15
+  - first:
+      213: 1285336452838516433
+    second: Yami_Spritesheet2_16
+  - first:
+      213: 1808577499955453381
+    second: Yami_Spritesheet2_17
+  - first:
+      213: 2858743605503722969
+    second: Yami_Spritesheet2_18
+  - first:
+      213: -4351168033072531131
+    second: Yami_Spritesheet2_19
+  - first:
+      213: -8824863759753232524
+    second: Yami_Spritesheet2_20
+  - first:
+      213: -2931343563782418193
+    second: Yami_Spritesheet2_21
+  - first:
+      213: -467323525369173421
+    second: Yami_Spritesheet2_22
+  - first:
+      213: -5695190388216441474
+    second: Yami_Spritesheet2_23
+  - first:
+      213: 6086467548872777993
+    second: Yami_Spritesheet2_24
+  - first:
+      213: 5966466810015293275
+    second: Yami_Spritesheet2_25
+  - first:
+      213: -3044446092760084358
+    second: Yami_Spritesheet2_26
+  - first:
+      213: -2035164765206715410
+    second: Yami_Spritesheet2_27
+  - first:
+      213: 1798343912177502852
+    second: Yami_Spritesheet2_28
+  - first:
+      213: 3965096645731289982
+    second: Yami_Spritesheet2_29
+  - first:
+      213: -1693150122849658355
+    second: Yami_Spritesheet2_30
+  - first:
+      213: -7290415218722839568
+    second: Yami_Spritesheet2_31
+  - first:
+      213: -4541939589906462698
+    second: Yami_Spritesheet2_32
+  - first:
+      213: 4626445264633151972
+    second: Yami_Spritesheet2_33
+  - first:
+      213: -2901213558935900651
+    second: Yami_Spritesheet2_34
+  - first:
+      213: 6101792762523542564
+    second: Yami_Spritesheet2_35
+  - first:
+      213: 1420684342744491558
+    second: Yami_Spritesheet2_36
+  - first:
+      213: 8956708268502121333
+    second: Yami_Spritesheet2_37
+  - first:
+      213: -8171267930555992977
+    second: Yami_Spritesheet2_38
+  - first:
+      213: -9147326399292301901
+    second: Yami_Spritesheet2_39
+  - first:
+      213: -7452002193241861252
+    second: Yami_Spritesheet2_40
+  - first:
+      213: -6892709924772817229
+    second: Yami_Spritesheet2_41
+  - first:
+      213: 7210225854746603360
+    second: Yami_Spritesheet2_42
+  - first:
+      213: -6566415629613345608
+    second: Yami_Spritesheet2_43
+  - first:
+      213: 3967776185093415444
+    second: Yami_Spritesheet2_44
+  - first:
+      213: -5834671828437770112
+    second: Yami_Spritesheet2_45
+  - first:
+      213: -4669063732108464088
+    second: Yami_Spritesheet2_46
+  - first:
+      213: -1290373855079790093
+    second: Yami_Spritesheet2_47
+  - first:
+      213: 151714708740742518
+    second: Yami_Spritesheet2_48
+  - first:
+      213: 3477347118451090843
+    second: Yami_Spritesheet2_49
+  - first:
+      213: 316922175965208256
+    second: Yami_Spritesheet2_50
+  - first:
+      213: 1810725576734080433
+    second: Yami_Spritesheet2_51
+  - first:
+      213: 7759980075552934734
+    second: Yami_Spritesheet2_52
+  - first:
+      213: 3266814931755443946
+    second: Yami_Spritesheet2_53
+  - first:
+      213: 466611114602841105
+    second: Yami_Spritesheet2_54
+  - first:
+      213: -4960213362912371692
+    second: Yami_Spritesheet2_55
+  - first:
+      213: 1136800632550999949
+    second: Yami_Spritesheet2_56
+  - first:
+      213: 5547526304996147268
+    second: Yami_Spritesheet2_57
+  - first:
+      213: -2779968741084438479
+    second: Yami_Spritesheet2_58
+  - first:
+      213: -5150050077046893267
+    second: Yami_Spritesheet2_59
+  - first:
+      213: 9013414477581727931
+    second: Yami_Spritesheet2_60
+  - first:
+      213: 6503275608992537536
+    second: Yami_Spritesheet2_61
+  - first:
+      213: 5468144760350123717
+    second: Yami_Spritesheet2_62
+  - first:
+      213: 11369449853665581
+    second: Yami_Spritesheet2_63
+  - first:
+      213: -5986287173192324080
+    second: Yami_Spritesheet2_64
+  - first:
+      213: -4920618148326095096
+    second: Yami_Spritesheet2_65
+  - first:
+      213: -8183100740474139730
+    second: Yami_Spritesheet2_66
+  - first:
+      213: -7076937570963765424
+    second: Yami_Spritesheet2_67
+  - first:
+      213: 2302942285012043816
+    second: Yami_Spritesheet2_68
+  - first:
+      213: 6933350968813559625
+    second: Yami_Spritesheet2_69
+  - first:
+      213: 3658975031933103077
+    second: Yami_Spritesheet2_70
+  - first:
+      213: 5840465522331228455
+    second: Yami_Spritesheet2_71
+  - first:
+      213: 7077352800301427774
+    second: Yami_Spritesheet2_72
+  - first:
+      213: 2030286298268471241
+    second: Yami_Spritesheet2_73
+  - first:
+      213: 1594883312149397884
+    second: Yami_Spritesheet2_74
+  - first:
+      213: 7700034574268581100
+    second: Yami_Spritesheet2_75
+  - first:
+      213: -3755974036803047637
+    second: Yami_Spritesheet2_76
+  - first:
+      213: -8457587070986411920
+    second: Yami_Spritesheet2_77
+  - first:
+      213: 2165065786978074544
+    second: Yami_Spritesheet2_78
+  - first:
+      213: 7916683098505131381
+    second: Yami_Spritesheet2_79
+  - first:
+      213: -4059585534951531434
+    second: Yami_Spritesheet2_80
+  - first:
+      213: 6705725864462741038
+    second: Yami_Spritesheet2_81
+  - first:
+      213: -6604297330536309528
+    second: Yami_Spritesheet2_82
+  - first:
+      213: 1192129338176840339
+    second: Yami_Spritesheet2_83
+  - first:
+      213: -998620057403774513
+    second: Yami_Spritesheet2_84
+  - first:
+      213: -3647514395977183487
+    second: Yami_Spritesheet2_85
+  - first:
+      213: -5530224906013240043
+    second: Yami_Spritesheet2_86
+  - first:
+      213: 7358356417951020595
+    second: Yami_Spritesheet2_87
+  - first:
+      213: 1735812563632473651
+    second: Yami_Spritesheet2_88
+  - first:
+      213: 7511283616746872349
+    second: Yami_Spritesheet2_89
+  - first:
+      213: -8560253252987566266
+    second: Yami_Spritesheet2_90
+  - first:
+      213: -8237647950742673612
+    second: Yami_Spritesheet2_91
+  - first:
+      213: 3719704068688730933
+    second: Yami_Spritesheet2_92
+  - first:
+      213: -7287527079341195178
+    second: Yami_Spritesheet2_93
+  - first:
+      213: 6394941164767645188
+    second: Yami_Spritesheet2_94
+  - first:
+      213: 2580045583730249125
+    second: Yami_Spritesheet2_95
+  - first:
+      213: -4325251508879118709
+    second: Yami_Spritesheet2_96
+  - first:
+      213: 6548671051112859678
+    second: Yami_Spritesheet2_97
+  - first:
+      213: -7342663514362816975
+    second: Yami_Spritesheet2_98
+  - first:
+      213: 374921865936479710
+    second: Yami_Spritesheet2_99
+  - first:
+      213: -8910843340144479410
+    second: Yami_Spritesheet2_100
+  - first:
+      213: 6190741123527594002
+    second: Yami_Spritesheet2_101
+  - first:
+      213: -6298652571128450137
+    second: Yami_Spritesheet2_102
+  - first:
+      213: 5408037033997838423
+    second: Yami_Spritesheet2_103
+  - first:
+      213: -7164244828895316064
+    second: Yami_Spritesheet2_104
+  - first:
+      213: 5109405379352967979
+    second: Yami_Spritesheet2_105
+  - first:
+      213: 7551781531805183663
+    second: Yami_Spritesheet2_106
+  - first:
+      213: 8703923745455616865
+    second: Yami_Spritesheet2_107
+  - first:
+      213: -7095553811579840200
+    second: Yami_Spritesheet2_108
+  - first:
+      213: -4843152524396763016
+    second: Yami_Spritesheet2_109
+  - first:
+      213: 7878870148438668166
+    second: Yami_Spritesheet2_110
+  - first:
+      213: -3311059286120977165
+    second: Yami_Spritesheet2_111
+  - first:
+      213: 9115056133452259490
+    second: Yami_Spritesheet2_112
+  - first:
+      213: 3311302910597344280
+    second: Yami_Spritesheet2_113
+  - first:
+      213: 1221443252604067134
+    second: Yami_Spritesheet2_114
+  - first:
+      213: -3905582192123537352
+    second: Yami_Spritesheet2_115
+  - first:
+      213: 5646894039137790010
+    second: Yami_Spritesheet2_116
+  - first:
+      213: 1266494033233483583
+    second: Yami_Spritesheet2_117
+  - first:
+      213: -166015478397787991
+    second: Yami_Spritesheet2_118
+  - first:
+      213: 4575550654524463741
+    second: Yami_Spritesheet2_119
+  - first:
+      213: -4383619654002186964
+    second: Yami_Spritesheet2_120
+  - first:
+      213: 7020283942924356536
+    second: Yami_Spritesheet2_121
+  - first:
+      213: -8546423655153183339
+    second: Yami_Spritesheet2_122
+  - first:
+      213: -5673643935193071147
+    second: Yami_Spritesheet2_123
+  - first:
+      213: 898021266618885652
+    second: Yami_Spritesheet2_124
+  - first:
+      213: -5731407982982800092
+    second: Yami_Spritesheet2_125
+  - first:
+      213: 3102930586981479994
+    second: Yami_Spritesheet2_126
+  - first:
+      213: -7895462354842011342
+    second: Yami_Spritesheet2_127
+  - first:
+      213: -6508211259383574683
+    second: Yami_Spritesheet2_128
+  - first:
+      213: -7977323284555816929
+    second: Yami_Spritesheet2_129
+  - first:
+      213: 6243026599145870443
+    second: Yami_Spritesheet2_130
+  - first:
+      213: 5852244045893490518
+    second: Yami_Spritesheet2_131
+  - first:
+      213: 9025970962222874090
+    second: Yami_Spritesheet2_132
+  - first:
+      213: -4701423465989914798
+    second: Yami_Spritesheet2_133
+  - first:
+      213: 9110449202309001757
+    second: Yami_Spritesheet2_134
+  - first:
+      213: 7326657417211567563
+    second: Yami_Spritesheet2_135
+  - first:
+      213: -2953392843104380093
+    second: Yami_Spritesheet2_136
+  - first:
+      213: -439686062687913170
+    second: Yami_Spritesheet2_137
+  - first:
+      213: 6393271792189360835
+    second: Yami_Spritesheet2_138
+  - first:
+      213: -6760811111056140430
+    second: Yami_Spritesheet2_139
+  - first:
+      213: -1705481654972675462
+    second: Yami_Spritesheet2_140
+  - first:
+      213: -555875947832133566
+    second: Yami_Spritesheet2_141
+  - first:
+      213: -3902728983038250593
+    second: Yami_Spritesheet2_142
+  - first:
+      213: 6627077025542890177
+    second: Yami_Spritesheet2_143
+  - first:
+      213: 485891394695210346
+    second: Yami_Spritesheet2_144
+  - first:
+      213: 8078623688807135689
+    second: Yami_Spritesheet2_145
+  - first:
+      213: -4311679626970798936
+    second: Yami_Spritesheet2_146
+  - first:
+      213: 5566854838429740537
+    second: Yami_Spritesheet2_147
+  - first:
+      213: -3958413434987675464
+    second: Yami_Spritesheet2_148
+  - first:
+      213: 8486280104758581280
+    second: Yami_Spritesheet2_149
+  - first:
+      213: 4763541649407757069
+    second: Yami_Spritesheet2_150
+  - first:
+      213: 3164346399199498416
+    second: Yami_Spritesheet2_151
+  - first:
+      213: 4449965046653253969
+    second: Yami_Spritesheet2_152
+  - first:
+      213: -6536013865213284841
+    second: Yami_Spritesheet2_153
+  - first:
+      213: -3520849323043392377
+    second: Yami_Spritesheet2_154
+  - first:
+      213: -153056701010196089
+    second: Yami_Spritesheet2_155
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Lumin
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba1bc0a9331ed0210800000000000000
+      internalID: 1300943479124046251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_1
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10e2fad4839179580800000000000000
+      internalID: -8820553615569637887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_2
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827d0fd708b171d60800000000000000
+      internalID: 7860781913281189672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078d7b82dc68642f0800000000000000
+      internalID: -988954852451690384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_4
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b46e5bc94cf0a6a0800000000000000
+      internalID: -6439870073265036109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_5
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c282e6aafdf452920800000000000000
+      internalID: 2964863751748986924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_6
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a58829d4334ac4990800000000000000
+      internalID: -7400359547424831398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_7
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf45989ec76be1de0800000000000000
+      internalID: -1360449389809019652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_8
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3efe202fac790d950800000000000000
+      internalID: 6471839562430869475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_9
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 1032.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad3bb074b75266360800000000000000
+      internalID: 7162453468782506970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c836348f56d056480800000000000000
+      internalID: -8906697956447263860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f21be531b9ecea60800000000000000
+      internalID: 7704790009847157489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b04a098cf13e800800000000000000
+      internalID: 640390518297332609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 925c467a8ae7ad830800000000000000
+      internalID: 4096726073874892073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_14
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e58e54849d72b90800000000000000
+      internalID: -7266600569305276820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_15
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48592eb48e9e6b510800000000000000
+      internalID: 1564695104472651140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_16
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6ec40a1be66d110800000000000000
+      internalID: 1285336452838516433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cddb9967ab591910800000000000000
+      internalID: 1808577499955453381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_18
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d508f5b92c4ca720800000000000000
+      internalID: 2858743605503722969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_19
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 946.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5493da63abb8d93c0800000000000000
+      internalID: -4351168033072531131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fb0b8aa29c78580800000000000000
+      internalID: -8824863759753232524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_21
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe01f164f86c157d0800000000000000
+      internalID: -2931343563782418193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_22
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35aef2bcabbb389f0800000000000000
+      internalID: -467323525369173421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_23
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e75d32e248e96f0b0800000000000000
+      internalID: -5695190388216441474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_24
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901218bfcf9777450800000000000000
+      internalID: 6086467548872777993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_25
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5f9e17b3f52dc250800000000000000
+      internalID: 5966466810015293275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_26
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a709537a864ffb5d0800000000000000
+      internalID: -3044446092760084358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_27
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee36676cd64a1c3e0800000000000000
+      internalID: -2035164765206715410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_28
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48a8355924005f810800000000000000
+      internalID: 1798343912177502852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_29
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 860.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7b08ec246ad60730800000000000000
+      internalID: 3965096645731289982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0a13281fe8b088e0800000000000000
+      internalID: -1693150122849658355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_31
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f36cee1cfd33da90800000000000000
+      internalID: -7290415218722839568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_32
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6188758d10ac7f0c0800000000000000
+      internalID: -4541939589906462698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_33
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e14f3bc47f643040800000000000000
+      internalID: 4626445264633151972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_34
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51e2412b3a1dcb7d0800000000000000
+      internalID: -2901213558935900651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_35
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424e347503ceda450800000000000000
+      internalID: 6101792762523542564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_36
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626ae33f1e847b310800000000000000
+      internalID: 1420684342744491558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_37
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b7fdc27be9c4c70800000000000000
+      internalID: 8956708268502121333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_38
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f643ba24c13d99e80800000000000000
+      internalID: -8171267930555992977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_39
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 774.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd11adba1b2e0180800000000000000
+      internalID: -9147326399292301901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c731366dc7b259890800000000000000
+      internalID: -7452002193241861252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_41
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b65b12b7dc2850a0800000000000000
+      internalID: -6892709924772817229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_42
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06f2286a63edf0460800000000000000
+      internalID: 7210225854746603360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_43
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4d25576c76fd4a0800000000000000
+      internalID: -6566415629613345608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_44
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4126fbc0b6f501730800000000000000
+      internalID: 3967776185093415444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_45
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080ecfca2e4170fa0800000000000000
+      internalID: -5834671828437770112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_46
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820f30ef547243fb0800000000000000
+      internalID: -4669063732108464088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_47
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f98484c0dba71ee0800000000000000
+      internalID: -1290373855079790093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_48
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d91b949bffa1200800000000000000
+      internalID: 151714708740742518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_49
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 688.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95610cc7c4024030800000000000000
+      internalID: 3477347118451090843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ce99d73a0fe56400800000000000000
+      internalID: 316922175965208256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_51
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bdf2f2815df02910800000000000000
+      internalID: 1810725576734080433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_52
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b017bb3ccf0bb60800000000000000
+      internalID: 7759980075552934734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_53
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6a9324fde065d20800000000000000
+      internalID: 3266814931755443946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_54
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 114c626265cb97600800000000000000
+      internalID: 466611114602841105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_55
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41c567d0a38c92bb0800000000000000
+      internalID: -4960213362912371692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_56
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8744abf62ab6cf00800000000000000
+      internalID: 1136800632550999949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_57
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4404e6748c5ccfc40800000000000000
+      internalID: 5547526304996147268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_58
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 130e8fca8219b69d0800000000000000
+      internalID: -2779968741084438479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_59
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 602.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d259526bdb85788b0800000000000000
+      internalID: -5150050077046893267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb83f9556b4161d70800000000000000
+      internalID: 9013414477581727931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_61
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb5676e5b6404a50800000000000000
+      internalID: 6503275608992537536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_62
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6251520b0c2eb40800000000000000
+      internalID: 5468144760350123717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_63
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21c1d35474682000800000000000000
+      internalID: 11369449853665581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_64
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ce46e588f6ceca0800000000000000
+      internalID: -5986287173192324080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_65
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807cea95dd376bbb0800000000000000
+      internalID: -4920618148326095096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_66
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab8dc28b39cf6e80800000000000000
+      internalID: -8183100740474139730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_67
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057c61146caa9cd90800000000000000
+      internalID: -7076937570963765424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_68
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8288e548ec1b5ff10800000000000000
+      internalID: 2302942285012043816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_69
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 516.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f1e3fb8f5383060800000000000000
+      internalID: 6933350968813559625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb656cc76a47c230800000000000000
+      internalID: 3658975031933103077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_71
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 729187dc2708d0150800000000000000
+      internalID: 5840465522331228455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_72
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c251cdfdec73260800000000000000
+      internalID: 7077352800301427774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_73
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cf82a0a1a60d2c10800000000000000
+      internalID: 2030286298268471241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_74
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c710dde1ce9222610800000000000000
+      internalID: 1594883312149397884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_75
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4418516a40cda60800000000000000
+      internalID: 7700034574268581100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_76
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fa3c6738910ebc0800000000000000
+      internalID: -3755974036803047637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_77
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0702be08e5d90aa80800000000000000
+      internalID: -8457587070986411920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_78
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bffd2cbcdbdb0e10800000000000000
+      internalID: 2165065786978074544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_79
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 430.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575bcbd6555bddd60800000000000000
+      internalID: 7916683098505131381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c56ede67479a7c0800000000000000
+      internalID: -4059585534951531434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_81
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e637035268f0d50800000000000000
+      internalID: 6705725864462741038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_82
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec9256a192d854a0800000000000000
+      internalID: -6604297330536309528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_83
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3922a50215b4b8010800000000000000
+      internalID: 1192129338176840339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_84
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc92ed449503422f0800000000000000
+      internalID: -998620057403774513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_85
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10f08a27bfc616dc0800000000000000
+      internalID: -3647514395977183487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_86
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51510159fb1b043b0800000000000000
+      internalID: -5530224906013240043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_87
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336bfa60d222e1660800000000000000
+      internalID: 7358356417951020595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_88
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33649f37458d61810800000000000000
+      internalID: 1735812563632473651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_89
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 344.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1e986727a07d3860800000000000000
+      internalID: 7511283616746872349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6474b44450fd33980800000000000000
+      internalID: -8560253252987566266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_91
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 437224f65defdad80800000000000000
+      internalID: -8237647950742673612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_92
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53b54c3842b0f9330800000000000000
+      internalID: 3719704068688730933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_93
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65004d87bb08dda90800000000000000
+      internalID: -7287527079341195178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_94
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e8f758b156fb850800000000000000
+      internalID: 6394941164767645188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_95
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ad8e8ae9c92ec320800000000000000
+      internalID: 2580045583730249125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_96
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ea9093bae99f3c0800000000000000
+      internalID: -4325251508879118709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_97
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e184778ef9d81ea50800000000000000
+      internalID: 6548671051112859678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_98
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136de21df6e991a90800000000000000
+      internalID: -7342663514362816975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_99
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 258.9231
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed5abad537df33500800000000000000
+      internalID: 374921865936479710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43788d9133565480800000000000000
+      internalID: -8910843340144479410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_101
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 210d34c704ee9e550800000000000000
+      internalID: 6190741123527594002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_102
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3b946bbd0b698a0800000000000000
+      internalID: -6298652571128450137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_103
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 758299787053d0b40800000000000000
+      internalID: 5408037033997838423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_104
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a7f3c1394d739c90800000000000000
+      internalID: -7164244828895316064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_105
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2bbdc92f1148e640800000000000000
+      internalID: 5109405379352967979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_106
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fae6a98ca415dc860800000000000000
+      internalID: 7551781531805183663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_107
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16338f7f78c8ac870800000000000000
+      internalID: 8703923745455616865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_108
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8395d18f667878d90800000000000000
+      internalID: -7095553811579840200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_109
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 172.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8786b4e607aa9ccb0800000000000000
+      internalID: -4843152524396763016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683bd1de7ae575d60800000000000000
+      internalID: 7878870148438668166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_111
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc208c3f11cc02d0800000000000000
+      internalID: -3311059286120977165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_112
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0ea2e724f2f7e70800000000000000
+      internalID: 9115056133452259490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_113
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c2fd1047c14fd20800000000000000
+      internalID: 3311302910597344280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_114
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3d53c0ba2073f010800000000000000
+      internalID: 1221443252604067134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_115
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838926d50b59cc9c0800000000000000
+      internalID: -3905582192123537352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_116
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a382417c53ccd5e40800000000000000
+      internalID: 5646894039137790010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_117
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f379801fc9d739110800000000000000
+      internalID: 1266494033233483583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_118
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a022ee4dc132bdf0800000000000000
+      internalID: -166015478397787991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_119
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 86.92308
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7a9cb6f31f9f7f30800000000000000
+      internalID: 4575550654524463741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_120
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2567cc66214a23c0800000000000000
+      internalID: -4383619654002186964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_121
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb82601d0f0d6160800000000000000
+      internalID: 7020283942924356536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_122
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595599e67f0056980800000000000000
+      internalID: -8546423655153183339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_123
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d184c4b6ea2341b0800000000000000
+      internalID: -5673643935193071147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_124
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416a0958599667c00800000000000000
+      internalID: 898021266618885652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_125
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42dd8774ec2f570b0800000000000000
+      internalID: -5731407982982800092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yami_Spritesheet2_126
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0.92308044
+        width: 79
+        height: 86.07692
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a36b9b7cde2df0b20800000000000000
+      internalID: 3102930586981479994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

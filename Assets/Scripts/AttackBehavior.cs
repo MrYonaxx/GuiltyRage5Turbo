@@ -32,25 +32,12 @@ namespace VoiceActing
         }
 
 
+
         [SerializeField]
-        private string attackAnimation;
-        public string AttackAnimation
+        private AnimationClip attackAnimation;
+        public AnimationClip AttackAnimation
         {
             get { return attackAnimation; }
-        }
-
-        [SerializeField]
-        private AnimationClip attackAnimation2;
-        public AnimationClip AttackAnimation2
-        {
-            get { return attackAnimation2; }
-        }
-
-        [SerializeField]
-        private AudioClip[] userSound;
-        public AudioClip[] UserSound
-        {
-            get { return userSound; }
         }
 
         [SerializeField]
@@ -146,6 +133,13 @@ namespace VoiceActing
             get { return onWallCombo; }
         }
 
+        [Space]
+        [SerializeField]
+        private AudioClip[] userSound;
+        public AudioClip[] UserSound
+        {
+            get { return userSound; }
+        }
 
         [Title("Attack Parameter")]
         /*[SerializeField]
@@ -349,6 +343,22 @@ namespace VoiceActing
         {
             get { return allyAttack; }
         }
+
+        [HorizontalGroup("AttackParameter26")]
+        [SerializeField]
+        bool spawnAtSpritePosition = false;
+        public bool SpawnAtSpritePosition
+        {
+            get { return spawnAtSpritePosition; }
+        }
+
+        [HorizontalGroup("AttackParameter26")]
+        [SerializeField]
+        bool destroyOnGround = false;
+        public bool DestroyOnGround
+        {
+            get { return destroyOnGround; }
+        }
         /*[HorizontalGroup("AttackParameter9")]
         [SerializeField]
         bool cameraFollowAttack = false;
@@ -463,9 +473,31 @@ namespace VoiceActing
         }
 
 
-
-
         [Space]
+        [HorizontalGroup("HitstopParameterGlobal")]
+        [SerializeField]
+        private bool hitStopGlobal;
+        public bool HitStopGlobal
+        {
+            get { return hitStopGlobal; }
+        }
+
+        [HorizontalGroup("HitstopParameter")]
+        [SerializeField]
+        private bool hitStopUser = true;
+        public bool HitStopUser
+        {
+            get { return hitStopUser; }
+        }
+
+        [HorizontalGroup("HitstopParameter")]
+        [SerializeField]
+        private bool hitStopProjectile;
+        public bool HitStopProjectile
+        {
+            get { return hitStopProjectile; }
+        }
+
         [HorizontalGroup("FeedbackPuissant")]
         [SerializeField]
         private float hitStop = 0.15f;
@@ -475,15 +507,8 @@ namespace VoiceActing
         }
 
 
-        [Space]
-        [HorizontalGroup("FeedbackPuissant")]
-        [SerializeField]
-        private bool hitStopGlobal;
-        public bool HitStopGlobal
-        {
-            get { return hitStopGlobal; }
-        }
 
+        [Space]
         [HorizontalGroup("Zoom")]
         [SerializeField]
         private float targetShakePower;
@@ -491,6 +516,7 @@ namespace VoiceActing
         {
             get { return targetShakePower; }
         }
+        [Space]
         [HorizontalGroup("Zoom")]
         [SerializeField]
         private float zoom;
@@ -611,6 +637,7 @@ namespace VoiceActing
         Active,
         MoveForward,
         MoveTo,
+        Move,
         PlayAnimation
     }
 

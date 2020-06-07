@@ -77,10 +77,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: aeriaaaal kickkkkku
-    attackAnimation: Usagi_Aerial_Normal1
-    attackAnimation2: {fileID: 0}
-    userSound:
-    - {fileID: 8300000, guid: 14fef20801e152c4a8ed500b5f3712e9, type: 3}
+    attackAnimation: {fileID: 7400000, guid: 9a5d59deb79178146b0ec98627a4bdc7, type: 2}
     lifetime: 0.1
     attackDamage: 100
     comboCost: 0
@@ -95,6 +92,8 @@ MonoBehaviour:
     onGroundCombo: {fileID: 0}
     cancelOnWall: 0
     onWallCombo: {fileID: 0}
+    userSound:
+    - {fileID: 8300000, guid: 14fef20801e152c4a8ed500b5f3712e9, type: 3}
     isActive: 1
     isMultiHit: 0
     noDirection: 0
@@ -115,6 +114,7 @@ MonoBehaviour:
     isInvulnerable: 0
     resetGravity: 0
     allyAttack: 0
+    spawnAtSpritePosition: 0
     onHitAnimation: {fileID: 1870070907935110700, guid: 1b5ba1ce2f1b8ea41affed2efde65207,
       type: 3}
     onHitSound: []

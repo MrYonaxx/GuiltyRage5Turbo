@@ -216,8 +216,7 @@ MonoBehaviour:
   animator: {fileID: 0}
   attackBehavior:
     attackName: 
-    attackAnimation: Hamtaro_Special_Aerial
-    attackAnimation2: {fileID: 0}
+    attackAnimation: {fileID: 7400000, guid: 17f8e1d0ec2d062488474fd26b60589d, type: 2}
     lifetime: 0.2
     attackDamage: 200
     comboCost: 0
@@ -232,6 +231,7 @@ MonoBehaviour:
     cancelOnWall: 1
     onWallCombo: {fileID: 2942628069076481641, guid: d5baa32080439cd41b3d730ae530a045,
       type: 3}
+    userSound: []
     isActive: 1
     isMultiHit: 0
     noDirection: 0
@@ -247,17 +247,25 @@ MonoBehaviour:
     dashCancel: 0
     runCancel: 0
     specialCancel: 0
+    groundBounce: 0
+    isArmor: 0
+    isInvulnerable: 0
     resetGravity: 1
     allyAttack: 0
+    spawnAtSpritePosition: 0
     onHitAnimation: {fileID: 855764348832698739, guid: 734251cd418c42946b79b2586c648edb,
       type: 3}
+    onHitSound: []
     knockbackPowerX: 10
     knockbackPowerZ: 3
     knockbackAerialPowerX: 3
     knockbackAerialPowerZ: 6
+    userKnockbackX: 0
+    userKnockbackZ: 0
+    groundBounceX: 0
+    groundBounceZ: 0
     blockStun: 0.1
     blockKnockback: 0
-    onHitKnockback: 0
     hitStop: 0.2
     hitStopGlobal: 0
     targetShakePower: 0.05
